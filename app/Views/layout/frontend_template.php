@@ -22,7 +22,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
@@ -48,54 +48,21 @@
   <?= $this->renderSection('content') ?>
 
   <!-- Footer -->
-  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
+  <footer class="text-center text-lg-start text-muted-white pt-1 " style="background-color:#000000;">
     <!-- Section: Links  -->
-    <section class="">
+    <section>
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
-            </h6>
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
+            </a>
+            </br>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
+              Wisma Kodel Lantai 8, Jl. HR Rasuna Said, Kuningan, Setiabudi, Jakarta Selatan
             </p>
           </div>
           <!-- Grid column -->
@@ -104,19 +71,13 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Kontak
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angular</a>
+              <i class="fas fa-phone me-3"></i> +6281 **** ****
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <i class="fas fa-envelope me-3"></i> sims@gmail.com
             </p>
           </div>
           <!-- Grid column -->
@@ -125,19 +86,16 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
+              Layanan
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="#!" class="text-reset">Internet</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
+              <a href="#!" class="text-reset">Pengembangan Aplikasi</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
+              <a href="#!" class="text-reset">Pelatihan</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -145,14 +103,13 @@
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <h6 class="text-uppercase fw-bold mb-4">Sosial Media</h6>
             <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
+              <a href="#!" class="text-reset"><i class="fab fa-twitter me-3"></i> X/Twitter</a>
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <p>
+              <a href="#!" class="text-reset"><i class="fab fa-instagram me-3"></i> Instagram</a>
+            </p>
           </div>
           <!-- Grid column -->
         </div>
@@ -163,12 +120,12 @@
 
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2024 PT SIMS. All Rights Reserved
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+
 
 
   <!-- MDB -->

@@ -51,6 +51,33 @@
         height: 100px;
         width: 100px;
     }
+
+    footer {
+        background-color: black;
+        color: white;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer a:hover {
+        color: #ddd;
+        /* or any color you prefer for hover effect */
+
+    }
+
+    @font-face {
+        font-family: 'ArcadeFont';
+        src: url('assets/font/ARCADE_I.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    h2 {
+        font-family: 'ArcadeFont', sans-serif;
+
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -127,7 +154,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="1" class="active"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
