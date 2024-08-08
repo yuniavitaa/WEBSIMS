@@ -3,14 +3,14 @@
 <?= $this->section('style') ?>
 <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Chakra Petch';
             margin: 0;
             padding: 0;
         }
         .hero {
             background-image: url('<?= base_url('assets/img/Background.png') ?>');
             background-size: cover;
-            background-position: center;
+            background-position: center Chakra Petch;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -39,6 +39,7 @@
         .hero p {
             font-size: 1.2em;
             margin: 10px 0;
+            font-family: 'Arcade Interlaced';
         }
         .hero .btn {
             display: inline-block;
@@ -139,6 +140,35 @@
         .service-item:hover .service-slideshow {
             opacity: 1;
         }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .service-card {
+            background-color: #987D9A;
+            border: 2px solid #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+        }
 
     </style>
 <?= $this->endSection() ?>
@@ -194,44 +224,106 @@
             <div class="service-item">
                 <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
                 <div class="service-info">High Speed Internet Access</div>
-                <div class="service-slideshow">Slide 2 Content</div>
-            </div>
+                <div class="service-slideshow">
+                    <li>Shared connections through wired (FTTH) or wiraless media</li>
+                    <li> Past or Pra Paid Service </li>
+                    <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
+                    <button class="more-btn">Selengkapnya</button>
+                    </div>
+                </div>
             <div class="service-item">
                 <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
                 <div class="service-info">VPN Service</div>
-                <div class="service-slideshow">Slide 3 Content</div>
+                <div class="service-slideshow">
+                    <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
+                    <li>Feature: MRTG, 24/7 Technical Support</li>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
             </div>
             <div class="service-item">
                 <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center">
                 <div class="service-info">Data Center</div>
-                <div class="service-slideshow">Slide 3 Content</div>
+                <div class="service-slideshow">Server Collection aquipped with electrical protection in the form of generatorn,
+                    UPS and Spark Arraster are provided
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
             </div>
 
             <div class="service-item">
                 <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
                 <div class="service-info">Dark Fiber Connection</div>
-                <div class="service-slideshow">Slide 3 Content</div>
+                <div class="service-slideshow">PTP connection is available for Service Providers or Talco Operatorn</div>
+                <button class="more-btn">Selengkapnya</button>
             </div>
 
             <div class="service-item">
                 <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
                 <div class="service-info">BTS Hotel/Multimedia Micro Cell Pole</div>
-                <div class="service-slideshow">Slide 3 Content</div>
+                <div class="service-slideshow">
+                    <li> PTP connection from MSC to MultimediaMicro Cell Pole</li>
+                    <li> BTS Hotel</li>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
             </div>
             <div class="service-item">
                 <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
                 <div class="service-info">VSAT</div>
-                <div class="service-slideshow">Slide 3 Content</div>
+                <div class="service-slideshow">Very Small Aparture Terminal (VSAT) service is a solution to accommodatetelecommunications
+                    Needs in arms notcovered by terrestrial networks for the hands of users with Find Moving or Mobile Locations
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
             </div>
             <div class="service-item">
                 <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
                 <div class="service-info">Training</div>
-                <div class="service-slideshow">Slide 3 Content</div>
+                <div class="service-slideshow">It is consultation and assistance service in the planning and development of smart city/digital
+                    government solutions, including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to
+                    expand the impact of the digital ecosystem
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="card">
+        <h1>SIMS' SUITE OF VALUE-ADDED SERVICES</h1>
+        <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
+    </div>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="web_app_icon.png" alt="Web Application Icon">
+                    <h3>Web Application</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="mobile_app_icon.png" alt="Mobile Application Icon">
+                    <h3>Mobile Application</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="web_design_icon.png" alt="Web Design Icon">
+                    <h3>Web Design</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="payment_gateway_icon.png" alt="Payment Gateway Icon">
+                    <h3>Payment Gateway</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
             </div>
         </div>
     </div>
-
-    
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
