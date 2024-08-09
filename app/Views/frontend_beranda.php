@@ -151,13 +151,9 @@
 
         <div class="container">
             <h1 style="font-weight: 900; margin-top: 100px; margin-bottom: 50px;">Carousel with text in slide</h1>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleControls" data-slide-to="1" class="active"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <div class="swiper" id="swiper-experience">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div>
@@ -166,11 +162,11 @@
                                 </div>
                             </div>
                             <div class="col-sm-8">
-                                <img src="assets/img/Background.png" alt="Slide 1" class="d-block w-100">
+                                <img src="assets/img/Media.png" alt="Slide 1" class="d-block w-100">
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="swiper-slide">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div>
@@ -184,17 +180,18 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
-</div>
+        </br>
 
+    </div>
+    <div class="container text-center pt-5">
+        <h2>TRUSTED BY</h2>
+
+    </div>
+
+</div>
 <?= $this->endSection() ?>
