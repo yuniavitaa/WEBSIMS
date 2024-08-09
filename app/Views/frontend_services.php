@@ -85,11 +85,12 @@
         }
 
         .services-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    }
         .service-item {
             position: relative;
             width: 300px;
@@ -169,6 +170,36 @@
         .service-card p {
             font-size: 14px;
         }
+        .service-slideshow p {
+    margin-bottom: auto; /* Membuat ruang di antara paragraf dan tombol */
+}
+
+.service-slideshow {
+    padding: 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Untuk menempatkan tombol di bawah */
+    height: 100%; /* Pastikan kontainer memiliki tinggi penuh */
+}
+
+        .more-btn {
+    display: block;
+    width: 80%; /* Lebar tombol */
+    margin: 0 auto; /* Untuk menempatkan tombol di tengah secara horizontal */
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-top: 20px; /* Opsional: jarak dari teks ke tombol */
+}
+.more-btn:hover {
+    background-color: #0056b3;
+}
 
     </style>
 <?= $this->endSection() ?>
@@ -194,94 +225,131 @@
         </div>
     </div>
 
-    <div id="services" class="container mt-5">
-        <div class="service-section row">
-            <div class="col-md-6">
-                <img src="<?= base_url('/assets/img/servicetv.png') ?>" alt="Pay TV Services">
-            </div>
-            <div class="col-md-6 service-text">
-                <h2 class="display-5">PAY TV SERVICES</h2>
-                <p>Digital TV service employs FTTH (Fiber To The Home) technology 
-                    and offers numerous Free To Air and Premium channels.</p>
-                    <button class="more-btn">Selengkapnya</button>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container mt-5">
         <h1 class="text-center mb-5">Our Services</h1>
         <div class="services-container">
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
-                <div class="service-info">
-                    Pay TV Service
-                </div>
-                <div class="service-slideshow">Digital TV service employe FTTH (Fitur To The Home)technology and offers
-                    numerous Free To Air and Premium Channels
-                <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
-                <div class="service-info">High Speed Internet Access</div>
-                <div class="service-slideshow">
-                    <li>Shared connections through wired (FTTH) or wiraless media</li>
-                    <li> Past or Pra Paid Service </li>
-                    <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
-                    <button class="more-btn">Selengkapnya</button>
-                    </div>
-                </div>
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
-                <div class="service-info">VPN Service</div>
-                <div class="service-slideshow">
-                    <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
-                    <li>Feature: MRTG, 24/7 Technical Support</li>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center">
-                <div class="service-info">Data Center</div>
-                <div class="service-slideshow">Server Collection aquipped with electrical protection in the form of generatorn,
-                    UPS and Spark Arraster are provided
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
+        <div class="service-item">
+        <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
+        <div class="service-info">
+            Pay TV Service
+        </div>
+        <div class="service-slideshow">
+            <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
 
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
-                <div class="service-info">Dark Fiber Connection</div>
-                <div class="service-slideshow">PTP connection is available for Service Providers or Talco Operatorn</div>
-                <button class="more-btn">Selengkapnya</button>
-            </div>
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
+        <div class="service-info">
+        High Speed Internet Access    
+        </div>
+        <div class="service-slideshow">
+            <p>
+        <ul >
+                <li>
+                    Shared connections through wired (FTTH) or wireless media
+                </li>
+                <li>
+                    Post or Pra Paid Service
+                </li>
+                <li>
+                    Dedicated connection through Optical Fiber (PTP) or wireless media
+                </li>
+                </ul>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
 
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
-                <div class="service-info">BTS Hotel/Multimedia Micro Cell Pole</div>
-                <div class="service-slideshow">
-                    <li> PTP connection from MSC to MultimediaMicro Cell Pole</li>
-                    <li> BTS Hotel</li>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
-                <div class="service-info">VSAT</div>
-                <div class="service-slideshow">Very Small Aparture Terminal (VSAT) service is a solution to accommodatetelecommunications
-                    Needs in arms notcovered by terrestrial networks for the hands of users with Find Moving or Mobile Locations
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
-                <div class="service-info">Training</div>
-                <div class="service-slideshow">It is consultation and assistance service in the planning and development of smart city/digital
-                    government solutions, including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to
-                    expand the impact of the digital ecosystem
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
+        <div class="service-info">
+           VPN Service
+        </div>
+        <div class="service-slideshow">
+            <p>
+                <ul>
+                    <li>
+                        Virtual Private Network solution with a variety og bandwidth according to needs
+                    </li>
+                    <li>
+                        Feature: MRTG, 24/7 Technical Support
+                    </li>
+                </ul>
+            </p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center ">
+        <div class="service-info">
+            Data Center
+        </div>
+        <div class="service-slideshow">
+            <p>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
+        <div class="service-info">
+        Dark Fiber Connection
+        </div>
+        <div class="service-slideshow">
+            <p>PTP connection is available to Service Providers Talco Operations</p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
+        <div class="service-info">
+        BTS Hotel/Multimedia Micro Cell Pole
+        </div>
+        <div class="service-slideshow">
+            <p>
+                <ul>
+                    <li>
+                        PTP connection from MSC ti MultimediaMicro Cell Pole
+                    </li>
+                    <li>
+                        BTS Hotel
+                    </li>
+                </ul>
+            </p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
+        <div class="service-info">
+            VSAT
+        </div>
+        <div class="service-slideshow">
+            <p>Very Small Aperture Terminal (VSAT) service is a solution to accommodatatelecomunications needs in areas notcovered
+                by terrestrial networks for the needs of users with fixed, Maving or Mobile locations
+            </p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
+        <div class="service-info">
+            Training
+        </div>
+        <div class="service-slideshow">
+            <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions, including training and mentoring
+                services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem
+            </p>
+            <button class="more-btn">Selengkapnya</button>
+        </div>
+    </div>
             
         </div>
         
