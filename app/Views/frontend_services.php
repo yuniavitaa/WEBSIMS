@@ -364,28 +364,28 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="web_app_icon.png" alt="Web Application Icon">
+                    <img src="assets/img/webapp.png" alt="Web Application Icon">
                     <h3>Web Application</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="mobile_app_icon.png" alt="Mobile Application Icon">
+                    <img src="assets/img/mobileapp.png" alt="Mobile Application Icon">
                     <h3>Mobile Application</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="web_design_icon.png" alt="Web Design Icon">
+                    <img src="assets/img/webdesign.png" alt="Web Design Icon">
                     <h3>Web Design</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="payment_gateway_icon.png" alt="Payment Gateway Icon">
+                    <img src="assets/img/payment.png" alt="Payment Gateway Icon">
                     <h3>Payment Gateway</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
