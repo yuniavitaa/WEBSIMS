@@ -78,6 +78,33 @@
         font-family: 'ArcadeFont', sans-serif;
 
     }
+
+    /* Menyesuaikan container Swiper */
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Menyesuaikan slide Swiper */
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Menyesuaikan gambar agar sesuai dengan container */
+    .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Lebar dan tinggi khusus */
+    .swiper-slide img {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
 </style>
 <?= $this->endSection() ?>
 
