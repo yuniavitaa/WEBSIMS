@@ -150,6 +150,40 @@
       },
     });
   </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 5, // Number of logos to display at once
+      spaceBetween: 30, // Space between logos
+      loop: true, // Enable looping of slides
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500, // Auto-slide every 2.5 seconds
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl:".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 

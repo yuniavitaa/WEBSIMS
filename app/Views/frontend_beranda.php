@@ -52,6 +52,21 @@
         width: 100px;
     }
 
+    .equal-height {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
     footer {
         background-color: black;
         color: white;
@@ -105,6 +120,21 @@
         max-height: 400px;
         object-fit: cover;
     }
+
+    section {
+        width: 85%;
+        max-width: 1250px;
+    }
+
+    .trusted-section img {
+        width: auto;
+        height: 80px;
+        /* Menyetel tinggi gambar agar seragam */
+        object-fit: contain;
+        /* Memastikan gambar tetap proporsional */
+        margin: 0 auto;
+        display: block;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -135,9 +165,9 @@
         <!-- Content for the home page -->
         <div class="row mt-4">
             <div class="col-md-3">
-                <div class="card text-center">
+                <div class="card text-center equal-height">
                     <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
-                    <div class="card-body equal-height">
+                    <div class="card-body">
                         <h5 class="card-title">Konektivitas Terluas</h5>
                         <p class="card-text">Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                         <a href="https://partner1.com" class="btn btn-primary" target="_blank">Visit Partner 1</a>
@@ -145,9 +175,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card text-center">
+                <div class="card text-center equal-height">
                     <img src="assets/img/teknologi.png" class="card-img-top small-icon mx-auto" alt="Partner 2">
-                    <div class="card-body equal-height">
+                    <div class="card-body">
                         <h5 class="card-title">Teknologi Terkini</h5>
                         <p class="card-text">Teknologi mutakhir untuk memastikan kecepatan, stabilitas, dan efisiensi dalam setiap layanan.</p>
                         <a href="https://partner2.com" class="btn btn-primary" target="_blank">Visit Partner 2</a>
@@ -155,9 +185,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card text-center">
+                <div class="card text-center equal-height">
                     <img src="assets/img/support.png" class="card-img-top small-icon mx-auto" alt="Partner 3">
-                    <div class="card-body equal-height">
+                    <div class="card-body">
                         <h5 class="card-title">Dukungan Terbaik</h5>
                         <p class="card-text">Layanan pelanggan siap membantu kapan saja, memastikan pengalaman pengguna yang memuaskan dan tanpa hambatan.</p>
                         <a href="https://partner3.com" class="btn btn-primary" target="_blank">Visit Partner 3</a>
@@ -165,9 +195,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card text-center">
+                <div class="card text-center equal-height">
                     <img src="assets/img/inovasi.png" class="card-img-top small-icon mx-auto" alt="Partner 4">
-                    <div class="card-body equal-height">
+                    <div class="card-body">
                         <h5 class="card-title">Inovasi Berkelanjutan</h5>
                         <p class="card-text">Revolusi teknologi dengan inovasi berkelanjutan memastikan Anda selalu berada di garis depan perkembangan digital.</p>
                         <a href="https://partner4.com" class="btn btn-primary" target="_blank">Visit Partner 4</a>
@@ -184,8 +214,8 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div>
-                                    <h3>What is lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <h3>Experience</h3>
+                                    <p>Regional Government Multimedia TV Studio</p>
                                 </div>
                             </div>
                             <div class="col-sm-8">
@@ -202,14 +232,13 @@
                                 </div>
                             </div>
                             <div class="col-sm-8">
-                                <img src="assets/img/Background.png" alt="Slide 2" class="d-block w-100">
+                                <img src="assets/img/city.png" alt="Slide 2" class="d-block w-100">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
         </br>
@@ -217,8 +246,41 @@
     </div>
     <div class="container text-center pt-5">
         <h2>TRUSTED BY</h2>
-
+        </br>
+        <section class="swiper mySwiper trusted-section">
+            <div class="wrapper swiper-wrapper">
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 5.png" alt="Logo DIY">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 6.png" alt="Logo Kominfo">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 7.png" alt="Logo Panti Rapih">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 8.png" alt="Logo RSUP Dr.Sardjito">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 9.png" alt="Logo Citranet">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 10.png" alt="Logo Indosat">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 11.png" alt="Logo Hyat Regency">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="assets/img/customer/image 12.png" alt="Logo UGM">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
     </div>
+    <br>
+</div>
+
 
 </div>
 <?= $this->endSection() ?>
