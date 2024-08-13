@@ -19,7 +19,7 @@
             text-align: center;
             position: relative;
         }
-        .hero::after {
+          .hero::after {
             content: '';
             position: absolute;
             top: 0;
@@ -201,6 +201,7 @@
     background-color: #0056b3;
 }
 
+
     </style>
 <?= $this->endSection() ?>
 
@@ -214,6 +215,8 @@
     <title>Service</title>
     <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
    
 </head>
 <body>
@@ -226,9 +229,9 @@
     </div>
 
 
+  
 
     <div class="container mt-5">
-        <h1 class="text-center mb-5">Our Services</h1>
         <div class="services-container">
         <div class="service-item">
         <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
@@ -355,7 +358,7 @@
         
     </div>
 
-    <div class="card">
+    <div class="card text-center mb-5" style="margin-top: 250px;">
         <h1>SIMS' SUITE OF VALUE-ADDED SERVICES</h1>
         <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
     </div>
@@ -393,9 +396,16 @@
         </div>
     </div>
 
+    <div class="explore text-center mb-5" style="margin-top: 250px;">
+        <h1>Get in touch with us today and explore how our service can elevate your multimediea experience</h1>
+        <a href="#services" class="btn">Hubungi Kami</a>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper's JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
 
