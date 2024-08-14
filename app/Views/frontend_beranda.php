@@ -2,6 +2,10 @@
 
 <?= $this->section('style') ?>
 <style>
+    .navbar {
+        padding: 0 20px;
+    }
+
     .hero-section {
         position: relative;
         width: 100%;
@@ -68,12 +72,15 @@
 
 
     footer {
+        padding: 80px;
         background-color: black;
         color: white;
+        justify-content: space-between;
     }
 
     footer a {
         color: white;
+        text-decoration: none;
     }
 
     footer a:hover {
@@ -205,17 +212,22 @@
                 </div>
             </div>
         </div>
-
+        </br>
         <div class="container">
-            <h1 style="font-weight: 900; margin-top: 100px; margin-bottom: 50px;">Carousel with text in slide</h1>
             <div class="swiper" id="swiper-experience">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div>
-                                    <h3>Experience</h3>
-                                    <p>Regional Government Multimedia TV Studio</p>
+                            <div class="col-sm-4 d-flex flex-column justify-content-center">
+                                <div class="text-start">
+                                    <p>Experience</p>
+                                    <h3>Regional
+                                        <span>Government</span>
+                                        </br>
+                                        <span>Multimedia Tv</span>
+                                        <span>Studio</span>
+                                    </h3>
+                                    <p>April 2024</p>
                                 </div>
                             </div>
                             <div class="col-sm-8">
@@ -225,10 +237,20 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div>
-                                    <h3>What is lorem ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="col-sm-4 d-flex flex-column justify-content-center">
+                                <div class="text-start">
+                                    <p>Experience</p>
+                                    <div class="text-uppercase">
+                                        <h3>District Internet
+                                            <span>Network [Center</span>
+                                            </br>
+                                            <span>For Internet</span>
+                                            <span>Service Keamatan</span>
+                                            </br>
+                                            <span>USO]</span>
+                                        </h3>
+                                    </div>
+                                    <p>April 2024</p>
                                 </div>
                             </div>
                             <div class="col-sm-8">
