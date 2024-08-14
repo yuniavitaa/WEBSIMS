@@ -141,14 +141,6 @@
         .service-item:hover .service-slideshow {
             opacity: 1;
         }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding: 20px;
-            width: 100%;
-            max-width: 1200px;
-        }
 
         .service-card {
             background-color: #987D9A;
@@ -224,7 +216,7 @@
         <div class="hero-content">
             <h1>Elevate your digital experience to unprecedented heights</h1>
             <p>Explore our innovative, high-quality superior services</p>
-            <a href="#services" class="btn btn-primary">Selengkapnya</a>
+            <a href="service" class="btn">Selengkapnya</a>
         </div>
     </div>
 
@@ -240,7 +232,7 @@
         </div>
         <div class="service-slideshow">
             <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
-            <button class="more-btn">Selengkapnya</button>
+            <button class="btn">Selengkapnya</button>
         </div>
     </div>
 
