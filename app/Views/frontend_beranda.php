@@ -51,6 +51,36 @@
         text-transform: uppercase;
     }
 
+    .section-about-us {
+        margin-bottom: 50px;
+        /* Sesuaikan dengan ukuran space yang diinginkan */
+    }
+
+
+    .image-stack {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .stacked-image-1 {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        /* Gambar pertama menggunakan lebar penuh */
+    }
+
+    .stacked-image-2 {
+        position: absolute;
+        top: 200px;
+        /* Gambar kedua lebih ke bawah */
+        left: 40px;
+        /* Atur posisi horizontal */
+        z-index: 1;
+        width: 60%;
+        /* Buat gambar kedua lebih kecil */
+    }
+
     .small-icon {
         height: 100px;
         width: 100px;
@@ -158,18 +188,31 @@
 </header>
 
 <!-- Content for the home page -->
-<div class="container text-center pt-5">
+<div class="container text-center pt-5 ">
     <h2>Our Partner</h2>
     <div class="row">
         <div class="col-md-12 pt-5">
             <img src="assets/img/Group 2.png" alt="Partner 1" class="img-fluid">
         </div>
     </div>
+    <!-- About Us -->
     <div class="container text-center pt-5">
         <h2>About Us</h2>
-        <p>PT SIMS facilitates digital living through access infrastructure, telecommunications networks,
-            and information technology services.</p>
-        <!-- Content for the home page -->
+        <div class="row mt-4">
+            <div class="col-md-6 position-relative">
+                <img src="assets/img/image 17.png" class="img-fluid stacked-image-1" alt="About Us Image">
+                <img src="assets/img/image 15.png" class="img-fluid stacked-image-2" alt="About Us Image">
+            </div>
+            <div class="col-md-6">
+                <div class="p-3" style="background: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    <h3>PT SIMS facilitates digital living through access infrastructure, telecommunications networks, and information technology services.</h3>
+                    <p class="text-end">Tentang Kami Δ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content for the home page -->
+    <div class="container text-center pt-5">
         <div class="row mt-4">
             <div class="col-md-3">
                 <div class="card text-center equal-height">
@@ -177,7 +220,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Konektivitas Terluas</h5>
                         <p class="card-text">Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
-                        <a href="https://partner1.com" class="btn btn-primary" target="_blank">Visit Partner 1</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +229,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Teknologi Terkini</h5>
                         <p class="card-text">Teknologi mutakhir untuk memastikan kecepatan, stabilitas, dan efisiensi dalam setiap layanan.</p>
-                        <a href="https://partner2.com" class="btn btn-primary" target="_blank">Visit Partner 2</a>
                     </div>
                 </div>
             </div>
@@ -197,7 +238,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Dukungan Terbaik</h5>
                         <p class="card-text">Layanan pelanggan siap membantu kapan saja, memastikan pengalaman pengguna yang memuaskan dan tanpa hambatan.</p>
-                        <a href="https://partner3.com" class="btn btn-primary" target="_blank">Visit Partner 3</a>
                     </div>
                 </div>
             </div>
@@ -207,65 +247,70 @@
                     <div class="card-body">
                         <h5 class="card-title">Inovasi Berkelanjutan</h5>
                         <p class="card-text">Revolusi teknologi dengan inovasi berkelanjutan memastikan Anda selalu berada di garis depan perkembangan digital.</p>
-                        <a href="https://partner4.com" class="btn btn-primary" target="_blank">Visit Partner 4</a>
                     </div>
                 </div>
             </div>
         </div>
-        </br>
-        <div class="container">
-            <div class="swiper" id="swiper-experience">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-sm-4 d-flex flex-column justify-content-center">
-                                <div class="text-start">
-                                    <p>Experience</p>
-                                    <h3>Regional
-                                        <span>Government</span>
-                                        </br>
-                                        <span>Multimedia Tv</span>
-                                        <span>Studio</span>
-                                    </h3>
-                                    <p>April 2024</p>
-                                </div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="swiper" id="swiper-experience">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="text-start">
+                                <p>Experience</p>
+                                <h3>Regional
+                                    <span>Government</span>
+                                    </br>
+                                    <span>Multimedia Tv</span>
+                                    <span>Studio</span>
+                                </h3>
+                                <p>April 2024</p>
                             </div>
-                            <div class="col-sm-8">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="vh-100">
                                 <img src="assets/img/Media.png" alt="Slide 1" class="d-block w-100">
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-sm-4 d-flex flex-column justify-content-center">
-                                <div class="text-start">
-                                    <p>Experience</p>
-                                    <div class="text-uppercase">
-                                        <h3>District Internet
-                                            <span>Network [Center</span>
-                                            </br>
-                                            <span>For Internet</span>
-                                            <span>Service Keamatan</span>
-                                            </br>
-                                            <span>USO]</span>
-                                        </h3>
-                                    </div>
-                                    <p>April 2024</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-sm-4 d-flex flex-column justify-content-center">
+                            <div class="text-start">
+                                <p>Experience</p>
+                                <div class="text-uppercase">
+                                    <h3>District Internet
+                                        <span>Network [Center</span>
+                                        </br>
+                                        <span>For Internet</span>
+                                        <span>Service Keamatan</span>
+                                        </br>
+                                        <span>USO]</span>
+                                    </h3>
                                 </div>
+                                <p>April 2024</p>
                             </div>
-                            <div class="col-sm-8">
-                                <img src="assets/img/city.png" alt="Slide 2" class="d-block w-100">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="vh-100">
+                                <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        </br>
-
     </div>
+
+    </br>
+
+
     <div class="container text-center pt-5">
         <h2>TRUSTED BY</h2>
         </br>
