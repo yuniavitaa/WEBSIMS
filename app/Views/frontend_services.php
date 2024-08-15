@@ -19,6 +19,15 @@
             text-align: center;
             position: relative;
         }
+        .hero a {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
           .hero::after {
             content: '';
             position: absolute;
@@ -42,14 +51,13 @@
             font-family: 'Arcade Interlaced';
         }
         .hero .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 0.75rem 2rem;
+        text-transform: uppercase;
         }
+        
         .hero .btn:hover {
             background-color: #0056b3;
         }
@@ -176,22 +184,16 @@
 }
 
         .more-btn {
-    display: block;
-    width: 80%; /* Lebar tombol */
-    margin: 0 auto; /* Untuk menempatkan tombol di tengah secara horizontal */
-    padding: 10px 0;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    margin-top: 20px; /* Opsional: jarak dari teks ke tombol */
+            background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 0.75rem 2rem;
+        text-transform: uppercase;
 }
 .more-btn:hover {
     background-color: #0056b3;
 }
+
 
 
     </style>
@@ -205,10 +207,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
-    <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
+    <link rel="stylesheet" href="assets/css/service.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
    
 </head>
 <body>
@@ -216,9 +220,35 @@
         <div class="hero-content">
             <h1>Elevate your digital experience to unprecedented heights</h1>
             <p>Explore our innovative, high-quality superior services</p>
-            <a href="service" class="btn">Selengkapnya</a>
+            <a href="#" class="btn">Selengkapnya</a>
         </div>
     </div>
+
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1
+          <img src="<?= base_url('assets/img/swiperpaytv.png') ?>" alt="">
+    </div>
+    <div class="swiper-slide">Slide 2
+    <img src="<?= base_url('assets/img/bts.png') ?>" alt="">
+    </div>
+    <div class="swiper-slide">Slide 3
+    <img src="<?= base_url('assets/img/city.png') ?>" alt="">
+    </div>
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
 
 
   
@@ -232,7 +262,7 @@
         </div>
         <div class="service-slideshow">
             <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
-            <button class="btn">Selengkapnya</button>
+            <button class="more-btn">Selengkapnya</button>
         </div>
     </div>
 
@@ -390,14 +420,18 @@
 
     <div class="explore text-center mb-5" style="margin-top: 250px;">
         <h1>Get in touch with us today and explore how our service can elevate your multimediea experience</h1>
-        <a href="#services" class="btn">Hubungi Kami</a>
+        <a href="#" class="btn">Hubungi Kami</a>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper's JavaScript -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script src="assets/js/service.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   
+    
 </body>
 </html>
 
