@@ -81,6 +81,24 @@
         /* Buat gambar kedua lebih kecil */
     }
 
+    .gradient-1 {
+        background-image: linear-gradient(180deg,
+                rgba(var(--mdb-body-bg-rgb), 0.01),
+                rgba(var(--mdb-body-bg-rgb), 1) 85%),
+            radial-gradient(ellipse at top left,
+                rgba(var(--mdb-primary-rgb), 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at top right,
+                rgba(var(--mdb-secondary-rgb), 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(var(--mdb-info-rgb), 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(var(--mdb-warning-rgb), 0.25),
+                transparent 50%);
+    }
+
     .small-icon {
         height: 100px;
         width: 100px;
@@ -102,7 +120,8 @@
 
 
     footer {
-        padding: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
         background-color: black;
         color: white;
         justify-content: space-between;
@@ -197,22 +216,24 @@
     </div>
     <!-- About Us -->
     <div class="container text-center pt-5">
-        <h2>About Us</h2>
+        <h2 style="margin-bottom: 87px;">About Us</h2>
         <div class="row mt-4">
             <div class="col-md-6 position-relative">
-                <img src="assets/img/image 17.png" class="img-fluid stacked-image-1" alt="About Us Image">
-                <img src="assets/img/image 15.png" class="img-fluid stacked-image-2" alt="About Us Image">
+                <img src="assets/img/image 171.png" class="img-fluid stacked-image-1" alt="About Us Image" style="transform: rotate(-5deg)">
+                <img src="assets/img/image 151.png" class="img-fluid stacked-image-2" alt="About Us Image" style="transform: rotate(10deg)">
             </div>
             <div class="col-md-6">
-                <div class="p-3" style="background: rgba(255, 255, 255, 0.8); border-radius: 8px;">
-                    <h3>PT SIMS facilitates digital living through access infrastructure, telecommunications networks, and information technology services.</h3>
-                    <p class="text-end">Tentang Kami Δ</p>
+                <div class="gradient-1">
+                    <div class="p-3" style="background: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                        <h3>PT SIMS facilitates digital living through access infrastructure, telecommunications networks, and information technology services.</h3>
+                        <p class="text-end">Tentang Kami Δ</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Content for the home page -->
-    <div class="container text-center pt-5">
+    <div class="container text-center pt-5" style="margin-top: 100px;">
         <div class="row mt-4">
             <div class="col-md-3">
                 <div class="card text-center equal-height">
@@ -253,7 +274,7 @@
         </div>
     </div>
     </br>
-    <div class="container">
+    <div class="container" style="margin-top: 50px;">
         <div class="swiper" id="swiper-experience">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -310,9 +331,8 @@
 
     </br>
 
-
-    <div class="container text-center pt-5">
-        <h2>TRUSTED BY</h2>
+    <div class="container text-center pt-5 " style="position: relative; top: -200px;">
+        <h2 style="margin-bottom: 87px;">TRUSTED BY</h2>
         </br>
         <section class="swiper mySwiper trusted-section">
             <div class="wrapper swiper-wrapper">
