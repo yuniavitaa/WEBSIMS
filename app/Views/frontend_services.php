@@ -194,7 +194,43 @@
     background-color: #0056b3;
 }
 
+.swiper {
+        width: 100%;
+        height: 100%;
+    }
 
+    /* Menyesuaikan slide Swiper */
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Menyesuaikan gambar agar sesuai dengan container */
+    .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Lebar dan tinggi khusus */
+    .swiper-slide img {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    @font-face {
+        font-family: 'ArcadeFont';
+        src: url('assets/font/ARCADE_I.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .text-swiper {
+        font-family: 'ArcadeFont', sans-serif;
+
+    }
+   
 
     </style>
 <?= $this->endSection() ?>
@@ -209,9 +245,6 @@
     <title>Service</title>
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="assets/css/service.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
    
 </head>
@@ -224,32 +257,44 @@
         </div>
     </div>
 
-    <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1
-          <img src="<?= base_url('assets/img/swiperpaytv.png') ?>" alt="">
-    </div>
-    <div class="swiper-slide">Slide 2
-    <img src="<?= base_url('assets/img/bts.png') ?>" alt="">
-    </div>
-    <div class="swiper-slide">Slide 3
-    <img src="<?= base_url('assets/img/city.png') ?>" alt="">
-    </div>
-
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  
-</div>
-
+    <div class="container">
+            <div class="swiper" id="swiper-experience">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex flex-column justify-content-center">
+                                <div class="text-start">
+                                <p class="text-swiper">Data Center</p>
+                                    <h5>Digital TV service employs FTTH  (fiber To The Home) technology and  offers numerous Free To Air and  Premium channels.</h5>
+                                
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex flex-column justify-content-center">
+                                <div class="text-start">
+                                    <p>Experience</p>
+                                    <div class="text-uppercase">
+                                    <p class="text-swiper">Data Center</p>
+                                    <h5>Server Collocation aquipped with electrical protetction in the form of generators,UPS and Spark Arrester are provided</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <img src="assets/img/swiperpaytv.png" alt="Slide 2" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        </div>
 
   
 
@@ -426,9 +471,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper's JavaScript -->
-     <script src="assets/js/service.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 
    
     
