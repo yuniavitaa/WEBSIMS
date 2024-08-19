@@ -108,6 +108,9 @@
             border-radius: 10px;
             cursor: pointer;
             transition: transform 0.3s;
+            overflow: hidden; /* Mencegah konten keluar dari batas elemen */
+            box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran elemen */
+            font-size: 14px; /* Sesuaikan ukuran font untuk layar lebih kecil */
         }
         .service-item img {
             width: 100%;
@@ -146,6 +149,11 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
+        @media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
         .service-item:hover .service-slideshow {
             opacity: 1;
         }
@@ -164,14 +172,21 @@
 
         .service-card h3 {
             margin-bottom: 10px;
-            font-size: 20px;
+            font-size: 14px;
         }
 
         .service-card p {
             font-size: 14px;
+            margin: 0; /* Mengurangi margin default untuk menghemat ruang */
+            padding: 0;
         }
         .service-slideshow p {
     margin-bottom: auto; /* Membuat ruang di antara paragraf dan tombol */
+    margin: 0;
+    padding: 5px 0; /* Kurangi padding untuk menghemat ruang */
+    word-wrap: break-word; /* Memastikan kata-kata panjang tidak melampaui batas elemen */
+    white-space: normal; /* Membiarkan teks terbungkus dan tidak melampaui batas */
+    font-size: 10px; /* Sesuaikan ukuran font untuk layar lebih kecil */
 }
 
 .service-slideshow {
@@ -182,13 +197,24 @@
     justify-content: space-between; /* Untuk menempatkan tombol di bawah */
     height: 100%; /* Pastikan kontainer memiliki tinggi penuh */
 }
+.service-slideshow ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 10px; /* Sesuaikan ukuran font untuk layar lebih kecil */
+}
+.service-slideshow ul li {
+    margin-bottom: 5px;
+    font-size: 10px; /* Sesuaikan ukuran font untuk layar lebih kecil */
+}
 
         .more-btn {
             background-color: transparent;
         border: 1px solid white;
         color: white;
-        padding: 0.75rem 2rem;
+      padding: 8px 16px;
         text-transform: uppercase;
+
 }
 .more-btn:hover {
     background-color: #0056b3;
@@ -318,17 +344,11 @@
         </div>
         <div class="service-slideshow">
             <p>
-        <ul >
-                <li>
-                    Shared connections through wired (FTTH) or wireless media
-                </li>
-                <li>
-                    Post or Pra Paid Service
-                </li>
-                <li>
-                    Dedicated connection through Optical Fiber (PTP) or wireless media
-                </li>
-                </ul>
+       <ul>
+            <li>Shared connections through wired (FTTH) or wireless media</li>
+            <li>Post or Pra Paid Service</li>
+            <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
+        </ul>
             <button class="more-btn">Selengkapnya</button>
         </div>
     </div>
@@ -339,16 +359,10 @@
            VPN Service
         </div>
         <div class="service-slideshow">
-            <p>
-                <ul>
-                    <li>
-                        Virtual Private Network solution with a variety og bandwidth according to needs
-                    </li>
-                    <li>
-                        Feature: MRTG, 24/7 Technical Support
-                    </li>
-                </ul>
-            </p>
+        <ul>
+            <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
+            <li>Feature: MRTG, 24/7 Technical Support</li>
+        </ul>
             <button class="more-btn">Selengkapnya</button>
         </div>
     </div>
@@ -381,7 +395,6 @@
         BTS Hotel/Multimedia Micro Cell Pole
         </div>
         <div class="service-slideshow">
-            <p>
                 <ul>
                     <li>
                         PTP connection from MSC ti MultimediaMicro Cell Pole
@@ -390,7 +403,7 @@
                         BTS Hotel
                     </li>
                 </ul>
-            </p>
+
             <button class="more-btn">Selengkapnya</button>
         </div>
     </div>
@@ -414,8 +427,9 @@
             Training
         </div>
         <div class="service-slideshow">
-            <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions, including training and mentoring
-                services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem
+            <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions, 
+                <p>including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem</p>
+                
             </p>
             <button class="more-btn">Selengkapnya</button>
         </div>
