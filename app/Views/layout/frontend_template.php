@@ -55,7 +55,7 @@
     <section>
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
-        <div class="row mt-3">
+        <d class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
@@ -70,6 +70,7 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
+
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
@@ -113,15 +114,16 @@
               <a href="#!" class="text-reset"><i class="fab fa-instagram me-3"></i> Instagram</a>
             </p>
           </div>
+
           <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
+      </div>
+      <!-- Grid row -->
       </div>
     </section>
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-start" style="padding-left: 90px; padding-right: 90px;">
       © 2024 PT SIMS. All Rights Reserved
     </div>
     <!-- Copyright -->

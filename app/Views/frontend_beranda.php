@@ -120,8 +120,8 @@
 
 
     footer {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
         background-color: black;
         color: white;
         justify-content: space-between;
@@ -178,7 +178,7 @@
     }
 
     section {
-        width: 85%;
+        width: 100%;
         max-width: 1250px;
     }
 
@@ -207,165 +207,168 @@
 </header>
 
 <!-- Content for the home page -->
-<div class="container text-center pt-5 ">
+<div class="container text-center pt-5" style="margin-top: 100px;">
     <h2>Our Partner</h2>
     <div class="row">
         <div class="col-md-12 pt-5">
             <img src="assets/img/Group 2.png" alt="Partner 1" class="img-fluid">
         </div>
     </div>
-    <!-- About Us -->
-    <div class="container text-center pt-5">
+</div>
+<!-- About Us -->
+<div class="bg-danger" style="min-height: 100vh; padding: 20px 0; margin-top: 100px;">
+    <div class=" container text-center pt-5">
         <h2 style="margin-bottom: 87px;">About Us</h2>
         <div class="row mt-4">
             <div class="col-md-6 position-relative">
                 <img src="assets/img/image 171.png" class="img-fluid stacked-image-1" alt="About Us Image" style="transform: rotate(-5deg)">
                 <img src="assets/img/image 151.png" class="img-fluid stacked-image-2" alt="About Us Image" style="transform: rotate(10deg)">
             </div>
-            <div class="col-md-6">
-                <div class="gradient-1">
-                    <div class="p-3" style="background: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+            <div class="col-md-6 " style="background-color: #ffff; border: 1px solid white; transform: rotate(-3deg); box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+                <div class="gradient-1 ">
+                    <div class="p-3">
                         <h3>PT SIMS facilitates digital living through access infrastructure, telecommunications networks, and information technology services.</h3>
-                        <p class="text-end">Tentang Kami Δ</p>
+                        <p class="text-end">Tentang Kami ⊿</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Content for the home page -->
-    <div class="container text-center pt-5" style="margin-top: 100px;">
-        <div class="row mt-4">
-            <div class="col-md-3">
-                <div class="card text-center equal-height">
-                    <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Konektivitas Terluas</h5>
-                        <p class="card-text">Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
-                    </div>
+</div>
+<!-- Content for the home page -->
+<div class="container text-center pt-5" style="margin-top: 100px;">
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card text-center equal-height">
+                <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
+                <div class="card-body">
+                    <h5 class="card-title">Konektivitas Terluas</h5>
+                    <p class="card-text">Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card text-center equal-height">
-                    <img src="assets/img/teknologi.png" class="card-img-top small-icon mx-auto" alt="Partner 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Teknologi Terkini</h5>
-                        <p class="card-text">Teknologi mutakhir untuk memastikan kecepatan, stabilitas, dan efisiensi dalam setiap layanan.</p>
-                    </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center equal-height">
+                <img src="assets/img/teknologi.png" class="card-img-top small-icon mx-auto" alt="Partner 2">
+                <div class="card-body">
+                    <h5 class="card-title">Teknologi Terkini</h5>
+                    <p class="card-text">Teknologi mutakhir untuk memastikan kecepatan, stabilitas, dan efisiensi dalam setiap layanan.</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card text-center equal-height">
-                    <img src="assets/img/support.png" class="card-img-top small-icon mx-auto" alt="Partner 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Dukungan Terbaik</h5>
-                        <p class="card-text">Layanan pelanggan siap membantu kapan saja, memastikan pengalaman pengguna yang memuaskan dan tanpa hambatan.</p>
-                    </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center equal-height">
+                <img src="assets/img/support.png" class="card-img-top small-icon mx-auto" alt="Partner 3">
+                <div class="card-body">
+                    <h5 class="card-title">Dukungan Terbaik</h5>
+                    <p class="card-text">Layanan pelanggan siap membantu kapan saja, memastikan pengalaman pengguna yang memuaskan dan tanpa hambatan.</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card text-center equal-height">
-                    <img src="assets/img/inovasi.png" class="card-img-top small-icon mx-auto" alt="Partner 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Inovasi Berkelanjutan</h5>
-                        <p class="card-text">Revolusi teknologi dengan inovasi berkelanjutan memastikan Anda selalu berada di garis depan perkembangan digital.</p>
-                    </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center equal-height">
+                <img src="assets/img/inovasi.png" class="card-img-top small-icon mx-auto" alt="Partner 4">
+                <div class="card-body">
+                    <h5 class="card-title">Inovasi Berkelanjutan</h5>
+                    <p class="card-text">Revolusi teknologi dengan inovasi berkelanjutan memastikan Anda selalu berada di garis depan perkembangan digital.</p>
                 </div>
             </div>
         </div>
     </div>
-    </br>
-    <div class="container" style="margin-top: 50px;">
-        <div class="swiper" id="swiper-experience">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="text-start">
-                                <p>Experience</p>
-                                <h3>Regional
-                                    <span>Government</span>
+</div>
+</br>
+<div class="container" style="margin-top: 50px;">
+    <div class="swiper" id="swiper-experience">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-start">
+                            <p>Experience</p>
+                            <h3>Regional
+                                <span>Government</span>
+                                </br>
+                                <span>Multimedia Tv</span>
+                                <span>Studio</span>
+                            </h3>
+                            <p>April 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="vh-100">
+                            <img src="assets/img/Media.png" alt="Slide 1" class="d-block w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-4 d-flex flex-column justify-content-center">
+                        <div class="text-start">
+                            <p>Experience</p>
+                            <div class="text-uppercase">
+                                <h3>District Internet
+                                    <span>Network [Center</span>
                                     </br>
-                                    <span>Multimedia Tv</span>
-                                    <span>Studio</span>
+                                    <span>For Internet</span>
+                                    <span>Service Keamatan</span>
+                                    </br>
+                                    <span>USO]</span>
                                 </h3>
-                                <p>April 2024</p>
                             </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="vh-100">
-                                <img src="assets/img/Media.png" alt="Slide 1" class="d-block w-100">
-                            </div>
+                            <p>April 2024</p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-sm-4 d-flex flex-column justify-content-center">
-                            <div class="text-start">
-                                <p>Experience</p>
-                                <div class="text-uppercase">
-                                    <h3>District Internet
-                                        <span>Network [Center</span>
-                                        </br>
-                                        <span>For Internet</span>
-                                        <span>Service Keamatan</span>
-                                        </br>
-                                        <span>USO]</span>
-                                    </h3>
-                                </div>
-                                <p>April 2024</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="vh-100">
-                                <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
-                            </div>
+                    <div class="col-sm-8">
+                        <div class="vh-100">
+                            <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
+</div>
 
+</br>
+
+<div class="container text-center pt-5 " style="position: relative; top: -200px;">
+    <h2 style="margin-bottom: 87px;">TRUSTED BY</h2>
     </br>
-
-    <div class="container text-center pt-5 " style="position: relative; top: -200px;">
-        <h2 style="margin-bottom: 87px;">TRUSTED BY</h2>
-        </br>
-        <section class="swiper mySwiper trusted-section">
-            <div class="wrapper swiper-wrapper">
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 5.png" alt="Logo DIY">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 6.png" alt="Logo Kominfo">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 7.png" alt="Logo Panti Rapih">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 8.png" alt="Logo RSUP Dr.Sardjito">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 9.png" alt="Logo Citranet">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 10.png" alt="Logo Indosat">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 11.png" alt="Logo Hyat Regency">
-                </div>
-                <div class="item swiper-slide">
-                    <img src="assets/img/customer/image 12.png" alt="Logo UGM">
-                </div>
+    <section class="swiper mySwiper trusted-section">
+        <div class="wrapper swiper-wrapper">
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 5.png" alt="Logo DIY">
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </section>
-    </div>
-    <br>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 6.png" alt="Logo Kominfo">
+            </div>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 7.png" alt="Logo Panti Rapih">
+            </div>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 8.png" alt="Logo RSUP Dr.Sardjito">
+            </div>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 9.png" alt="Logo Citranet">
+            </div>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 10.png" alt="Logo Indosat">
+            </div>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 11.png" alt="Logo Hyat Regency">
+            </div>
+            <div class="item swiper-slide">
+                <img src="assets/img/customer/image 12.png" alt="Logo UGM">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+</div>
+<br>
 </div>
 
 
