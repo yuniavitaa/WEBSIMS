@@ -2,225 +2,288 @@
 
 <?= $this->section('style') ?>
 <style>
-        body {
-            font-family: 'Chakra Petch';
-            margin: 0;
-            padding: 0;
-        }
-        .hero {
-            background-image: url('<?= base_url('assets/img/Background.png') ?>');
-            background-size: cover;
-            background-position: center Chakra Petch;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        .hero a {
-    padding: 12px 30px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    body {
+        font-family: 'Chakra Petch';
+        margin: 0;
+        padding: 0;
+    }
 
-}
-          .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin: 10px 0;
-            font-family: 'Arcade Interlaced';
-        }
-        .hero .btn {
-            background-color: transparent;
+    .hero {
+        background-image: url('<?= base_url('assets/img/Background.png') ?>');
+        background-size: cover;
+        background-position: center Chakra Petch;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero a {
+        padding: 12px 30px;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+
+    }
+
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 600;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin: 10px 0;
+        font-family: 'Arcade Interlaced';
+    }
+
+    .hero .btn {
+        background-color: transparent;
         border: 1px solid white;
         color: white;
         padding: 0.75rem 2rem;
         text-transform: uppercase;
-        }
-        
-        .hero .btn:hover {
-            background-color: #0056b3;
-        }
-        .service-section {
-            display: flex;
-            align-items: center;
-            padding: 50px;
-            background-color: #f9f9f9;
-        }
-        .service-content {
-            padding: 50px;
-            text-align: center;
-        }
-        .service-content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .service-content p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .service-content img {
-            max-width: 20%;
-            height: auto;
-        }
-        .service-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .service-text {
-            padding-left: 30px;
-        }
-
-        .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
     }
-        .service-item {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            overflow: hidden;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.3s;
-            overflow: hidden; /* Mencegah konten keluar dari batas elemen */
-            box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran elemen */
-            font-size: 14px; /* Sesuaikan ukuran font untuk layar lebih kecil */
-        }
-        .service-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-        .service-item:hover img {
-            transform: scale(1.1);
-        }
-        .service-item .service-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            box-sizing: border-box;
-            transition: opacity 0.3s;
-        }
-        .service-item:hover .service-info {
-            opacity: 0;
-        }
-        .service-item .service-slideshow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        @media (max-width: 768px) {
+
+    .hero .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .service-section {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        background-color: #f9f9f9;
+    }
+
+    .service-content {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .service-content h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .service-content p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .service-content img {
+        max-width: 20%;
+        height: auto;
+    }
+
+    .service-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .service-text {
+        padding-left: 30px;
+    }
+
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
     .service-item {
-        flex: 1 1 calc(50% - 40px);
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+        overflow: hidden;
+        /* Mencegah konten keluar dari batas elemen */
+        box-sizing: border-box;
+        /* Memastikan padding dihitung dalam ukuran elemen */
+        font-size: 14px;
+        /* Sesuaikan ukuran font untuk layar lebih kecil */
     }
-}
-        .service-item:hover .service-slideshow {
-            opacity: 1;
+
+    .service-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+    .service-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .service-item .service-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 0.3s;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .service-item:hover .service-info {
+        opacity: 0;
+    }
+
+    .service-item .service-slideshow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    @media (max-width: 768px) {
+        .service-item {
+            flex: 1 1 calc(50% - 40px);
         }
+    }
 
-        .service-card {
-            background-color: #987D9A;
-            border: 2px solid #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    .service-item:hover .service-slideshow {
+        opacity: 1;
+    }
 
-        .service-card img {
-            width: 50px;
-            margin-bottom: 20px;
-        }
+    /* Membuat container/row pada bagian detail/description web,mobile, web design, payment gateway*/
 
-        .service-card h3 {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
+    .service-card {
+        background-color: #987D9A;
+        border: 2px solid #fff;
+        padding: 20px;
+        text-align: center;
+    }
 
-        .service-card p {
-            font-size: 14px;
-            margin: 0; /* Mengurangi margin default untuk menghemat ruang */
-            padding: 0;
-        }
-        .service-slideshow p {
-    margin-bottom: auto; /* Membuat ruang di antara paragraf dan tombol */
-    margin: 0;
-    padding: 5px 0; /* Kurangi padding untuk menghemat ruang */
-    word-wrap: break-word; /* Memastikan kata-kata panjang tidak melampaui batas elemen */
-    white-space: normal; /* Membiarkan teks terbungkus dan tidak melampaui batas */
-    font-size: 10px; /* Sesuaikan ukuran font untuk layar lebih kecil */
-}
+    .service-card img {
+        width: 50px;
+        margin-bottom: 20px;
+    }
 
-.service-slideshow {
-    padding: 15px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Untuk menempatkan tombol di bawah */
-    height: 100%; /* Pastikan kontainer memiliki tinggi penuh */
-}
-.service-slideshow ul {
-    margin: 0;
-    padding-left: 20px;
-    list-style-type: disc;
-    font-size: 10px; /* Sesuaikan ukuran font untuk layar lebih kecil */
-}
-.service-slideshow ul li {
-    margin-bottom: 5px;
-    font-size: 10px; /* Sesuaikan ukuran font untuk layar lebih kecil */
-}
+    .service-card h3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
 
-        .more-btn {
-            background-color: transparent;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        margin: 0;
+        /* Mengurangi margin default untuk menghemat ruang */
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+
+    }
+
+    .service-slideshow p {
+        margin-bottom: auto;
+        /* Membuat ruang di antara paragraf dan tombol */
+        margin: 0;
+        padding: 5px 0;
+        /* Kurangi padding untuk menghemat ruang */
+        word-wrap: break-word;
+        /* Memastikan kata-kata panjang tidak melampaui batas elemen */
+        white-space: normal;
+        /* Membiarkan teks terbungkus dan tidak melampaui batas */
+        font-size: 10px;
+        /* Sesuaikan ukuran font untuk layar lebih kecil */
+    }
+
+    /*sims' */
+    .card h4 {
+        font-family: 'ArcadeFont', sans-serif;
+
+    }
+
+    /*Improve your online */
+    .card p {
+        font-family: 'Chakra Petch', sans-serif;
+    }
+
+    .service-slideshow {
+        padding: 15px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Untuk menempatkan tombol di bawah */
+        height: 100%;
+        /* Pastikan kontainer memiliki tinggi penuh */
+    }
+
+    .service-slideshow ul {
+        margin: 0;
+        padding-left: 20px;
+        list-style-type: disc;
+        font-size: 10px;
+        /* Sesuaikan ukuran font untuk layar lebih kecil */
+    }
+
+    .service-slideshow ul li {
+        margin-bottom: 5px;
+        font-size: 10px;
+        /* Sesuaikan ukuran font untuk layar lebih kecil */
+    }
+
+    .more-btn {
+        background-color: transparent;
         border: 1px solid white;
         color: white;
-      padding: 8px 16px;
+        padding: 8px 16px;
         text-transform: uppercase;
 
-}
-.more-btn:hover {
-    background-color: #0056b3;
-}
+    }
 
-.swiper {
+    .more-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .swiper {
         width: 100%;
         height: 100%;
     }
@@ -252,201 +315,214 @@
         font-weight: normal;
         font-style: normal;
     }
+
     .text-swiper {
         font-family: 'ArcadeFont', sans-serif;
+        font-weight: 600;
 
     }
-   
 
-    </style>
+    #swiper-experience h5 {
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
 <?= $this->endSection() ?>
 
 
 <?= $this->section('content') ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-/>
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    />
+
 </head>
+
 <body>
-<div class="hero">
+    <div class="hero">
         <div class="hero-content">
-            <h1>Elevate your digital experience to unprecedented heights</h1>
+            <h1>Elevate your digital</h1>
+            <h1>experience to </h1>
+            <h1>unprecedented heights</h1>
             <p>Explore our innovative, high-quality superior services</p>
             <a href="#" class="btn">Selengkapnya</a>
         </div>
     </div>
 
-    <div class="container">
-            <div class="swiper" id="swiper-experience">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-sm-4 d-flex flex-column justify-content-center">
-                                <div class="text-start">
-                                <p class="text-swiper">Data Center</p>
-                                    <h5>Digital TV service employs FTTH  (fiber To The Home) technology and  offers numerous Free To Air and  Premium channels.</h5>
-                                
-                                </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="swiper" id="swiper-experience">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="text-start">
+                                <h4 class="text-swiper">PAY TV SERVICES</h4>
+                                <h5>Digital TV service employs FTTH (fiber To The Home) technology and offers numerous Free To Air and Premium channels.</h5>
                             </div>
-                            <div class="col-sm-8">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="vh-100">
                                 <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-sm-4 d-flex flex-column justify-content-center">
-                                <div class="text-start">
-                                    <p>Experience</p>
-                                    <div class="text-uppercase">
-                                    <p class="text-swiper">Data Center</p>
-                                    <h5>Server Collocation aquipped with electrical protetction in the form of generators,UPS and Spark Arrester are provided</h5>
-                                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="text-start">
+                                <h4 class="text-swiper">DATA CENTER</h4>
+                                <h5>Server Collocation aquipped with electrical protetction in the form of generators,UPS and Spark Arrester are provided</h5>
                             </div>
-                            <div class="col-sm-8">
-                                <img src="assets/img/swiperpaytv.png" alt="Slide 2" class="d-block w-100">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="vh-100">
+                                <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-        </div>
 
-  
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 
     <div class="container mt-5">
         <div class="services-container">
-        <div class="service-item">
-        <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
-        <div class="service-info">
-            Pay TV Service
-        </div>
-        <div class="service-slideshow">
-            <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
+                <div class="service-info">
+                    Pay TV Service
+                </div>
+                <div class="service-slideshow">
+                    <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
-        <div class="service-info">
-        High Speed Internet Access    
-        </div>
-        <div class="service-slideshow">
-            <p>
-       <ul>
-            <li>Shared connections through wired (FTTH) or wireless media</li>
-            <li>Post or Pra Paid Service</li>
-            <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
-        </ul>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
+                <div class="service-info">
+                    High Speed Internet Access
+                </div>
+                <div class="service-slideshow">
+                    <p>
+                    <ul>
+                        <li>Shared connections through wired (FTTH) or wireless media</li>
+                        <li>Post or Pra Paid Service</li>
+                        <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
+                    </ul>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
-        <div class="service-info">
-           VPN Service
-        </div>
-        <div class="service-slideshow">
-        <ul>
-            <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
-            <li>Feature: MRTG, 24/7 Technical Support</li>
-        </ul>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
+                <div class="service-info">
+                    VPN Service
+                </div>
+                <div class="service-slideshow">
+                    <ul>
+                        <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
+                        <li>Feature: MRTG, 24/7 Technical Support</li>
+                    </ul>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center ">
-        <div class="service-info">
-            Data Center
-        </div>
-        <div class="service-slideshow">
-            <p>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</p>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center ">
+                <div class="service-info">
+                    Data Center
+                </div>
+                <div class="service-slideshow">
+                    <p>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</p>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
-        <div class="service-info">
-        Dark Fiber Connection
-        </div>
-        <div class="service-slideshow">
-            <p>PTP connection is available to Service Providers Talco Operations</p>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
+                <div class="service-info">
+                    Dark Fiber Connection
+                </div>
+                <div class="service-slideshow">
+                    <p>PTP connection is available to Service Providers Talco Operations</p>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
-        <div class="service-info">
-        BTS Hotel/Multimedia Micro Cell Pole
-        </div>
-        <div class="service-slideshow">
-                <ul>
-                    <li>
-                        PTP connection from MSC ti MultimediaMicro Cell Pole
-                    </li>
-                    <li>
-                        BTS Hotel
-                    </li>
-                </ul>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
+                <div class="service-info">
+                    BTS Hotel/Multimedia Micro Cell Pole
+                </div>
+                <div class="service-slideshow">
+                    <ul>
+                        <li>
+                            PTP connection from MSC ti MultimediaMicro Cell Pole
+                        </li>
+                        <li>
+                            BTS Hotel
+                        </li>
+                    </ul>
 
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
-        <div class="service-info">
-            VSAT
-        </div>
-        <div class="service-slideshow">
-            <p>Very Small Aperture Terminal (VSAT) service is a solution to accommodatatelecomunications needs in areas notcovered
-                by terrestrial networks for the needs of users with fixed, Maving or Mobile locations
-            </p>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
+                <div class="service-info">
+                    VSAT
+                </div>
+                <div class="service-slideshow">
+                    <p>Very Small Aperture Terminal (VSAT) service is a solution to accommodatatelecomunications needs in areas notcovered
+                        by terrestrial networks for the needs of users with fixed, Maving or Mobile locations
+                    </p>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
 
-    <div class="service-item">
-        <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
-        <div class="service-info">
-            Training
+            <div class="service-item">
+                <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
+                <div class="service-info">
+                    Training
+                </div>
+                <div class="service-slideshow">
+                    <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions,
+                    <p>including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem</p>
+
+                    </p>
+                    <button class="more-btn">Selengkapnya</button>
+                </div>
+            </div>
+
         </div>
-        <div class="service-slideshow">
-            <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions, 
-                <p>including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem</p>
-                
-            </p>
-            <button class="more-btn">Selengkapnya</button>
-        </div>
-    </div>
-            
-        </div>
-        
+
     </div>
 
     <div class="card text-center mb-5" style="margin-top: 250px;">
-        <h1>SIMS' SUITE OF VALUE-ADDED SERVICES</h1>
+        <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
         <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
     </div>
-   
+
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 ">
                 <div class="service-card">
                     <img src="assets/img/webapp.png" alt="Web Application Icon">
                     <h3>Web Application</h3>
@@ -485,11 +561,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
 
-   
-    
+
+
+
 </body>
+
 </html>
 
 
