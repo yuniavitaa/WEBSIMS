@@ -135,7 +135,7 @@
 
     footer a:hover {
         color: #ddd;
-        /* or any color you prefer for hover effect */
+        
 
     }
 
