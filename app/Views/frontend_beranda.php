@@ -19,9 +19,9 @@
         justify-content: center;
     }
 
-    .hero-content {
+    /* .hero-content {
         z-index: 2;
-    }
+    } */
 
     .hero-overlay {
         position: absolute;
@@ -30,7 +30,7 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .hero-content h1 {
@@ -43,13 +43,13 @@
         margin-bottom: 2rem;
     }
 
-    .hero-content .btn {
+    /* .hero-content .btn {
         background-color: transparent;
         border: 1px solid white;
         color: white;
         padding: 0.75rem 2rem;
         text-transform: uppercase;
-    }
+    } */
 
     .section-about-us {
         margin-bottom: 50px;
@@ -82,6 +82,7 @@
     }
 
     .gradient-1 {
+        background-color: white;
         background-image: linear-gradient(180deg,
                 rgba(var(--mdb-body-bg-rgb), 0.01),
                 rgba(var(--mdb-body-bg-rgb), 1) 85%),
@@ -199,10 +200,16 @@
 <!-- Hero Section -->
 <header class="hero-section">
     <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1>Connecting People with Internet</h1>
-        <p>Empowering connectivity for tomorrow.</p>
-        <a href="#" class="btn">Selengkapnya</a>
+    <div class="container" style="z-index: 1;">
+        <div class="row">
+            <div class="col">
+                <div class="hero-content">
+                    <h1>Connecting People with Internet</h1>
+                    <p>Empowering connectivity for tomorrow.</p>
+                    <a href="#" class="btn btn-outline-light btn-lg" data-mdb-ripple-init>Selengkapnya</a>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
@@ -216,20 +223,27 @@
     </div>
 </div>
 <!-- About Us -->
-<div class="bg-danger" style="min-height: 100vh; padding: 20px 0; margin-top: 100px;">
-    <div class=" container text-center pt-5">
-        <h2 style="margin-bottom: 87px;">About Us</h2>
+<div style=" background-image: url('assets/img/background-tentang-kami.png'); background-size: cover; background-position: center top 20%; padding-bottom: 300px; margin-top: 100px; ">
+    <div class="container text-start pt-5">
         <div class="row mt-4">
             <div class="col-md-6 position-relative">
-                <img src="assets/img/image 171.png" class="img-fluid stacked-image-1" alt="About Us Image" style="transform: rotate(-5deg)">
-                <img src="assets/img/image 151.png" class="img-fluid stacked-image-2" alt="About Us Image" style="transform: rotate(10deg)">
+                <img src="assets/img/image 171.png" class="img-fluid stacked-image-1" alt="About Us Image" style="transform: rotate(5deg)">
+                <img src="assets/img/image 151.png" class="img-fluid stacked-image-2" alt="About Us Image" style="transform: rotate(-10deg)">
             </div>
-            <div class="col-md-6 " style="background-color: #ffff; border: 1px solid white; transform: rotate(-3deg); box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-                <div class="gradient-1 ">
-                    <div class="p-3">
-                        <h3>PT SIMS facilitates digital living through access infrastructure, telecommunications networks, and information technology services.</h3>
+            <div class="col-md-6">
+                <h2 class="text-end text-white me-5 mb-5 fs-1">About Us</h2>
+                <di class="gradient-1 position-absolute z-3 charmonman-regular p-4 shadow" style="
+                            margin-left: -32px;
+                            height: 256px;
+                            width: calc(50vw - 96px);
+                            transform: rotate(-3deg);">
+                        <h3>
+                            <span class="charmonman-bold">
+                                PT SIMS
+                            </span>
+                            facilitates digital living through access infrastructure, telecommunications networks, and information technology services.
+                        </h3>
                         <p class="text-end">Tentang Kami ⊿</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -282,7 +296,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 d-flex flex-column justify-content-center">
                         <div class="text-start">
                             <p>Experience</p>
                             <h3>Regional
