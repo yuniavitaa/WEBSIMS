@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Arcade Interlaced';
+  src: url('../font/ARCADE_I.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .charmonman-regular {
   font-family: "Charmonman", cursive;
   font-weight: 400;
@@ -7,5 +14,11 @@
 .charmonman-bold {
   font-family: "Charmonman", cursive;
   font-weight: 700;
+  font-style: normal;
+}
+
+.arcade-interlaced-regular {
+  font-family: 'Arcade Interlaced';
+  font-weight: 400;
   font-style: normal;
 }

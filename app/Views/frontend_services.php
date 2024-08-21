@@ -3,7 +3,7 @@
 <?= $this->section('style') ?>
 <style>
     body {
-        font-family: 'Chakra Petch';
+        font-family: 'Chakra Petch' ,sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -11,13 +11,12 @@
     .hero {
         background-image: url('<?= base_url('assets/img/Background.png') ?>');
         background-size: cover;
-        background-position: center Chakra Petch;
+        background-position: center;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        text-align: center;
         position: relative;
     }
 
@@ -44,19 +43,12 @@
     .hero-content {
         position: relative;
         z-index: 1;
-        font-family: "Chakra Petch", sans-serif;
-        font-weight: 600;
     }
 
     .hero h1 {
         font-size: 3em;
         margin: 0;
-    }
 
-    .hero p {
-        font-size: 1.2em;
-        margin: 10px 0;
-        font-family: 'Arcade Interlaced';
     }
 
     .hero .btn {
@@ -236,7 +228,7 @@
 
     /*sims' */
     .card h4 {
-        font-family: 'ArcadeFont', sans-serif;
+        font-family: 'Arcade Interlaced', sans-serif;
 
     }
 
@@ -280,7 +272,7 @@
     }
 
     .more-btn:hover {
-        background-color: #0056b3;
+        background: linear-gradient(to right, #FF5F7E, #0056B3);
     }
 
     .swiper {
@@ -309,15 +301,8 @@
         object-fit: cover;
     }
 
-    @font-face {
-        font-family: 'ArcadeFont';
-        src: url('assets/font/ARCADE_I.TTF') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
     .text-swiper {
-        font-family: 'ArcadeFont', sans-serif;
+        font-family: 'Arcade Interlaced', sans-serif;
         font-weight: 600;
 
     }
@@ -332,73 +317,60 @@
 
 
 <?= $this->section('content') ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service</title>
-    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    />
-
-</head>
-
-<body>
     <div class="hero">
-        <div class="hero-content">
-            <h1>Elevate your digital</h1>
-            <h1>experience to </h1>
-            <h1>unprecedented heights</h1>
-            <p>Explore our innovative, high-quality superior services</p>
-            <a href="#" class="btn">Selengkapnya</a>
+        <div class="position-relative z-1 container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="fw-bold">Elevate your digital<br>
+                    experience to <br>
+                    unprecedented heights</h1>
+                    <p class="fs-6 my-3 arcade-interlaced-regular">Explore our innovative, high-quality superior services</p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="container" style="margin-top: 50px;">
+    <div class="container ">
         <div class="swiper" id="swiper-experience">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="text-start">
-                                <h4 class="text-swiper">PAY TV SERVICES</h4>
-                                <h5>Digital TV service employs FTTH (fiber To The Home) technology and offers numerous Free To Air and Premium channels.</h5>
-                            </div>
-                        </div>
                         <div class="col-sm-8">
-                            <div class="vh-100">
                                 <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-flex align-items-center h-100 ">
+                                <div>
+                                    <h4 class="text-swiper mb-4">PAY TV SERVICES</h4>
+                                    <h5>Digital TV service employs FTTH (fiber To The Home) technology and offers numerous Free To Air and Premium channels.</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="text-start">
-                                <h4 class="text-swiper">DATA CENTER</h4>
-                                <h5>Server Collocation aquipped with electrical protetction in the form of generators,UPS and Spark Arrester are provided</h5>
-                            </div>
-                        </div>
                         <div class="col-sm-8">
-                            <div class="vh-100">
-                                <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
+                                <img src="assets/img/swiperpaytv.png" alt="Slide 2" class="d-block w-100">
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-flex align-items-center h-100">
+                                <div>
+                                    <h4 class="text-swiper mb-4">DATA CENTER</h4>
+                                    <h5>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </div>
+
 
     <div class="container mt-5">
         <div class="services-container">
@@ -553,21 +525,25 @@
         </div>
     </div>
 
-    <div class="explore text-center mb-5" style="margin-top: 250px;">
-        <h1>Get in touch with us today and explore how our service can elevate your multimediea experience</h1>
-        <a href="#" class="btn">Hubungi Kami</a>
+    <div class="explore bg-dark text-center" style="margin-top: 250px; padding-top:128px; padding-bottom:128px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <h1 class="text-white">Get in touch with us today and explore how our service can elevate your multimedia experience</h1>
+                <a href="#" class="btn btn-outline-light btn-lg ">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ 
 
 
 
 
-</body>
 
-</html>
 
 
 <?= $this->endSection() ?>
