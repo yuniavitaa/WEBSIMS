@@ -2,9 +2,9 @@
 
 <?= $this->section('style') ?>
 <style>
-    .navbar {
+    /* .navbar {
         padding: 0 20px;
-    }
+    } */
 
     .hero-section {
         position: relative;
@@ -117,6 +117,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.3);
     }
 
 
@@ -135,7 +136,7 @@
 
     footer a:hover {
         color: #ddd;
-        
+
 
     }
 
@@ -152,10 +153,10 @@
     }
 
     /* Menyesuaikan container Swiper */
-    .swiper {
+    /* .swiper {
         width: 100%;
         height: 100%;
-    }
+    } */
 
     /* Menyesuaikan slide Swiper */
     .swiper-slide {
@@ -237,23 +238,23 @@
                             height: 256px;
                             width: calc(50vw - 96px);
                             transform: rotate(-3deg);">
-                        <h3>
-                            <span class="charmonman-bold">
-                                PT SIMS
-                            </span>
-                            facilitates digital living through access infrastructure, telecommunications networks, and information technology services.
-                        </h3>
-                        <p class="text-end">Tentang Kami ⊿</p>
-                </div>
+                    <h3>
+                        <span class="charmonman-bold">
+                            PT SIMS
+                        </span>
+                        facilitates digital living through access infrastructure, telecommunications networks, and information technology services.
+                    </h3>
+                    <p class="text-end">Tentang Kami ⊿</p>
             </div>
         </div>
     </div>
 </div>
+</div>
 <!-- Content for the home page -->
 <div class="container text-center pt-5" style="margin-top: 100px;">
-    <div class="row mt-4">
+    <div class="row " style="margin-top: -200px;">
         <div class="col-md-3">
-            <div class="card text-center equal-height">
+            <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
                 <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
                 <div class="card-body">
                     <h5 class="card-title">Konektivitas Terluas</h5>
@@ -262,8 +263,8 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card text-center equal-height">
-                <img src="assets/img/teknologi.png" class="card-img-top small-icon mx-auto" alt="Partner 2">
+            <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
+                <img src=" assets/img/teknologi.png" class="card-img-top small-icon mx-auto" alt="Partner 2">
                 <div class="card-body">
                     <h5 class="card-title">Teknologi Terkini</h5>
                     <p class="card-text">Teknologi mutakhir untuk memastikan kecepatan, stabilitas, dan efisiensi dalam setiap layanan.</p>
@@ -271,7 +272,7 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card text-center equal-height">
+            <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
                 <img src="assets/img/support.png" class="card-img-top small-icon mx-auto" alt="Partner 3">
                 <div class="card-body">
                     <h5 class="card-title">Dukungan Terbaik</h5>
@@ -280,7 +281,7 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card text-center equal-height">
+            <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
                 <img src="assets/img/inovasi.png" class="card-img-top small-icon mx-auto" alt="Partner 4">
                 <div class="card-body">
                     <h5 class="card-title">Inovasi Berkelanjutan</h5>
@@ -292,63 +293,62 @@
 </div>
 </br>
 <div class="container" style="margin-top: 50px;">
-    <div class="swiper" id="swiper-experience">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="row">
-                    <div class="col-sm-4 d-flex flex-column justify-content-center">
-                        <div class="text-start">
-                            <p>Experience</p>
-                            <h3>Regional
-                                <span>Government</span>
-                                </br>
-                                <span>Multimedia Tv</span>
-                                <span>Studio</span>
-                            </h3>
-                            <p>April 2024</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="vh-100">
-                            <img src="assets/img/Media.png" alt="Slide 1" class="d-block w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="row">
-                    <div class="col-sm-4 d-flex flex-column justify-content-center">
-                        <div class="text-start">
-                            <p>Experience</p>
-                            <div class="text-uppercase">
-                                <h3>District Internet
-                                    <span>Network [Center</span>
-                                    </br>
-                                    <span>For Internet</span>
-                                    <span>Service Keamatan</span>
-                                    </br>
-                                    <span>USO]</span>
-                                </h3>
+            <div class="swiper" id="swiper-experience">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row w-100">
+                        <div class="col-sm-4 d-flex flex-column justify-content-center">
+                            <div class="text-start">
+                                <p>Experience</p>
+                                <div class="text-uppercase">
+                                    <h3>Regional
+                                        </br>
+                                        Goverment
+                                        </br>
+                                        Multimedia TV
+                                        </br>
+                                        Studio
+                                        </br>
+                                    </h3>
+                                </div>
+                                <p>April 2024</p>
                             </div>
-                            <p>April 2024</p>
+                        </div>
+                        <div class="col-sm-8">
+                            <img src="assets/img/Media.png" alt="Slide 2" class="w-100 object-fit-cover">
+                        </div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="vh-100">
-                            <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
+                    <div class="swiper-slide">
+                        <div class="row w-100">
+                            <div class="col-sm-4 d-flex flex-column justify-content-center">
+                                <div class="text-start">
+                                    <p>Experience</p>
+                                    <div class="text-uppercase">
+                                        <h3>District Internet
+                                            <span>Network [Center</span>
+                                            </br>
+                                            <span>For Internet</span>
+                                            <span>Service Keamatan</span>
+                                            </br>
+                                            <span>USO]</span>
+                                        </h3>
+                                    </div>
+                                    <p>April 2024</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</div>
-
 </br>
-
-<div class="container text-center pt-5 " style="position: relative; top: -200px;">
+<div class="container text-center pt-5 " style="position: relative; top: -200px; margin-top: 200px;">
     <h2 style="margin-bottom: 87px;">TRUSTED BY</h2>
     </br>
     <section class="swiper mySwiper trusted-section">

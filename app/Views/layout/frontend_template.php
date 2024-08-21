@@ -21,7 +21,7 @@
   <!-- MDB -->
   <link rel="stylesheet" href="assets/css/mdb.min.css" />
   <!-- Style -->
-   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -30,7 +30,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black shadow-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
@@ -83,10 +83,10 @@
               Kontak
             </h6>
             <p>
-              <i class="fas fa-phone me-3"></i> +6281 **** ****
+              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Kontak.png" width="24" height="24" alt="Whatsapp">+6281 **** ****</a>
             </p>
             <p>
-              <i class="fas fa-envelope me-3"></i> sims@gmail.com
+              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Gmail.png" width="24" height="24" alt="Email">sims@gmail.com</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -98,13 +98,13 @@
               Layanan
             </h6>
             <p>
-              <a href="#!" class="text-reset">Internet</a>
+              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Internet.png" width="24" height="24" alt="Internet">Internet</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Pengembangan Aplikasi</a>
+              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/coding.png" width="24" height="24" alt="Email">Pengembangan Aplikasi</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Pelatihan</a>
+              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/email.png" width="24" height="24" alt="Pelatihan">Pelatihan</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -114,13 +114,12 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Sosial Media</h6>
             <p>
-              <a href="#!" class="text-reset"><i class="fab fa-twitter me-3"></i> X/Twitter</a>
+              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/X.png" width="24" height="24" alt="Twitter">Twitter</a>
             </p>
             <p>
-              <a href="#!" class="text-reset"><i class="fab fa-instagram me-3"></i> Instagram</a>
+              <a href="http://instagram.com/username"><img style="margin:5px" src="assets/img/icon-footer/Instagram.png" width="24" height="24" alt="Instagram">Instagram</a>
             </p>
           </div>
-
           <!-- Grid column -->
       </div>
       <!-- Grid row -->
