@@ -3,7 +3,7 @@
 <?= $this->section('style') ?>
 <style>
     body {
-        font-family: 'Chakra Petch' ,sans-serif;
+        font-family: 'Chakra Petch', sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -312,233 +312,281 @@
         font-weight: 400;
         font-style: normal;
     }
+
+    .separator-arrow-down {
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0;
+        background-image: url('assets/img/separatorsims.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .separator-arrow-down {
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0;
+        background-image: url('assets/img/separatorsims.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .separator-arrow-down-alt {
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0;
+        background-image: url('assets/img/layer1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+   
 </style>
 <?= $this->endSection() ?>
 
 
 <?= $this->section('content') ?>
 
-    <div class="hero">
-        <div class="position-relative z-1 container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="fw-bold">Elevate your digital<br>
+<div class="hero">
+    <div class="position-relative z-1 container">
+        <div class="row">
+            <div class="col">
+                <h1 class="fw-bold">Elevate your digital<br>
                     experience to <br>
                     unprecedented heights</h1>
-                    <p class="fs-6 my-3 arcade-interlaced-regular">Explore our innovative, high-quality superior services</p>
-                    <a href="#" class="btn">Selengkapnya</a>
-                </div>
+                <p class="fs-6 my-3 arcade-interlaced-regular">Explore our innovative, high-quality superior services</p>
+                <a href="#" class="btn">Selengkapnya</a>
             </div>
         </div>
     </div>
+</div>
 
+<div class="container ">
+    <div class="swiper" id="swiper-experience">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="d-flex align-items-center h-100 ">
+                            <div>
+                                <h4 class="text-swiper mb-4">PAY TV SERVICES</h4>
+                                <h5>Digital TV service employs FTTH (fiber To The Home) technology and offers numerous Free To Air and Premium channels.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="assets/img/swiperpaytv.png" alt="Slide 2" class="d-block w-100">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div>
+                                <h4 class="text-swiper mb-4">DATA CENTER</h4>
+                                <h5>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <div class="services-container">
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
+            <div class="service-info">
+                Pay TV Service
+            </div>
+            <div class="service-slideshow">
+                <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
+            <div class="service-info">
+                High Speed Internet Access
+            </div>
+            <div class="service-slideshow">
+                <p>
+                <ul>
+                    <li>Shared connections through wired (FTTH) or wireless media</li>
+                    <li>Post or Pra Paid Service</li>
+                    <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
+                </ul>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
+            <div class="service-info">
+                VPN Service
+            </div>
+            <div class="service-slideshow">
+                <ul>
+                    <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
+                    <li>Feature: MRTG, 24/7 Technical Support</li>
+                </ul>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center ">
+            <div class="service-info">
+                Data Center
+            </div>
+            <div class="service-slideshow">
+                <p>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</p>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
+            <div class="service-info">
+                Dark Fiber Connection
+            </div>
+            <div class="service-slideshow">
+                <p>PTP connection is available to Service Providers Talco Operations</p>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
+            <div class="service-info">
+                BTS Hotel/Multimedia Micro Cell Pole
+            </div>
+            <div class="service-slideshow">
+                <ul>
+                    <li>
+                        PTP connection from MSC ti MultimediaMicro Cell Pole
+                    </li>
+                    <li>
+                        BTS Hotel
+                    </li>
+                </ul>
+
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
+            <div class="service-info">
+                VSAT
+            </div>
+            <div class="service-slideshow">
+                <p>Very Small Aperture Terminal (VSAT) service is a solution to accommodatatelecomunications needs in areas notcovered
+                    by terrestrial networks for the needs of users with fixed, Maving or Mobile locations
+                </p>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
+            <div class="service-info">
+                Training
+            </div>
+            <div class="service-slideshow">
+                <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions,
+                <p>including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem</p>
+
+                </p>
+                <button class="more-btn">Selengkapnya</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="bg-black text-white d-flex">
+    <div class="separator-arrow-down align-self-start"></div>
     <div class="container ">
-        <div class="swiper" id="swiper-experience">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-sm-8">
-                                <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="d-flex align-items-center h-100 ">
-                                <div>
-                                    <h4 class="text-swiper mb-4">PAY TV SERVICES</h4>
-                                    <h5>Digital TV service employs FTTH (fiber To The Home) technology and offers numerous Free To Air and Premium channels.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-sm-8">
-                                <img src="assets/img/swiperpaytv.png" alt="Slide 2" class="d-block w-100">
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="d-flex align-items-center h-100">
-                                <div>
-                                    <h4 class="text-swiper mb-4">DATA CENTER</h4>
-                                    <h5>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
-
-
-    <div class="container mt-5">
-        <div class="services-container">
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/paytv.png') ?>" alt="Pay TV Service">
-                <div class="service-info">
-                    Pay TV Service
-                </div>
-                <div class="service-slideshow">
-                    <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/highspeed.png') ?>" alt="High Speed Internet Access">
-                <div class="service-info">
-                    High Speed Internet Access
-                </div>
-                <div class="service-slideshow">
-                    <p>
-                    <ul>
-                        <li>Shared connections through wired (FTTH) or wireless media</li>
-                        <li>Post or Pra Paid Service</li>
-                        <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
-                    </ul>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/vpn.png') ?>" alt="VPN Service">
-                <div class="service-info">
-                    VPN Service
-                </div>
-                <div class="service-slideshow">
-                    <ul>
-                        <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
-                        <li>Feature: MRTG, 24/7 Technical Support</li>
-                    </ul>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/datacenter.png') ?>" alt="Data Center ">
-                <div class="service-info">
-                    Data Center
-                </div>
-                <div class="service-slideshow">
-                    <p>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</p>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/darkfiber.png') ?>" alt="Dark Fiber Connection">
-                <div class="service-info">
-                    Dark Fiber Connection
-                </div>
-                <div class="service-slideshow">
-                    <p>PTP connection is available to Service Providers Talco Operations</p>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/bts.png') ?>" alt="BTS Hotel/Multimedia Micro Cell Pole">
-                <div class="service-info">
-                    BTS Hotel/Multimedia Micro Cell Pole
-                </div>
-                <div class="service-slideshow">
-                    <ul>
-                        <li>
-                            PTP connection from MSC ti MultimediaMicro Cell Pole
-                        </li>
-                        <li>
-                            BTS Hotel
-                        </li>
-                    </ul>
-
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
-                <div class="service-info">
-                    VSAT
-                </div>
-                <div class="service-slideshow">
-                    <p>Very Small Aperture Terminal (VSAT) service is a solution to accommodatatelecomunications needs in areas notcovered
-                        by terrestrial networks for the needs of users with fixed, Maving or Mobile locations
-                    </p>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
-                <div class="service-info">
-                    Training
-                </div>
-                <div class="service-slideshow">
-                    <p>It is consultation and assistance service in the planning and development of smart city/digital government solutions,
-                    <p>including training and mentoring services for increasing the capacity of MSMEa in the digital era in order to expand the impact of the digital acosystem</p>
-
-                    </p>
-                    <button class="more-btn">Selengkapnya</button>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="card text-center mb-5" style="margin-top: 250px;">
-        <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
-        <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
-    </div>
-
-    <div class="container">
         <div class="row">
-            <div class="col-md-3 ">
-                <div class="service-card">
-                    <img src="assets/img/webapp.png" alt="Web Application Icon">
-                    <h3>Web Application</h3>
-                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-card">
-                    <img src="assets/img/mobileapp.png" alt="Mobile Application Icon">
-                    <h3>Mobile Application</h3>
-                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-card">
-                    <img src="assets/img/webdesign.png" alt="Web Design Icon">
-                    <h3>Web Design</h3>
-                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-card">
-                    <img src="assets/img/payment.png" alt="Payment Gateway Icon">
-                    <h3>Payment Gateway</h3>
-                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            <div class="col">
+                <div class="text-center mb-5 " style="margin-top: 250px;">
+                    <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
+                    <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="separator-arrow-down-alt align-self-end"></div>
+</section>
 
-    <div class="explore bg-dark text-center" style="margin-top: 250px; padding-top:128px; padding-bottom:128px;">
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 ">
+            <div class="service-card">
+                <img src="assets/img/webapp.png" alt="Web Application Icon">
+                <h3>Web Application</h3>
+                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-card">
+                <img src="assets/img/mobileapp.png" alt="Mobile Application Icon">
+                <h3>Mobile Application</h3>
+                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-card">
+                <img src="assets/img/webdesign.png" alt="Web Design Icon">
+                <h3>Web Design</h3>
+                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-card">
+                <img src="assets/img/payment.png" alt="Payment Gateway Icon">
+                <h3>Payment Gateway</h3>
+                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="bg-dark text-white d-flex">
+    <div class="separator-arrow-down align-self-start"></div>
         <div class="container">
             <div class="row">
                 <div class="col">
-                <h1 class="text-white">Get in touch with us today and explore how our service can elevate your multimedia experience</h1>
-                <a href="#" class="btn btn-outline-light btn-lg ">Hubungi Kami</a>
+                <div class="explore text-center" style="margin-top: 250px; padding-top:128px; padding-bottom:128px;">
+                    <h1>Get in touch with us today and explore how our service can elevate your multimedia experience</h1>
+                    <a href="#" class="btn btn-outline-light btn-lg ">Hubungi Kami</a>
                 </div>
             </div>
         </div>
-        
     </div>
+</section>
 
 
- 
+
+
 
 
 
