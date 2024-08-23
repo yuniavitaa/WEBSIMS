@@ -322,6 +322,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
     .separator-arrow-down {
         position: absolute;
         width: 100%;
@@ -337,11 +338,10 @@
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('assets/img/layer1.svg');
+        background-image: url('assets/img/rect14.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
-   
 </style>
 <?= $this->endSection() ?>
 
@@ -529,8 +529,12 @@
             </div>
         </div>
     </div>
+    <section class="bg-black text-white d-flex">
     <div class="separator-arrow-down-alt align-self-end"></div>
 </section>
+</section>
+
+
 
 
 
@@ -572,9 +576,9 @@
 
 <section class="bg-dark text-white d-flex">
     <div class="separator-arrow-down align-self-start"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
+    <div class="container">
+        <div class="row">
+            <div class="col">
                 <div class="explore text-center" style="margin-top: 250px; padding-top:128px; padding-bottom:128px;">
                     <h1>Get in touch with us today and explore how our service can elevate your multimedia experience</h1>
                     <a href="#" class="btn btn-outline-light btn-lg ">Hubungi Kami</a>
