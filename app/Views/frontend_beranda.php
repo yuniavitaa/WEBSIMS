@@ -6,6 +6,10 @@
         padding: 0 20px;
     } */
 
+    body{
+        overflow-x: hidden;
+    }
+
     .hero-section {
         position: relative;
         width: 100%;
@@ -51,11 +55,72 @@
         text-transform: uppercase;
     } */
 
+    .line {
+        width: 7%;
+        height: 5px;
+        background-color: white;
+        margin-top: 1px;
+    }
+
     .section-about-us {
         margin-bottom: 50px;
         /* Sesuaikan dengan ukuran space yang diinginkan */
     }
 
+    .scroll-button {
+        text-align: center;
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .scroll-icon {
+        width: 40px;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .scroll-button:hover .scroll-icon {
+        transform: translateY(5px);
+    }
+
+    .scroll-button a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .scroll-button i {
+        font-size: 40px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .scroll-button:hover i {
+        transform: translateY(5px);
+    }
+
+
+    .separator-arrow-up-subtractive {
+        position: absolute;
+        width: 100vw;
+        height: 76.22px;
+        /* top: 0; */
+        left: 0;
+        transform: translateY(-1px);
+        background-image: url('assets/img/Separator2.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .separator-arrow-down-subtractive {
+        position: absolute;
+        width: 100vw;
+        height: 128px;
+        /* top: 0; */
+        margin-top: -1px;
+        left: 0;
+        background-image: url('assets/img/Separator11.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
     .image-stack {
         position: relative;
@@ -100,6 +165,25 @@
                 transparent 50%);
     }
 
+    .gradient-2 {
+        background-color: white;
+        background-image: linear-gradient(180deg,
+                rgba(var(--mdb-body-bg-rgb), 0.01),
+                rgba(var(--mdb-body-bg-rgb), 1) 85%),
+            radial-gradient(ellipse at top left,
+                rgba(var(--mdb-primary-rgb), 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at top right,
+                rgba(var(--mdb-secondary-rgb), 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(var(--mdb-info-rgb), 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(var(--mdb-warning-rgb), 0.25),
+                transparent 50%);
+    }
+
     .small-icon {
         height: 100px;
         width: 100px;
@@ -122,8 +206,8 @@
 
 
     footer {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
         background-color: black;
         color: white;
         justify-content: space-between;
@@ -202,20 +286,29 @@
 <header class="hero-section">
     <div class="hero-overlay"></div>
     <div class="container" style="z-index: 1;">
+        <div class="line"></div>
         <div class="row">
+            <div class="scroll-button">
+                <a href="#target-section">
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </div>
             <div class="col">
                 <div class="hero-content">
-                    <h1>Connecting People with Internet</h1>
+                    <h1>Connecting People</h1>
+                    </br>
+                    <h1 class="chakra-petch-regular">with Internet</h1>
                     <p>Empowering connectivity for tomorrow.</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-mdb-ripple-init>Selengkapnya</a>
+                    <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium" data-mdb-ripple-init>Selengkapnya</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+
 <!-- Content for the home page -->
-<div class="container text-center pt-5" style="margin-top: 100px;">
+<div class="container text-center pt-5" style="margin-top: 87px;">
     <h2>Our Partner</h2>
     <div class="row">
         <div class="col-md-12 pt-5">
@@ -224,7 +317,8 @@
     </div>
 </div>
 <!-- About Us -->
-<div style=" background-image: url('assets/img/background-tentang-kami.png'); background-size: cover; background-position: center top 20%; padding-bottom: 300px; margin-top: 100px; ">
+<div class="d-flex" style="background-image: url('assets/img/background-tentang-kami.png'); background-size: cover; background-position: center top 20%; padding-bottom: 300px; margin-top: 100px; ">
+    <div class="separator-arrow-up-subtractive z-3 align-self-start"></div>
     <div class="container text-start pt-5">
         <div class="row mt-4">
             <div class="col-md-6 position-relative">
@@ -233,11 +327,8 @@
             </div>
             <div class="col-md-6">
                 <h2 class="text-end text-white me-5 mb-5 fs-1">About Us</h2>
-                <di class="gradient-1 position-absolute z-3 charmonman-regular p-4 shadow" style="
-                            margin-left: -32px;
-                            height: 256px;
-                            width: calc(50vw - 96px);
-                            transform: rotate(-3deg);">
+                <di class="gradient-1 position-absolute z-3 charmonman-regular p-4 shadow"
+                    style="margin-left: -32px;height: 256px;width: calc(50vw - 96px);transform: rotate(-3deg);">
                     <h3>
                         <span class="charmonman-bold">
                             PT SIMS
@@ -249,11 +340,14 @@
         </div>
     </div>
 </div>
-</div>
+
+
+
 <!-- Content for the home page -->
 <div class="container text-center pt-5" style="margin-top: 100px;">
     <div class="row " style="margin-top: -200px;">
         <div class="col-md-3">
+            <div class="separator-arrow-down-subtractive align-self-end"></div>
             <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
                 <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
                 <div class="card-body">
@@ -292,61 +386,61 @@
     </div>
 </div>
 </br>
-<div class="container" style="margin-top: 50px;">
-            <div class="swiper" id="swiper-experience">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="row w-100">
-                        <div class="col-sm-4 d-flex flex-column justify-content-center">
-                            <div class="text-start">
-                                <p>Experience</p>
-                                <div class="text-uppercase">
-                                    <h3>Regional
-                                        </br>
-                                        Goverment
-                                        </br>
-                                        Multimedia TV
-                                        </br>
-                                        Studio
-                                        </br>
-                                    </h3>
-                                </div>
-                                <p>April 2024</p>
+<div class="container" style="margin-top: 100px;">
+    <div class="swiper gradient-2" id="swiper-experience">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="row w-100">
+                    <div class="col-sm-4 d-flex flex-column justify-content-center">
+                        <div class="text-start">
+                            <p>Experience</p>
+                            <div class="text-uppercase">
+                                <h3>Regional
+                                    </br>
+                                    Goverment
+                                    </br>
+                                    Multimedia TV
+                                    </br>
+                                    Studio
+                                    </br>
+                                </h3>
                             </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <img src="assets/img/Media.png" alt="Slide 2" class="w-100 object-fit-cover">
-                        </div>
+                            <p>April 2024</p>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="row w-100">
-                            <div class="col-sm-4 d-flex flex-column justify-content-center">
-                                <div class="text-start">
-                                    <p>Experience</p>
-                                    <div class="text-uppercase">
-                                        <h3>District Internet
-                                            <span>Network [Center</span>
-                                            </br>
-                                            <span>For Internet</span>
-                                            <span>Service Keamatan</span>
-                                            </br>
-                                            <span>USO]</span>
-                                        </h3>
-                                    </div>
-                                    <p>April 2024</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
-                            </div>
-                        </div>
+                    <div class="col-sm-8">
+                        <img src="assets/img/Media.png" alt="Slide 2" class="w-100 object-fit-cover">
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row w-100">
+                    <div class="col-sm-4 d-flex flex-column justify-content-center">
+                        <div class="text-start">
+                            <p>Experience</p>
+                            <div class="text-uppercase">
+                                <h3>District Internet
+                                    <span>Network [Center</span>
+                                    </br>
+                                    <span>For Internet</span>
+                                    <span>Service Keamatan</span>
+                                    </br>
+                                    <span>USO]</span>
+                                </h3>
+                            </div>
+                            <p>April 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
 </br>
 <div class="container text-center pt-5 " style="position: relative; top: -200px; margin-top: 200px;">
     <h2 style="margin-bottom: 87px;">TRUSTED BY</h2>
