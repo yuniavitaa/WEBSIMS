@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Service extends BaseController
+class Experience extends BaseController
 {
     public function experience(): string
     {
