@@ -29,6 +29,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <?= $this->renderSection('style') ?>
+  <style>
+
+    footer {
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: black;
+      color: white;
+      justify-content: space-between;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ddd;
+
+
+    }
+  </style>
 </head>
 
 <body>
