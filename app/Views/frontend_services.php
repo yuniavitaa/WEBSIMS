@@ -2,10 +2,11 @@
 
 <?= $this->section('style') ?>
 <style>
-    body {
+    body{
         font-family: 'Chakra Petch', sans-serif;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
     .hero {
