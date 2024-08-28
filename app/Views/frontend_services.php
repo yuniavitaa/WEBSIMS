@@ -530,14 +530,9 @@
         </div>
     </div>
     <section class="bg-black text-white d-flex">
-    <div class="separator-arrow-down-alt align-self-end"></div>
+        <div class="separator-arrow-down-alt align-self-end"></div>
+    </section>
 </section>
-</section>
-
-
-
-
-
 
 
 <div class="container">
