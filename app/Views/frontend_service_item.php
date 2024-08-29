@@ -3,6 +3,8 @@
 <style>
     body {
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     .hero-section {
@@ -11,51 +13,55 @@
         height: 100vh;
         background-image: url('assets/img/Background_PayTV.png');
         background-size: cover;
+        background-position: center;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        /* z-index: 1; */
+    .hero-content h1 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
-    .hero-content {
-     
+    .hero-content p {
+        margin-top: 20px;
+        margin-right: 20px;
+        font-size: 1rem;
+        letter-spacing: 2px;
     }
-
-    
 
     .wood-background {
         position: relative;
         width: 100%;
-        background-image: url('path/to/wood-background.png');
+        background-image: url('assets/img/image 25.png');
         background-size: cover;
         background-position: center;
-        z-index: 1;
         height: auto;
+        z-index: 1;
     }
 
     .info-box {
         position: absolute;
+        margin-top: 200px;
+        padding-right: 30px;
+        padding-left: 30px;
         top: 55vh;
         left: 50%;
         transform: translateX(-50%);
-        background: white;
-        padding: 30px;
+        background: rgba(255, 255, 255, 0.95);
+        padding-top: 30px;
+        padding-bottom: 30px;
         border-radius: 10px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
-        width: 50%;
-        height: 50%;
-        z-index: 3;
+        width: 60%;
+        height: 60%;
+        z-index: 2;
     }
 
     .icon-container {
@@ -76,45 +82,35 @@
     }
 
     .info-box h3 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-    }
-
-    .info-box p {
-        font-size: 1rem;
-        margin-bottom: 0;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #333;
     }
 
     .separator-line {
         width: 50%;
         height: 2px;
-        background-image: url('assets/img/pay-tv/Line.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 20px 0;
-
+        background: url('assets/img/pay-tv/Line.png') no-repeat center;
+        margin: 20px auto;
     }
 
-    footer {
-        z-index: 4;
+    .info-box p {
+        font-size: 1rem;
+        margin-bottom: 0;
+        color: #333;
     }
 </style>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-
-<!-- Hero Section -->
 <section class="hero-section">
-    <div class="hero-overlay"></div>
     <div class="container" style="z-index: 1;">
         <div class="row">
             <div class="col">
-                <div class="hero-content">
-                    <h1>Connecting People</h1>
-                    </br>
-                    <h1 class="chakra-petch-regular">with Internet</h1>
-                    <p>Empowering connectivity for tomorrow.</p>
-                    <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium" data-mdb-ripple-init>Selengkapnya</a>
+                <div class="hero-content text-start">
+                    <h1>Pay TV Services</h1>
+                    <p>DIGITAL TV SERVICE EMPLOYS FTTH TECHNOLOGY OFFERS NUMEROUS FREE TO AIR AND PREMIUM CHANNELS</p>
+                    <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -148,12 +144,22 @@
             <h3>Extensive</h3>
         </div>
     </div>
-
-    <!-- Garis separator -->
-    <div class="separator-line pl-10 "></div>
-
+    <div class="separator-line"></div>
     <p>Our Pay TV Services leverage leading FTTH (Fiber To The Home) technology to deliver amazing digital television experiences directly to your doorstep.</p>
 </div>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 p-0">
+                <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
