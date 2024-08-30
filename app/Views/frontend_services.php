@@ -352,13 +352,13 @@
 <div class="hero">
     <div class="position-relative z-1 container">
         <div class="row">
-            <div class="col">
+            <dEiv class="col">
                 <h1 class="fw-bold">Elevate your digital<br>
                     experience to <br>
                     unprecedented heights</h1>
                 <p class="fs-6 my-3 arcade-interlaced-regular">Explore our innovative, high-quality superior services</p>
                 <a href="#" class="btn">Selengkapnya</a>
-            </div>
+            </dEiv>
         </div>
     </div>
 </div>
