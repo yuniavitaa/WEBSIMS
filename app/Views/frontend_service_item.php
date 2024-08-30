@@ -42,7 +42,6 @@
         background-size: cover;
         background-position: center;
         height: auto;
-        z-index: 1;
     }
 
     .info-box {
@@ -99,6 +98,22 @@
         margin-bottom: 0;
         color: #333;
     }
+
+    .text-box {
+        position: absolute;
+        width: 40%;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #B33F5E;
+        border-radius: 8px;
+    }
+
+    .position-box {
+        margin-top: 300px;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        z-index: 3;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -149,17 +164,27 @@
 </div>
 
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="row">
             <div class="col-sm-6 p-0">
                 <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
-                
+                <h2 class="text-end me-5 mb-3 fs-1 " style="color: #b71c1c; position: relative; top: -200px;">Why?</h2>
+                <div class="text-box p-4 rounded-0 position-box">
+                    <p>
+                        With a vast array of Free To Air channels alongside an enticing selection of Premium channels,
+                        our service ensures that you have access to a diverse range of high-quality content,
+                        catering to every interest and preference.
+                    </p>
+                    <button class="btn btn-outline-dark">SELENGKAPNYA</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 
 

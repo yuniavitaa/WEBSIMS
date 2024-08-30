@@ -6,10 +6,10 @@
         padding: 0 20px;
     } */
 
-    body{
+    body {
         overflow-x: hidden;
     }
-    
+
     .hero-section {
         position: relative;
         width: 100%;
