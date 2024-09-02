@@ -7,6 +7,25 @@
         padding: 0;
     }
 
+    .navbar {
+        background-color: transparent !important;
+        border-bottom: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar.navbar-dark .navbar-nav .nav-link {
+        color: white !important;
+    }
+
+    .navbar.navbar-dark .navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar.scrolled {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    /* Hero Section */
     .hero-section {
         position: relative;
         width: 100%;
@@ -88,7 +107,7 @@
 
     .separator-line {
         width: 50%;
-        height: 2px;
+        height: 5px;
         background: url('assets/img/pay-tv/Line.png') no-repeat center;
         margin: 20px auto;
     }
@@ -114,6 +133,20 @@
         transform: translate(-25%, -50%);
         z-index: 3;
     }
+
+    /* Wave separator */
+    .wave-container {
+        position: relative;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -123,8 +156,9 @@
         <div class="row">
             <div class="col">
                 <div class="hero-content text-start">
-                    <h1>Pay TV Services</h1>
-                    <p>DIGITAL TV SERVICE EMPLOYS FTTH TECHNOLOGY OFFERS NUMEROUS FREE TO AIR AND PREMIUM CHANNELS</p>
+                    <h1 class="chakra-petch-bold">Pay TV Services</h1>
+                    <p class="arcade-interlaced-regular">DIGITAL TV SERVICE EMPLOYS FTTH TECHNOLOGY OFFERS NUMEROUS FREE TO AIR AND PREMIUM CHANNELS</p>
+                    </br>
                     <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium">Selengkapnya</a>
                 </div>
             </div>
@@ -140,39 +174,46 @@
     </div>
 </section>
 
-<div class="info-box rounded-0">
-    <div class="icon-container">
-        <div class="icon-item">
-            <img src="assets/img/pay-tv/icons-tv.png" alt="Seamless">
-            <h3>Seamless</h3>
+<div class="info-box rounded-0" style="padding: 20px; width: 50%; height: auto; max-width: 600px;">
+    <div class="icon-container chakra-petch-regular" style="margin-bottom: 15px;">
+        <div class="icon-item" style="flex: 1; padding: 5px;">
+            <img src="assets/img/pay-tv/icons-tv.png" alt="Seamless" style="max-width: 40px; margin-bottom: 5px;">
+            <h3 style="font-size: 1rem; margin-bottom: 5px;">Seamless</h3>
         </div>
-        <div class="icon-item">
-            <img src="assets/img/pay-tv/icons1-tv.png" alt="Clear">
-            <h3>Clear</h3>
+        <div class="icon-item" style="flex: 1; padding: 5px;">
+            <img src="assets/img/pay-tv/icons1-tv.png" alt="Clear" style="max-width: 40px; margin-bottom: 5px;">
+            <h3 style="font-size: 1rem; margin-bottom: 5px;">Clear</h3>
         </div>
-        <div class="icon-item">
-            <img src="assets/img/pay-tv/icons2-tv.png" alt="Immersive">
-            <h3>Immersive</h3>
+        <div class="icon-item" style="flex: 1; padding: 5px;">
+            <img src="assets/img/pay-tv/icons2-tv.png" alt="Immersive" style="max-width: 40px; margin-bottom: 5px;">
+            <h3 style="font-size: 1rem; margin-bottom: 5px;">Immersive</h3>
         </div>
-        <div class="icon-item">
-            <img src="assets/img/pay-tv/icons3-tv.png" alt="Extensive">
-            <h3>Extensive</h3>
+        <div class="icon-item" style="flex: 1; padding: 5px;">
+            <img src="assets/img/pay-tv/icons3-tv.png" alt="Extensive" style="max-width: 40px; margin-bottom: 5px;">
+            <h3 style="font-size: 1rem; margin-bottom: 5px;">Extensive</h3>
         </div>
     </div>
-    <div class="separator-line"></div>
-    <p>Our Pay TV Services leverage leading FTTH (Fiber To The Home) technology to deliver amazing digital television experiences directly to your doorstep.</p>
+    <div class="separator-line rounded-1" style="width: 50%; margin: 15px auto;"></div>
+    <section class="darker-grotesque-regular" style="font-size: 0.9rem; line-height: 1.4;">
+        <p>Our Pay TV Services leverage leading FTTH</p>
+        <br>
+        <p>(Fiber To The Home) technology to deliver amazing</p>
+        <br>
+        <p>digital television experiences directly to your doorstep.</p>
+    </section>
 </div>
 
+
 <section>
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6 p-0">
                 <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
-                <h2 class="text-end me-5 mb-3 fs-1 " style="color: #b71c1c; position: relative; top: -200px;">Why?</h2>
+                <h1 class="text-end me-5 mb-3 fs-1 chakra-petch-bold" style="color: #b71c1c; position: relative; top: -200px; font-weight:700;">Why?</h1>
                 <div class="text-box p-4 rounded-0 position-box">
-                    <p>
+                    <p class="chakra-petch-light">
                         With a vast array of Free To Air channels alongside an enticing selection of Premium channels,
                         our service ensures that you have access to a diverse range of high-quality content,
                         catering to every interest and preference.
@@ -184,8 +225,17 @@
     </div>
 </section>
 
+<?= $this->endSection() ?>
 
-
-
-
+<?= $this->section('script') ?>
+<script>
+    document.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 <?= $this->endSection() ?>
