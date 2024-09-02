@@ -288,17 +288,17 @@
     <div class="container" style="z-index: 1;">
         <div class="line"></div>
         <div class="row">
-            <div class="scroll-button">
+            <!-- <div class="scroll-button">
                 <a href="#target-section">
                     <i class="fa fa-chevron-down"></i>
                 </a>
-            </div>
+            </div> -->
             <div class="col">
                 <div class="hero-content">
-                    <h1>Connecting People</h1>
+                    <h1 class="chakra-petch-bold ">Connecting People</h1>
                     </br>
                     <h1 class="chakra-petch-regular">with Internet</h1>
-                    <p>Empowering connectivity for tomorrow.</p>
+                    <p class="arcade-interlaced-regular">Empowering connectivity for tomorrow.</p>
                     <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium" data-mdb-ripple-init>Selengkapnya</a>
                 </div>
             </div>
