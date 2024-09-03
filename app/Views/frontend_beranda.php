@@ -115,7 +115,7 @@
         width: 100vw;
         height: 128px;
         /* top: 0; */
-        margin-top: -1px;
+        margin-top: -200px;
         left: 0;
         background-image: url('assets/img/Separator11.svg');
         background-size: contain;
@@ -345,9 +345,9 @@
 
 <!-- Content for the home page -->
 <div class="container text-center pt-5" style="margin-top: 100px;">
+    <div class="separator-arrow-down-subtractive align-self-end"></div>
     <div class="row " style="margin-top: -200px;">
         <div class="col-md-3">
-            <div class="separator-arrow-down-subtractive align-self-end"></div>
             <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
                 <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
                 <div class="card-body">

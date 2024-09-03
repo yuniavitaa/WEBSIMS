@@ -134,7 +134,7 @@
         z-index: 3;
     }
 
-    /* Wave separator */
+    /* Wave separator
     .wave-container {
         position: relative;
     }
@@ -146,7 +146,39 @@
         width: 100%;
         height: auto;
         z-index: 1;
+    } */
+    .separator-wave {
+        position: absolute;
+        width: 100%;
+        height: 610px;
+        margin-left: 630px;
+        end:0;
+        background-image: url('assets/img/separatorwave.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
+
+    .separator-arrow-down-subtractive {
+        position: absolute;
+        width: 100vw;
+        height: 128px;
+        margin-top: 500px;
+        /* top: 0; */
+        left: 0;
+        /* bottom: 0; */
+        background-image: url('assets/img/separatorpaytv.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* 
+    .black-background {
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0;
+        background-color: black;
+    } */
 </style>
 <?= $this->endSection() ?>
 
@@ -155,7 +187,7 @@
     <div class="container" style="z-index: 1;">
         <div class="row">
             <div class="col">
-                <div class="hero-content text-start">
+                <div class="hero-content text-start" style="padding:0px 250px;">
                     <h1 class="chakra-petch-bold">Pay TV Services</h1>
                     <p class="arcade-interlaced-regular">DIGITAL TV SERVICE EMPLOYS FTTH TECHNOLOGY OFFERS NUMEROUS FREE TO AIR AND PREMIUM CHANNELS</p>
                     </br>
@@ -206,13 +238,16 @@
 
 <section>
     <div class="container-fluid">
+        <div class="separator-arrow-down-subtractive align-self-end"></div>
         <div class="row">
             <div class="col-sm-6 p-0">
+                <div class="separator-wave"></div>
                 <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
                 <h1 class="text-end me-5 mb-3 fs-1 chakra-petch-bold" style="color: #b71c1c; position: relative; top: -200px; font-weight:700;">Why?</h1>
                 <div class="text-box p-4 rounded-0 position-box">
+
                     <p class="chakra-petch-light">
                         With a vast array of Free To Air channels alongside an enticing selection of Premium channels,
                         our service ensures that you have access to a diverse range of high-quality content,
@@ -224,6 +259,16 @@
         </div>
     </div>
 </section>
+
+<section>
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</section>
+
+
 
 <?= $this->endSection() ?>
 
