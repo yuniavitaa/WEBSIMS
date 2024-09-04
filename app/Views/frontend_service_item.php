@@ -152,10 +152,10 @@
         width: 100%;
         height: 610px;
         margin-left: 630px;
-        end:0;
         background-image: url('assets/img/separatorwave.svg');
         background-size: contain;
         background-repeat: no-repeat;
+
     }
 
     .separator-arrow-down-subtractive {
@@ -163,22 +163,50 @@
         width: 100vw;
         height: 128px;
         margin-top: 500px;
-        /* top: 0; */
         left: 0;
-        /* bottom: 0; */
         background-image: url('assets/img/separatorpaytv.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
 
-    /* 
-    .black-background {
-        position: absolute;
-        width: 100%;
-        height: 128px;
-        left: 0;
-        background-color: black;
-    } */
+
+  
+    .title {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-family: 'Arcade Interlaced', sans-serif;
+    }
+
+    
+    .subtitle {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #000;
+        border: 4px solid #fff;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        font-family: 'Chakra Petch', sans-serif;
+        
+    }
+
+    .cta-button:hover {
+        background-color: transparent;
+        color: #000;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -268,6 +296,15 @@
     </div>
 </section>
 
+<div class="container-fluid" style="background-color:#000; padding: 60px 0;">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="title">GET READY</h1>
+            <p class="subtitle">Experience the future of television</p>
+            <button class="cta-button">GAME ON</button>
+        </div>
+    </div>
+</div>
 
 
 <?= $this->endSection() ?>
