@@ -8,13 +8,13 @@
     }
 
     .navbar {
-        background-color: transparent !important;
+        background-color: transparent;
         border-bottom: none;
         transition: background-color 0.3s ease;
     }
 
     .navbar.navbar-dark .navbar-nav .nav-link {
-        color: white !important;
+        color: white;
     }
 
     .navbar.navbar-dark .navbar-toggler {
@@ -151,7 +151,8 @@
         position: absolute;
         width: 100%;
         height: 610px;
-        margin-left: 630px;
+        left: 47%;
+        /* margin-left: 630px; */
         background-image: url('assets/img/separatorwave.svg');
         background-size: contain;
         background-repeat: no-repeat;
@@ -170,7 +171,7 @@
     }
 
 
-  
+
     .title {
         font-size: 4rem;
         font-weight: bold;
@@ -180,7 +181,7 @@
         font-family: 'Arcade Interlaced', sans-serif;
     }
 
-    
+
     .subtitle {
         font-size: 1.5rem;
         color: #fff;
@@ -189,7 +190,7 @@
         font-family: 'Chakra Petch', sans-serif;
     }
 
-    
+
     .cta-button {
         padding: 15px 30px;
         font-size: 1.2rem;
@@ -200,12 +201,29 @@
         text-transform: uppercase;
         transition: all 0.3s ease;
         font-family: 'Chakra Petch', sans-serif;
-        
+
     }
 
     .cta-button:hover {
         background-color: transparent;
         color: #000;
+    }
+
+    .gradient {
+        background: radial-gradient(ellipse at top left,
+                rgba(128, 0, 128, 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at top right,
+                rgba(0, 128, 0, 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.25),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(255, 192, 203, 0.25),
+                transparent 50%);
+
+        padding: 60px 0;
     }
 </style>
 <?= $this->endSection() ?>
@@ -296,7 +314,8 @@
     </div>
 </section>
 
-<div class="container-fluid" style="background-color:#000; padding: 60px 0;">
+
+<div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
     <div class="row">
         <div class="col text-center">
             <h1 class="title">GET READY</h1>
