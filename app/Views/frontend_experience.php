@@ -107,7 +107,7 @@
     </div>
 </div>
 <!-- Gevorment -->
-<div class="container-fluid government-section">
+<div class="container-fluid government-section" style="max-height: 512px; overflow: hidden;">
     <div class="row mb-5 align-items-center">
         <div class="col-md-6 d-flex align-items-center justify-content-center text-center ">
             <div>
@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="col-md-6 p-0">
-            <img src="assets/img/exmedia.png" alt="Government Image" class="img-fluid government-image"" >
+            <img src="assets/img/exmedia.png" alt="Government Image" style="object-fit: cover;" >
         </div>
     </div>
 </div>
@@ -137,9 +137,9 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Sarjito -->
-        <div class="container-fluid left-section">
+        <div class="container-fluid government-section">
             <div class="row mb-5 align-items-center">
-                <div class="col-md-6 p-0  ">
+                <div class="col-md-6 p-0">
                     <div>
                         <img src="assets/img/exsarjito.png" alt="Government Image" class="img-fluid government-image">
                     </div>
@@ -165,7 +165,7 @@
         </div>
         <br>
         <!-- Konten ISP -->
-        <div class="container-fluid government-section">
+        <div class="container-fluid government-section" style="max-height: 512px; overflow: hidden;">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 d-flex align-items-center justify-content-center text-center ">
                     <div>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <img src="assets/img/exisp.png" alt="Government Image" class="img-fluid government-image">
+                    <img src="assets/img/exisp.png" alt="Government Image" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -227,7 +227,7 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten apart -->
-        <div class="container-fluid government-section">
+        <div class="container-fluid government-section"style="max-height: 512px; overflow: hidden;">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 d-flex align-items-center justify-content-center text-center ">
                     <div>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <img src="assets/img/exaprt.png" alt="Government Image" class="img-fluid government-image">
+                    <img src="assets/img/exaprt.png" alt="Government Image" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -284,7 +284,7 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Banking -->
-        <div class="container-fluid government-section">
+        <div class="container-fluid government-section" style="max-height: 512px; overflow: hidden;">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 d-flex align-items-center justify-content-center text-center">
                     <div>
@@ -294,7 +294,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <img src="assets/img/exbank.png" alt="Government Image" class="img-fluid government-image">
+                    <img src="assets/img/exbank.png" alt="Government Image" style="object-fit: cover;">
                 </div>
             </div>
         </div>
