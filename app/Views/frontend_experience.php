@@ -84,12 +84,6 @@
 
     }
 
-    .government-section h4 {
-        text-align: center;
-        /* Pusatkan judul */
-        margin-bottom: 10px;
-        /* Sesuaikan jarak antara judul dan paragraf */
-    }
     
 </style>
 <?= $this->endSection() ?>
@@ -137,14 +131,14 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Sarjito -->
-        <div class="container-fluid government-section">
-            <div class="row mb-5 align-items-center">
+        <div class="container-fluid left-section" >
+            <div class="row mb-5 align-items-center" >
                 <div class="col-md-6 p-0">
                     <div>
                         <img src="assets/img/exsarjito.png" alt="Government Image" class="img-fluid government-image">
                     </div>
                 </div>
-                <div class="col-md-6 align-items-center justify-content-center text-center">
+                <div class="col-md-6 d-flex flex-column justify-content-start" style="padding-left: 40px;">
                     <h4 class="text-experience mb-4 arcade-interlaced-semibold">BUSINESS/ <br> COMMERCIAL</h4>
                     <p class="chakra-petch-regular">Dedicated Internet, Broadband Internet, SOHO, VPN.</p>
                 </div>
@@ -196,14 +190,14 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Hotel -->
-        <div class="container-fluid government-section">
+        <div class="container-fluid left-section">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 p-0">
                     <div>
                         <img src="assets/img/exhotel.png" alt="Government Image" class="img-fluid government-image">
                     </div>
                 </div>
-                <div class="col-md-6 align-items-center justify-content-center text-center">
+                <div class="col-md-6 flex-column justify-content-start" style="padding-left: 40px;">
                     <h4 class="text-experience mb-4 arcade-interlaced-semibold">HOTEL</h4>
                     <p class="chakra-petch-regular">Pay TV, dedicated internet, WiFi,
                         <br>hotspot access, MATV
@@ -255,14 +249,14 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Education -->
-        <div class="container-fluid government-section">
+        <div class="container-fluid left-section">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 p-0">
                     <div>
                         <img src="assets/img/exedu.png" alt="Government Image" class="img-fluid government-image">
                     </div>
                 </div>
-                <div class="col-md-6 align-items-center justify-content-center text-center">
+                <div class="col-md-6 flex-column justify-content-start" style="padding-left: 40px;">
                     <h4 class="text-experience mb-4 arcade-interlaced-semibold">EDUCATION</h4>
                     <p class="chakra-petch-regular">Dedicated Internet, dark fiber,<br> interconnection, internship.</p>
 
