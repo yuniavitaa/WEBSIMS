@@ -210,20 +210,26 @@
     }
 
     .gradient {
-        background: radial-gradient(ellipse at top left,
-                rgba(128, 0, 128, 0.25),
-                transparent 50%),
-            radial-gradient(ellipse at top right,
-                rgba(0, 128, 0, 0.25),
+        background-image: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.01),
+                rgba(255, 255, 255, 0) 85%),
+            radial-gradient(ellipse at center left,
+                rgba(128, 0, 128, 0.15),
+                /* Purple */
                 transparent 50%),
             radial-gradient(ellipse at center right,
-                rgba(0, 0, 255, 0.25),
+                rgba(0, 128, 0, 0.15),
+                /* Green */
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.15),
+                /* Blue */
                 transparent 50%),
             radial-gradient(ellipse at center left,
-                rgba(255, 192, 203, 0.25),
+                rgba(255, 192, 203, 0.15),
+                /* Pink */
                 transparent 50%);
-
-        padding: 60px 0;
+        padding: 96px 0;
     }
 </style>
 <?= $this->endSection() ?>
@@ -309,7 +315,7 @@
 <section>
     <div class="row">
         <div class="col">
-
+        
         </div>
     </div>
 </section>
