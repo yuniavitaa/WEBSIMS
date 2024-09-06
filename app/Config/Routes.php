@@ -33,6 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/service', 'Service::service');
 $routes->get('/service_item', 'Service::service_item'); 
 $routes->get('/experience', 'Experience::experience');
+$routes->get('/blog_item', 'Blog::blog_item');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -93,8 +93,8 @@
     <div class="position-relative z-1 container">
         <div class="row">
             <div class="col">
-                <p class="fs-6 my-3 chakra-petch-regular ">Discover How Our Decades worth of Experience Transforms Businesses Across Various Sectors</p>
-                <h1 class="chakra-petch-bold">Elevating Connectivity:<br>Empowering Diverse Sectors</h1>
+                <h4 class="fs-6 my-3 chakra-petch-regular ">Discover How Our Decades worth of Experience Transforms Businesses Across Various Sectors</h4>
+                <p class="chakra-petch-bold" style="font-size: 50px;">Elevating Connectivity:<br>Empowering Diverse Sectors</p>
                 <a href="#" class="btn">Selengkapnya</a>
             </div>
         </div>
