@@ -186,6 +186,50 @@
     </div>
 </section>
 
+<section>
+    <div class="row">
+        <div class="col-sm-6 p-0" style="margin-top:-5px;">
+            <img src="assets/img/about-us/vision.png" alt="Vision & Mission img" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="col-sm-6 d-flex align-items-center justify-content-center bg-black">
+            <div class="text-box p-4 rounded-0 position-box">
+                <h1 class="text-white chakra-petch-bold " style="font-size: 100px; center:0;">Vision & Mission</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
+        <div class="row">
+            <div class="col text-start" style="width: 100%; max-width: 800px; margin: 0 auto;">
+                <h1 class="title chakra-petch-bold" style="margin-bottom: 20px;">Vision</h1>
+                <p class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
+                    The vision is the preeminent provider of multimedia/broadband networks and services in terms of content quality and breadth by offering sustainable ecosystem solution services.
+                </p>
+                <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px;">Mission</h1>
+                <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
+                    <li>Providing network solutions, services, and multimedia products with a focus on ecosystems with added value and the best quality.</li>
+                    <li>Becoming a profitable, advanced, and learning company.</li>
+                    <li>Providing network solutions, services, and multimedia products with smart, fast, and right quality as well as prices.</li>
+                    <li>Creating trend services and enriching multimedia content in the context of ecosystem growth with continuous development and innovation processes.</li>
+                    <li>Encouraging the transformation of information society towards knowledge by strengthening culture, productivity, growth, moral intelligence, and noble character.</li>
+                    <li>Establishing synergies and partnerships with local and national ecosystem participants in the development of competitive multimedia products and services.</li>
+                    <li>Providing the best care and support for human resources who strive to be the best professionals in multimedia products and services.</li>
+                    <li>Becoming a government partner in creating a favorable climate for the development of ecosystems in Indonesia and accelerating the implementation of multimedia services and networks in society.</li>
+                </ul>
+
+                <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px;">Business Strategies</h1>
+                <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
+                    <li>Partnering strategically with respected local and national companies.</li>
+                    <li>Investing in advanced infrastructure to enhance business services development and multimedia platforms across the nation.</li>
+                    <li>Becoming a prominent partner in creating favorable investment conditions for multimedia service and network society.</li>
+                    <li>Utilizing and maximizing the quality of the broadband service system and technology for customers.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?= $this->endSection() ?>
