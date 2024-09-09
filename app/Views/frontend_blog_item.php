@@ -36,8 +36,8 @@
         <div class="p-3 bg-light">
           <h5>Share</h5>
           <div class="social-icons mb-4">
+          <a href="#"><i class="bi bi-twitter"></i></a>
             <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-x"></i></a>
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-tiktok"></i></a>
           </div>
@@ -45,19 +45,19 @@
           <h5>For You</h5>
           <div class="recommended-articles">
             <div class="card mb-3">
-              <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="...">
+              <img src="assets/img/bigdng.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
               </div>
             </div>
             <div class="card mb-3">
-              <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="...">
+              <img src="assets/img/bitv.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
               </div>
             </div>
             <div class="card mb-3">
-              <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="...">
+              <img src="assets/img/bisunset.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
               </div>
