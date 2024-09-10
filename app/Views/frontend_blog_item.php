@@ -43,24 +43,30 @@
           </div>
 
           <h5>For You</h5>
-          <div class="recommended-articles">
-            <div class="card mb-3">
-              <img src="assets/img/bigdng.png" class="card-img-top" alt="...">
-              <div class="card-body">
+          <div class=" container recommended-articles">
+            <div class="row">
+            <div class=" d-flex align-items-center col-lg-10 col-md-6 mb-4 ">
+              <img src="assets/img/bigdng.png"class="img-fluid" alt="..." style="width: 100px; height: auto; margin-right: 10px;">
+              <div class="card-body p-0" style="flex-grow: 1;">
+                <h6 class="card-title">Lorem Ipsum Dolor Sit Amet </h6>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="d-flex col-lg-10 col-md-6 mb-4">
+              <img src="assets/img/bitv.png"class="img-fluid" alt="..." style="width: 100px; height: auto; margin-right: 10px;">
+              <div class="card-body p-0" style="flex-grow: 1;">
                 <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
               </div>
             </div>
-            <div class="card mb-3">
-              <img src="assets/img/bitv.png" class="card-img-top" alt="...">
-              <div class="card-body">
+            </div>
+            <div class="row">
+            <div class="d-flex col-lg-10 col-md-6 mb-4">
+              <img src="assets/img/bisunset.png" class="img-fluid" alt="..." style="width: 100px; height: auto; margin-right: 10px;">
+              <div class="card-body p-0" style="flex-grow: 1;">
                 <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
               </div>
             </div>
-            <div class="card mb-3">
-              <img src="assets/img/bisunset.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
-              </div>
             </div>
           </div>
         </div>
