@@ -4,6 +4,14 @@ namespace App\Controllers;
 
 class Blog extends BaseController
 {
+    public function blog(): string
+    {
+        $data = [
+            'title' => 'Blog'
+        ];
+        return view('frontend_blog', $data);
+    }
+    
     public function blog_item(): string
     {
         $data = [

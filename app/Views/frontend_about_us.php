@@ -32,9 +32,6 @@
         justify-content: center;
     }
 
-    /* .hero-content {
-        z-index: 2;
-    } */
 
     .hero-overlay {
         position: absolute;
@@ -73,10 +70,7 @@
 
 
     .subtitle {
-        /* font-size: 1.5rem;
-        color: #fff; */
         margin-left: 50px;
-        /* letter-spacing: 2px; */
         font-family: 'Chakra Petch', sans-serif;
     }
 
@@ -86,19 +80,15 @@
                 rgba(255, 255, 255, 0) 85%),
             radial-gradient(ellipse at center left,
                 rgba(128, 0, 128, 0.15),
-                /* Purple */
                 transparent 50%),
             radial-gradient(ellipse at center right,
                 rgba(0, 128, 0, 0.15),
-                /* Green */
                 transparent 50%),
             radial-gradient(ellipse at center right,
                 rgba(0, 0, 255, 0.15),
-                /* Blue */
                 transparent 50%),
             radial-gradient(ellipse at center left,
                 rgba(255, 192, 203, 0.15),
-                /* Pink */
                 transparent 50%);
         padding: 96px 0;
     }
@@ -107,6 +97,11 @@
         background-color: black;
         height: 128px;
         width: 100%;
+    }
+
+    .text-box{
+        display: flex;
+        margin-left: -300px;
     }
 </style>
 <?= $this->endSection() ?>
@@ -155,9 +150,7 @@
     <div class="container-fluid p-0 position-relative">
         <div class="row">
             <div class="col">
-                <!-- Background Image -->
                 <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
-                <!-- Dark Overlay and Text -->
                 <div class="text-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, 0.5);">
                     <div class="container text-white" style="max-width: 800px;">
                         <h1 class="subtitle text-white chakra-petch-bold" style="text-align: justify; margin-bottom:40px;">The basic configuration of the Jogja Medianet HFC network</h1>
@@ -193,7 +186,7 @@
         </div>
         <div class="col-sm-6 d-flex align-items-center justify-content-center bg-black">
             <div class="text-box p-4 rounded-0 position-box">
-                <h1 class="text-white chakra-petch-bold " style="font-size: 100px; center:0;">Vision & Mission</h1>
+                <h1 class="text-white chakra-petch-bold " style="font-size: 80px;">Vision & Mission</h1>
             </div>
         </div>
     </div>
@@ -203,11 +196,11 @@
     <div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
         <div class="row">
             <div class="col text-start" style="width: 100%; max-width: 800px; margin: 0 auto;">
-                <h1 class="title chakra-petch-bold" style="margin-bottom: 20px;">Vision</h1>
+                <h1 class="title chakra-petch-bold" style="margin-bottom: 20px; font-size: 48px;">Vision</h1>
                 <p class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
                     The vision is the preeminent provider of multimedia/broadband networks and services in terms of content quality and breadth by offering sustainable ecosystem solution services.
                 </p>
-                <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px;">Mission</h1>
+                <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px; font-size: 48px;">Mission</h1>
                 <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
                     <li>Providing network solutions, services, and multimedia products with a focus on ecosystems with added value and the best quality.</li>
                     <li>Becoming a profitable, advanced, and learning company.</li>
@@ -219,7 +212,7 @@
                     <li>Becoming a government partner in creating a favorable climate for the development of ecosystems in Indonesia and accelerating the implementation of multimedia services and networks in society.</li>
                 </ul>
 
-                <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px;">Business Strategies</h1>
+                <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px; font-size: 48px;">Business Strategies</h1>
                 <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
                     <li>Partnering strategically with respected local and national companies.</li>
                     <li>Investing in advanced infrastructure to enhance business services development and multimedia platforms across the nation.</li>
