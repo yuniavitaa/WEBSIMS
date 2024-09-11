@@ -72,11 +72,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Experiences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('service') ?>">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('experience') ?>">Experiences</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('about_us') ?>">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('blog') ?>">Blog</a></li>
         </ul>
       </div>
     </div>

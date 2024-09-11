@@ -52,6 +52,22 @@
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
+
+    .btn-group .btn.active {
+        background-color: #6f42c1;
+        color: white;
+        border-color: #6f42c1;
+    }
+
+    .input-group .form-control {
+        border-radius: 20px 0 0 20px;
+    }
+
+    .input-group .btn {
+        border-radius: 0 20px 20px 0;
+        background-color: #6f42c1;
+        border: none;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -71,4 +87,41 @@
         </div>
     </div>
 </header>
+
+<section>
+    <div class="container mt-4">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <div class="btn-group" role="group" aria-label="Filter Options">
+                    <button type="button" class="btn active rounded-4 ">Event</button>
+                    <button type="button" class="btn rounded-4">News</button>
+                    <button type="button" class="btn rounded-4">Article</button>
+                </div>
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col-auto ">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="button" style="width: 50px;">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</br>
+<section>
+    <div class="card shadow" style="width: 18rem; margin-left: 115px;">
+        <img class="card-img-top" src="assets/img/blog/Media.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</section>
+</br>
 <?= $this->endSection() ?>
