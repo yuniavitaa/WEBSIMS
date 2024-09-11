@@ -33,7 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/service', 'Service::service');
 $routes->get('/service_item', 'Service::service_item'); 
 $routes->get('/experience', 'Experience::experience');
-$routes->get('/about_us', 'About_Us::about_us');
+$routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
 /*

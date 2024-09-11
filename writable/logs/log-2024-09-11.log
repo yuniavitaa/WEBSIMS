@@ -1,0 +1,26 @@
+CRITICAL - 2024-09-11 02:53:34 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\layout\frontend_template.php on line 75.
+ 1 APPPATH\Views\layout\frontend_template.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'D:\\FINAL SIMS\\SIMSWEB\\app\\Views\\layout\\frontend_template.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\FINAL SIMS\\SIMSWEB\\app\\Views\\layout\\frontend_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/frontend_template', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('frontend_beranda', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('frontend_beranda')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\FINAL SIMS\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-09-11 02:53:35 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\layout\frontend_template.php on line 75.
+ 1 APPPATH\Views\layout\frontend_template.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'D:\\FINAL SIMS\\SIMSWEB\\app\\Views\\layout\\frontend_template.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\FINAL SIMS\\SIMSWEB\\app\\Views\\layout\\frontend_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/frontend_template', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('frontend_beranda', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('frontend_beranda')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\FINAL SIMS\\SIMSWEB\\public\\index.php')

@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class About_Us extends BaseController
+class AboutUs extends BaseController
 {
     public function about_us()
     {
