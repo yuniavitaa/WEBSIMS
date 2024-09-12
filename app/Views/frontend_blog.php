@@ -54,9 +54,10 @@
     }
 
     .btn-group .btn.active {
-        background-color: #6f42c1;
+        background: linear-gradient(135deg, #ff416c, #4688f1);
         color: white;
-        border-color: #6f42c1;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     .input-group .form-control {
@@ -65,8 +66,35 @@
 
     .input-group .btn {
         border-radius: 0 20px 20px 0;
-        background-color: #6f42c1;
+        background: linear-gradient(135deg, #ff416c, #4688f1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         border: none;
+    }
+
+    .page-item .page-link {
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        padding: 10px 15px;
+        color: #333;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+
+    .page-item.active .page-link {
+        background: linear-gradient(135deg, #ff416c, #4688f1);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-item .page-link:hover {
+        background: rgba(70, 136, 241, 0.1);
+    }
+
+    .page-item .page-link:focus {
+        outline: none;
+        box-shadow: 0 0 6px rgba(70, 136, 241, 0.5);
     }
 </style>
 <?= $this->endSection() ?>
@@ -77,8 +105,11 @@
     <div class="hero-overlay"></div>
     <div class="container" style="z-index: 1;">
         <div class="row">
+
             <div class="col">
+                <span class="badge badge-pill badge-light text-dark mb-3 px-3 py-2" style="border-radius:50px;">News</span>
                 <div class="hero-content">
+                    <p class="chakra-petch-bold"> 1st May 2024</p>
                     <h1>PT SIMS has become the tenth decacorn company in Indonesia</h1>
                     <p class="chakra-petch-bold">Digital TV service employs FTTH (fiber To The Home) technology and offers numerous Free To Air and Premium channels.</p>
                     <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium" data-mdb-ripple-init>Selengkapnya</a>
@@ -98,7 +129,6 @@
                     <button type="button" class="btn rounded-4">Article</button>
                 </div>
             </div>
-
             <div class="col"></div>
 
             <div class="col-auto ">
@@ -114,14 +144,84 @@
 </section>
 </br>
 <section>
-    <div class="card shadow" style="width: 18rem; margin-left: 115px;">
-        <img class="card-img-top" src="assets/img/blog/Media.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow rounded-0" style="width: 100%;">
+                    <img class="card-img-top rounded-0" src="assets/img/blog/Media.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow rounded-0" style="width: 100%;">
+                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow rounded-0" style="width: 100%;">
+                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card shadow rounded-0 " style="width: 100%;">
+                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 4.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow rounded-0" style="width: 100%;">
+                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 5.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow rounded-0" style="width: 100%;">
+                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 6.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 </br>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination " style="margin-left:100px;">
+        <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">></a>
+        </li>
+    </ul>
+</nav>
+
 <?= $this->endSection() ?>
