@@ -82,23 +82,27 @@
 <div class="container mt-4">
   <div class="row">
     <!-- Bagian artikel -->
-    <div class="col-md-8">
-      <h2 class="blog-title">PT SIMS has become the tenth decacorn company in Indonesia</h2>
-      <p class="text-muted">Jona Sodi - 23 Oct 2024</p>
-      <img src="assets/img/bgitem.png" class="img-fluid mb-3" alt="Article Image">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl condimentum id venenatis a condimentum vitae. Semper risus in hendrerit gravida rutrum quisque non tellus. Nec ullamcorper sit amet risus nullam.
-               Arcu ac tortor dignissim convallis aenean et tortor. Bibendum est ultricies integer quis auctor elit sed. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Nunc congue nisi vitae suscipit. Nibh mauris cursus mattis molestie a iaculis at. Purus ut faucibus pulvinar elementum integer enim. 
-               Massa enim nec dui nunc mattis enim ut.  netus et malesuada fames ac. Sodales neque sodales ut etiam sit.
-               Morbi tristique senectus et netus. Eros donec ac odio tempor. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Viverra nibh cras pulvinar mattis nunc sed. Tempus iaculis urna id volutpat lacus laoreet non. Adipiscing diam donec adipiscing tristique risus nec feugiat. Risus quis varius quam quisque id. Ultrices dui sapien eget mi proin. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. 
-               Sed elementum tempus egestas sed sed.</p>
+    <div class="col-lg-8">
+      <p><small>Blog / News</small></p>
+      <h1 class="fw-bold">PT SIMS has become the tenth decacorn company in Indonesia</h1>
+      <p class="text-muted">Admin SIMS - 30 April 2024</p>
+
+      <img src="assets/img/bgitem.png" alt="Gambar Utama" class="img-fluid my-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl condimentum id venenatis a condimentum vitae.
+        Semper risus in hendrerit gravida rutrum quisque non tellus. Nec ullamcorper sit amet risus nullam. Arcu ac tortor dignissim convallis aenean et tortor. Bibendum est ultricies integer quis auctor elit sed. A diam sollicitudin tempor id eu nisl nunc mi ipsum.
+        Nunc congue nisi vitae suscipit. Nibh mauris cursus mattis molestie a iaculis at. Purus ut faucibus pulvinar elementum integer enim. Massa enim nec dui nunc mattis enim ut.
+        Et netus et malesuada fames ac. Sodales neque sodales ut etiam sit.
+        Morbi tristique senectus et netus. Eros donec ac odio tempor. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Viverra nibh cras pulvinar mattis nunc sed. Tempus iaculis urna id volutpat lacus laoreet non. Adipiscing diam donec adipiscing tristique risus nec feugiat. Risus quis varius quam quisque id. Ultrices dui sapien eget mi proin. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Sed elementum tempus egestas sed sed.</p>
     </div>
 
+<br>
+<br>
     <!-- Bagian Share/For You -->
-    <div class="col-md-4">
+    <div class="col-lg-3">
       <!-- Bagian Share -->
-      <div class="share-section sticky-top">
+      <div class="share-section sticky-top p-3 bg-light" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <h5>Share</h5>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between mb-3">
           <!-- Ikon share -->
           <img src="assets/img/iconsosmed.png" alt="TikTok" class="img-fluid" style="margin-right: auto;">
 
@@ -106,25 +110,33 @@
         <hr>
         <!-- Bagian For You -->
         <h5>For You</h5>
-        <div class="for-you-section overflow-auto" style="max-height: 400px;">
-          <div class="for-you-item mb-3">
-            <img src="assets/img/bigdng.png" class="img-fluid" alt="For You Image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+        <div class="row for-you-section overflow-auto" style="max-height: 300px;">
+          <div class=" col d-flex align-items-center col-12 mb-3">
+            <img src="assets/img/bigdng.png" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card-body p-0">
+              <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
+            </div>
           </div>
-          <div class="for-you-item mb-3">
-            <img src="assets/img/bisunset.png" class="img-fluid" alt="For You Image">
-            <p>Lorem ipsum dolor sit amet...</p>
+
+          <div class=" col d-flex align-items-center col-12 mb-3">
+            <img src="assets/img/bisunset.png" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card-body p-0">
+              <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
+            </div>
           </div>
-          <div class="for-you-item mb-3">
-            <img src="assets/img/bitv.png" class="img-fluid" alt="For You Image">
-            <p>Lorem ipsum dolor sit amet...</p>
+
+          <div class="col d-flex align-items-center col-12 mb-3">
+            <img src="assets/img/bitv.png" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card-body p-0">
+              <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-</div>
 
 <?= $this->endSection() ?>

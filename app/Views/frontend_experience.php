@@ -131,7 +131,7 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Sarjito -->
-        <div class="container-fluid left-section" >
+        <div class="container left-section" >
             <div class="row mb-5 align-items-center" >
                 <div class="col-md-6 p-0">
                     <div>
@@ -159,7 +159,7 @@
         </div>
         <br>
         <!-- Konten ISP -->
-        <div class="container-fluid government-section" style="max-height: 512px; overflow: hidden;">
+        <div class="container government-section" style="max-height: 512px; overflow: hidden;">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 d-flex align-items-center justify-content-center text-center ">
                     <div>
@@ -190,7 +190,7 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Hotel -->
-        <div class="container-fluid left-section">
+        <div class="container left-section">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 p-0">
                     <div>
@@ -221,7 +221,7 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten apart -->
-        <div class="container-fluid government-section"style="max-height: 512px; overflow: hidden;">
+        <div class="container government-section"style="max-height: 512px; overflow: hidden;">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 d-flex align-items-center justify-content-center text-center ">
                     <div>
@@ -249,7 +249,7 @@
         <div class="gradient-line my-4"></div>
 
         <!-- Konten Education -->
-        <div class="container-fluid left-section">
+        <div class="container left-section">
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 p-0">
                     <div>

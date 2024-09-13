@@ -36,6 +36,7 @@ $routes->get('/experience', 'Experience::experience');
 $routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
+$routes->get('/contact_us', 'ContactUs::contact_us');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
