@@ -149,13 +149,14 @@
     } */
     .separator-wave {
         position: absolute;
-        width: 100%;
-        height: 610px;
-        left: 47%;
+        width: 50vw;
+        height: 100vh;
+        right:50%;
         /* margin-left: 630px; */
         background-image: url('assets/img/separatorwave.svg');
-        background-size: contain;
+        background-size: auto 100%;
         background-repeat: no-repeat;
+        background-position: right center;
 
     }
 
