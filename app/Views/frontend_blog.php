@@ -53,7 +53,7 @@
         margin-bottom: 2rem;
     }
 
-    .btn-group .btn.active {
+    .button-group .btn.active {
         background: linear-gradient(135deg, #ff416c, #4688f1);
         color: white;
         border: none;
@@ -105,7 +105,6 @@
     <div class="hero-overlay"></div>
     <div class="container" style="z-index: 1;">
         <div class="row">
-
             <div class="col">
                 <span class="badge badge-pill badge-light text-dark mb-3 px-3 py-2" style="border-radius:50px;">News</span>
                 <div class="hero-content">
@@ -123,7 +122,7 @@
     <div class="container mt-4">
         <div class="row align-items-center">
             <div class="col-auto">
-                <div class="btn-group" role="group" aria-label="Filter Options">
+                <div class="button-group" role="group" aria-label="Filter Options">
                     <button type="button" class="btn active rounded-4 ">Event</button>
                     <button type="button" class="btn rounded-4">News</button>
                     <button type="button" class="btn rounded-4">Article</button>
@@ -207,7 +206,7 @@
         </div>
     </div>
 </section>
-</br>
+</br>]
 
 <!-- Pagination -->
 <nav aria-label="Page navigation example">

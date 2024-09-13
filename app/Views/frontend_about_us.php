@@ -23,7 +23,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('assets/img/about-us/Hero-about-us.png');
+        background-image: url('assets/img/about-us/Hero-About.png');
         background-size: cover;
         background-position: center;
         color: white;
@@ -99,9 +99,17 @@
         width: 100%;
     }
 
-    .text-box{
+    .text-box {
         display: flex;
         margin-left: -300px;
+    }
+
+    .about-us {
+        background-image: url('assets/img/about-us/image 39.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 400px;
     }
 </style>
 <?= $this->endSection() ?>
@@ -146,11 +154,11 @@
         </div>
     </div>
 </section>
-<section>
+<section class="about-us">
     <div class="container-fluid p-0 position-relative">
         <div class="row">
             <div class="col">
-                <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
+                <!-- <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;"> -->
                 <div class="text-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, 0.5);">
                     <div class="container text-white" style="max-width: 800px;">
                         <h1 class="subtitle text-white chakra-petch-bold" style="text-align: justify; margin-bottom:40px;">The basic configuration of the Jogja Medianet HFC network</h1>
@@ -170,14 +178,15 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div class="black-background"></div>
-            </div>
-        </div>
     </div>
     </div>
 </section>
+
+<div class="row">
+    <div class="col">
+        <div class="black-background"></div>
+    </div>
+</div>
 
 <section>
     <div class="row">
@@ -197,11 +206,11 @@
         <div class="row">
             <div class="col text-start" style="width: 100%; max-width: 800px; margin: 0 auto;">
                 <h1 class="title chakra-petch-bold" style="margin-bottom: 20px; font-size: 48px;">Vision</h1>
-                <p class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
+                <p class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
                     The vision is the preeminent provider of multimedia/broadband networks and services in terms of content quality and breadth by offering sustainable ecosystem solution services.
                 </p>
                 <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px; font-size: 48px;">Mission</h1>
-                <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
+                <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
                     <li>Providing network solutions, services, and multimedia products with a focus on ecosystems with added value and the best quality.</li>
                     <li>Becoming a profitable, advanced, and learning company.</li>
                     <li>Providing network solutions, services, and multimedia products with smart, fast, and right quality as well as prices.</li>
@@ -213,7 +222,7 @@
                 </ul>
 
                 <h1 class="title chakra-petch-bold" style="margin-top: 30px; margin-bottom: 20px; font-size: 48px;">Business Strategies</h1>
-                <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
+                <ul class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
                     <li>Partnering strategically with respected local and national companies.</li>
                     <li>Investing in advanced infrastructure to enhance business services development and multimedia platforms across the nation.</li>
                     <li>Becoming a prominent partner in creating favorable investment conditions for multimedia service and network society.</li>
