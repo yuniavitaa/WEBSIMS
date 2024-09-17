@@ -72,7 +72,7 @@
           <a class="nav-link" href="<?= base_url('experience') ?>">Experiences</a>
         </li>
         <li class="nav-item"><a class="nav-link" href="<?= base_url('about_us') ?>">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?= base_url('contact_us') ?>">Contact Us</a></li>
         <li class="nav-item"><a class="nav-link" href="<?= base_url('blog') ?>">Blog</a></li>
       </ul>
     </div>
