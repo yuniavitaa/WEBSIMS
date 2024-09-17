@@ -154,11 +154,11 @@
         </div>
     </div>
 </section>
-<section class="about-us">
+<section >
     <div class="container-fluid p-0 position-relative">
         <div class="row">
             <div class="col">
-                <!-- <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;"> -->
+                <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
                 <div class="text-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, 0.5);">
                     <div class="container text-white" style="max-width: 800px;">
                         <h1 class="subtitle text-white chakra-petch-bold" style="text-align: justify; margin-bottom:40px;">The basic configuration of the Jogja Medianet HFC network</h1>
@@ -175,7 +175,7 @@
                             Infrastructure: Currently, Jogja’s entire service infrastructure utilizes Fiber Optics to reach residences, in an endeavor to introduce new products and services with a new vision as the leading digital lifestyle in Yogyakarta, the new Lifemedia Brand is introduced.
                         </p>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
     </div>
@@ -188,8 +188,9 @@
     </div>
 </div>
 
+
 <section>
-    <div class="row">
+    <div class="row" >
         <div class="col-sm-6 p-0" style="margin-top:-5px;">
             <img src="assets/img/about-us/vision.png" alt="Vision & Mission img" class="w-100 h-100 object-fit-cover">
         </div>
