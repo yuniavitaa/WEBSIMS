@@ -53,6 +53,9 @@
         margin-bottom: 2rem;
     }
 
+    .rounded-button{
+        border-radius: 50px;
+    }
     .button-group .btn.active {
         background: linear-gradient(135deg, #ff416c, #4688f1);
         color: white;
@@ -123,9 +126,9 @@
         <div class="row align-items-center">
             <div class="col-auto">
                 <div class="button-group" role="group" aria-label="Filter Options">
-                    <button type="button" class="btn active rounded-4 ">Event</button>
-                    <button type="button" class="btn rounded-4">News</button>
-                    <button type="button" class="btn rounded-4">Article</button>
+                    <button type="button" class="btn rounded-button ">Event</button>
+                    <button type="button" class="btn active rounded-button">News</button>
+                    <button type="button" class="btn rounded-button">Article</button>
                 </div>
             </div>
             <div class="col"></div>
