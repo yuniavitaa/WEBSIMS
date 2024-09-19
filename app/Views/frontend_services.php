@@ -339,7 +339,7 @@
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('assets/img/rect14.svg');
+        background-image: url('assets/img/layer1.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
