@@ -40,7 +40,7 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        /* z-index: 1; */
+        
     }
 
     .hero-content h1 {
@@ -53,9 +53,10 @@
         margin-bottom: 2rem;
     }
 
-    .rounded-button{
+    .rounded-button {
         border-radius: 50px;
     }
+
     .button-group .btn.active {
         background: linear-gradient(135deg, #ff416c, #4688f1);
         color: white;
@@ -98,6 +99,21 @@
     .page-item .page-link:focus {
         outline: none;
         box-shadow: 0 0 6px rgba(70, 136, 241, 0.5);
+    }
+
+    .pagination .page-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 5px;
+        border: none;
+    }
+
+    .pagination .active .page-link {
+        border: none;
     }
 </style>
 <?= $this->endSection() ?>
@@ -213,15 +229,15 @@
 
 <!-- Pagination -->
 <nav aria-label="Page navigation example">
-    <ul class="pagination " style="margin-left:100px;">
+    <ul class="pagination" style="margin-left:100px;">
         <li class="page-item active">
-            <a class="page-link" href="#">1</a>
+            <a class="page-link" href="#" style="background: linear-gradient(to right, #a12d45, #4660e6); color: white; border-radius: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.2); width: 70px; height: 40px;">1</a>
         </li>
         <li class="page-item">
-            <a class="page-link" href="#">2</a>
+            <a class="page-link" href="#" style="border-radius: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 70px; height: 40px;">2</a>
         </li>
         <li class="page-item">
-            <a class="page-link" href="#">></a>
+            <a class="page-link" href="#" style="border-radius: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 70px; height: 40px;">></a>
         </li>
     </ul>
 </nav>

@@ -131,6 +131,17 @@
         height: 100%;
         background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     }
+
+    .gradient-overlay-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        pointer-events: none;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -157,7 +168,7 @@
     <div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
         <div class="row">
             <div class="col text-start" style="width: 100%; max-width: 800px; margin: 0 auto;">
-                <h1 class="title chakra-petch-bold" style=" margin-bottom: 20px;">A BRIEF STORY</h1>
+                <h1 class="title chakra-petch-bold" style="margin-bottom: 20px;">A BRIEF STORY</h1>
                 <p class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
                     PT. SaranaInsan MudaSelaras, a company that provides multimedia services, debuted the brand Jogja Medianet in Yogyakarta and its environs to support the vision of the city of Jogja, namely "Jogja Never Ending Asia."
                 </p>
@@ -174,6 +185,7 @@
         </div>
     </div>
 </section>
+
 <section>
     <div class="container-fluid p-0 position-relative">
         <div class="row">
@@ -210,7 +222,6 @@
         <div class="black-background"></div>
     </div>
 </div>
-
 
 <section>
     <div class="row">
