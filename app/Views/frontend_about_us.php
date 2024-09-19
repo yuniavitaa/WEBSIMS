@@ -111,6 +111,37 @@
         width: 100%;
         height: 400px;
     }
+
+    .text-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        /* Gradient height, adjust as needed */
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .gradient-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .gradient-overlay-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        pointer-events: none;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -137,7 +168,7 @@
     <div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
         <div class="row">
             <div class="col text-start" style="width: 100%; max-width: 800px; margin: 0 auto;">
-                <h1 class="title chakra-petch-bold" style=" margin-bottom: 20px;">A BRIEF STORY</h1>
+                <h1 class="title chakra-petch-bold" style="margin-bottom: 20px;">A BRIEF STORY</h1>
                 <p class="subtitle text-white chakra-petch-regular" style="text-align: justify; line-height: 1.8;">
                     PT. SaranaInsan MudaSelaras, a company that provides multimedia services, debuted the brand Jogja Medianet in Yogyakarta and its environs to support the vision of the city of Jogja, namely "Jogja Never Ending Asia."
                 </p>
@@ -154,31 +185,35 @@
         </div>
     </div>
 </section>
-<section >
+
+<section>
     <div class="container-fluid p-0 position-relative">
         <div class="row">
             <div class="col">
-                <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
-                <div class="text-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, 0.5);">
-                    <div class="container text-white" style="max-width: 800px;">
-                        <h1 class="subtitle text-white chakra-petch-bold" style="text-align: justify; margin-bottom:40px;">The basic configuration of the Jogja Medianet HFC network</h1>
-                        <p class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
-                            In January 2002, during the ATF (Asean Tourism Forum) international event held at the Jogja Expo Center (JEC), Jogja Medianet began offering its services.
-                        </p>
-                        <p class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
-                            The JEC Building has then become Multimedia Services Ready supported by the HFC infrastructure of Jogja Medianet.
-                        </p>
-                        <p class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
-                            In accordance with the progression of telecommunications technology, PT SIMS is migrating its services to FTTH (Fiber To The Home).
-                        </p>
-                        <p class="subtitle text-white chakra-petch-regular" style="text-align: justify;">
-                            Infrastructure: Currently, Jogja’s entire service infrastructure utilizes Fiber Optics to reach residences, in an endeavor to introduce new products and services with a new vision as the leading digital lifestyle in Yogyakarta, the new Lifemedia Brand is introduced.
-                        </p>
+                <div class="position-relative">
+                    <img src="assets/img/about-us/image 39.png" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
+                    <!-- Gradient overlay -->
+                    <div class="gradient-overlay"></div>
+                    <div class="text-overlay position-absolute bottom-0 start-0 w-100" style="height: 30%; margin-bottom : 100px;">
+                        <div class="container text-white" style="max-width: 800px; z-index:4;">
+                            <h1 class="subtitle text-white chakra-petch-bold" style="text-align: start; margin-bottom:40px;">The basic configuration of the Jogja Medianet HFC network</h1>
+                            <p class="subtitle text-white chakra-petch-regular" style="text-align: start;">
+                                In January 2002, during the ATF (Asean Tourism Forum) international event held at the Jogja Expo Center (JEC), Jogja Medianet began offering its services.
+                            </p>
+                            <p class="subtitle text-white chakra-petch-regular" style="text-align: start;">
+                                The JEC Building has then become Multimedia Services Ready supported by the HFC infrastructure of Jogja Medianet.
+                            </p>
+                            <p class="subtitle text-white chakra-petch-regular" style="text-align: start;">
+                                In accordance with the progression of telecommunications technology, PT SIMS is migrating its services to FTTH (Fiber To The Home).
+                            </p>
+                            <p class="subtitle text-white chakra-petch-regular" style="text-align: start;">
+                                Infrastructure. Currently, Jogja’s entire service infrastructure utilizes Fiber Optics to reach residences, in an endeavor to introduce new products and services with a new vision as the leading digital lifestyle in Yogyakarta, the new Lifemedia Brand is introduced.
+                            </p>
+                        </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -188,9 +223,8 @@
     </div>
 </div>
 
-
 <section>
-    <div class="row" >
+    <div class="row">
         <div class="col-sm-6 p-0" style="margin-top:-5px;">
             <img src="assets/img/about-us/vision.png" alt="Vision & Mission img" class="w-100 h-100 object-fit-cover">
         </div>
