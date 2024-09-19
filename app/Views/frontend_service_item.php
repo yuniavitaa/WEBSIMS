@@ -1,4 +1,5 @@
 <?= $this->extend('layout/frontend_template') ?>
+
 <?= $this->section('style') ?>
 <style>
     body {
@@ -61,16 +62,18 @@
         background-size: cover;
         background-position: center;
         height: auto;
+        padding-top: 50px;
+        /* Tambahkan padding agar gambar tidak terlalu tinggi */
     }
 
     .info-box {
         position: absolute;
-        margin-top: 200px;
+        top: 20%;
+        /* Mengatur posisi top lebih tinggi */
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding-right: 30px;
         padding-left: 30px;
-        top: 55vh;
-        left: 50%;
-        transform: translateX(-50%);
         background: rgba(255, 255, 255, 0.95);
         padding-top: 30px;
         padding-bottom: 30px;
@@ -78,7 +81,8 @@
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
         width: 60%;
-        height: 60%;
+        height: auto;
+        max-width: 600px;
         z-index: 2;
     }
 
@@ -134,30 +138,15 @@
         z-index: 3;
     }
 
-    /* Wave separator
-    .wave-container {
-        position: relative;
-    }
-
-    .wave {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        z-index: 1;
-    } */
     .separator-wave {
         position: absolute;
         width: 50vw;
         height: 100vh;
-        right:50%;
-        /* margin-left: 630px; */
+        right: 50%;
         background-image: url('assets/img/separatorwave.svg');
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: right center;
-
     }
 
     .separator-arrow-down-subtractive {
@@ -169,9 +158,8 @@
         background-image: url('assets/img/separatorpaytv.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        z-index: 2;
     }
-
-
 
     .title {
         font-size: 4rem;
@@ -182,7 +170,6 @@
         font-family: 'Arcade Interlaced', sans-serif;
     }
 
-
     .subtitle {
         font-size: 1.5rem;
         color: #fff;
@@ -190,7 +177,6 @@
         letter-spacing: 2px;
         font-family: 'Chakra Petch', sans-serif;
     }
-
 
     .cta-button {
         padding: 15px 30px;
@@ -202,7 +188,6 @@
         text-transform: uppercase;
         transition: all 0.3s ease;
         font-family: 'Chakra Petch', sans-serif;
-
     }
 
     .cta-button:hover {
@@ -236,6 +221,8 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
+
+<!-- Hero Section -->
 <section class="hero-section">
     <div class="container" style="z-index: 1;">
         <div class="row">
@@ -243,7 +230,7 @@
                 <div class="hero-content text-start" style="padding:0px 250px;">
                     <h1 class="chakra-petch-bold">Pay TV Services</h1>
                     <p class="arcade-interlaced-regular">DIGITAL TV SERVICE EMPLOYS FTTH TECHNOLOGY OFFERS NUMEROUS FREE TO AIR AND PREMIUM CHANNELS</p>
-                    </br>
+                    <br>
                     <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium">Selengkapnya</a>
                 </div>
             </div>
@@ -251,99 +238,43 @@
     </div>
 </section>
 
-<section class="wood-background">
+<!-- Wood Background Section with Info Box -->
+<section class="wood-background position-relative">
     <div class="container-fluid" style="padding: 0;">
         <div class="row">
             <img src="assets/img/image 25.png" alt="Service Item" style="width: 100%; display: block;">
         </div>
     </div>
-</section>
-
-<div class="info-box rounded-0" style="padding: 20px; width: 50%; height: auto; max-width: 600px;">
-    <div class="icon-container chakra-petch-regular" style="margin-bottom: 15px;">
-        <div class="icon-item" style="flex: 1; padding: 5px;">
-            <img src="assets/img/pay-tv/icons-tv.png" alt="Seamless" style="max-width: 40px; margin-bottom: 5px;">
-            <h3 style="font-size: 1rem; margin-bottom: 5px;">Seamless</h3>
-        </div>
-        <div class="icon-item" style="flex: 1; padding: 5px;">
-            <img src="assets/img/pay-tv/icons1-tv.png" alt="Clear" style="max-width: 40px; margin-bottom: 5px;">
-            <h3 style="font-size: 1rem; margin-bottom: 5px;">Clear</h3>
-        </div>
-        <div class="icon-item" style="flex: 1; padding: 5px;">
-            <img src="assets/img/pay-tv/icons2-tv.png" alt="Immersive" style="max-width: 40px; margin-bottom: 5px;">
-            <h3 style="font-size: 1rem; margin-bottom: 5px;">Immersive</h3>
-        </div>
-        <div class="icon-item" style="flex: 1; padding: 5px;">
-            <img src="assets/img/pay-tv/icons3-tv.png" alt="Extensive" style="max-width: 40px; margin-bottom: 5px;">
-            <h3 style="font-size: 1rem; margin-bottom: 5px;">Extensive</h3>
-        </div>
-    </div>
-    <div class="separator-line rounded-1" style="width: 50%; margin: 15px auto;"></div>
-    <section class="darker-grotesque-regular" style="font-size: 0.9rem; line-height: 1.4;">
-        <p>Our Pay TV Services leverage leading FTTH</p>
-        <br>
-        <p>(Fiber To The Home) technology to deliver amazing</p>
-        <br>
-        <p>digital television experiences directly to your doorstep.</p>
-    </section>
-</div>
-
-
-<section>
-    <div class="container-fluid">
-        <div class="separator-arrow-down-subtractive align-self-end"></div>
-        <div class="row">
-            <div class="col-sm-6 p-0">
-                <div class="separator-wave"></div>
-                <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
+    <div class="info-box rounded-0 position-absolute" style="top: 20%; left: 50%; transform: translate(-50%, -50%); padding: 20px; width: 50%; height: auto; max-width: 600px;">
+        <div class="icon-container chakra-petch-regular" style="margin-bottom: 15px;">
+            <div class="icon-item" style="flex: 1; padding: 5px;">
+                <img src="assets/img/pay-tv/icons-tv.png" alt="Seamless" style="max-width: 40px; margin-bottom: 5px;">
+                <h3 style="font-size: 1rem; margin-bottom: 5px;">Seamless</h3>
             </div>
-            <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
-                <h1 class="text-end me-5 mb-3 fs-1 chakra-petch-bold" style="color: #b71c1c; position: relative; top: -200px; font-weight:700;">Why?</h1>
-                <div class="text-box p-4 rounded-0 position-box">
-
-                    <p class="chakra-petch-light">
-                        With a vast array of Free To Air channels alongside an enticing selection of Premium channels,
-                        our service ensures that you have access to a diverse range of high-quality content,
-                        catering to every interest and preference.
-                    </p>
-                    <button class="btn btn-outline-dark">SELENGKAPNYA</button>
-                </div>
+            <div class="icon-item" style="flex: 1; padding: 5px;">
+                <img src="assets/img/pay-tv/icons1-tv.png" alt="Clear" style="max-width: 40px; margin-bottom: 5px;">
+                <h3 style="font-size: 1rem; margin-bottom: 5px;">Clear</h3>
+            </div>
+            <div class="icon-item" style="flex: 1; padding: 5px;">
+                <img src="assets/img/pay-tv/icons2-tv.png" alt="Immersive" style="max-width: 40px; margin-bottom: 5px;">
+                <h3 style="font-size: 1rem; margin-bottom: 5px;">Immersive</h3>
+            </div>
+            <div class="icon-item" style="flex: 1; padding: 5px;">
+                <img src="assets/img/pay-tv/icons3-tv.png" alt="Extensive" style="max-width: 40px; margin-bottom: 5px;">
+                <h3 style="font-size: 1rem; margin-bottom: 5px;">Extensive</h3>
             </div>
         </div>
+        <div class="separator-line rounded-1" style="width: 50%; margin: 15px auto;"></div>
+        <section class="darker-grotesque-regular" style="font-size: 0.9rem; line-height: 1.4;">
+            <p>Our Pay TV Services leverage leading FTTH</p>
+            <br>
+            <p>(Fiber To The Home) technology to deliver amazing</p>
+            <br>
+            <p>digital television experiences directly to your doorstep.</p>
+        </section>
     </div>
 </section>
 
-<section>
-    <div class="row">
-        <div class="col">
-        
-        </div>
-    </div>
-</section>
+<!-- Additional Sections Here -->
 
-
-<div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
-    <div class="row">
-        <div class="col text-center">
-            <h1 class="title">GET READY</h1>
-            <p class="subtitle">Experience the future of television</p>
-            <button class="cta-button">GAME ON</button>
-        </div>
-    </div>
-</div>
-
-
-<?= $this->endSection() ?>
-
-<?= $this->section('script') ?>
-<script>
-    document.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
 <?= $this->endSection() ?>
