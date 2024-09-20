@@ -111,7 +111,7 @@
 
 <!-- Social Media Section -->
 <section class="social-media py-5 text-center" style="background-color: #000; color: white;">
-    <h3 class="arcade-interlaced-bold">TEMUKAN KAMI!</h3>
+    <h3 class="arcade-interlaced-semibold">TEMUKAN KAMI!</h3>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
