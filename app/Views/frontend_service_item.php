@@ -274,7 +274,59 @@
         </section>
     </div>
 </section>
+<section>
+    <div class="container-fluid">
+        <div class="separator-arrow-down-subtractive align-self-end"></div>
+        <div class="row">
+            <div class="col-sm-6 p-0">
+                <div class="separator-wave"></div>
+                <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
+                <h1 class="text-end me-5 mb-3 fs-1 chakra-petch-bold" style="color: #b71c1c; position: relative; top: -200px; font-weight:700;">Why?</h1>
+                <div class="text-box p-4 rounded-0 position-box">
 
-<!-- Additional Sections Here -->
+                    <p class="chakra-petch-light">
+                        With a vast array of Free To Air channels alongside an enticing selection of Premium channels,
+                        our service ensures that you have access to a diverse range of high-quality content,
+                        catering to every interest and preference.
+                    </p>
+                    <button class="btn btn-outline-dark">SELENGKAPNYA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        <div class="col">
 
+        </div>
+    </div>
+</section>
+<div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="title">GET READY</h1>
+            <p class="subtitle">Experience the future of television</p>
+            <button class="cta-button">GAME ON</button>
+        </div>
+    </div>
+</div>
+
+
+
+<?= $this->endSection() ?>
+
+<?= $this->section('script') ?>
+<script>
+    document.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 <?= $this->endSection() ?>

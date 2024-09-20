@@ -524,6 +524,7 @@
         <div class="row">
             <div class="col">
                 <div class="text-center mb-5 " style="margin-top: 250px;">
+                    
                     <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
                     <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
                 </div>
