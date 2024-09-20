@@ -337,12 +337,14 @@
     .separator-arrow-down-alt {
         position: absolute;
         width: 100%;
-        height: 128px;
+        height: 200px;
         left: 0;
         background-image: url('assets/img/layer1.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top:-9px;
     }
+  
 </style>
 <?= $this->endSection() ?>
 
@@ -523,19 +525,18 @@
     <div class="container ">
         <div class="row">
             <div class="col">
-                <div class="text-center mb-5 " style="margin-top: 250px;">
+                <div class="text-center mb-6 " style="margin-top: 250px;">
                     <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
+                    <div class="separator-arrow-down-alt align-self-end"></div>
                     <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
                 </div>
             </div>
         </div>
     </div>
-    <section class="bg-black text-white d-flex">
-        <div class="separator-arrow-down-alt align-self-end"></div>
-    </section>
+  
 </section>
 
-
+<br>
 <div class="container">
     <div class="row">
         <div class="col-md-3 ">
