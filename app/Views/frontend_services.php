@@ -334,6 +334,19 @@
         background-image: url('assets/img/lay1.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top:-185px;
+        
+      
+    } 
+    .separator-arrow-down-custom{
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0;
+        background-image: url('assets/img/lay1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top:-185px;
         
       
     }
@@ -366,6 +379,8 @@
                 transparent 50%);
         padding: 96px 0;
     }
+
+    
 </style>
 <?= $this->endSection() ?>
 
@@ -599,27 +614,16 @@
 
 <section class="custom-section text-white d-flex" style="background-color: #000; color: white;">
     <div class="separator-arrow-down-custom align-self-start"></div>
-    <div class="container custom-section text-white d-flex" style="background-color: #000; color: white;">
+    <div class="container text-center">
         <div class="row">
             <div class="col">
-                <div class="explore text-center" style="margin-top: 250px; padding-top:128px; padding-bottom:128px;">
-                    <h1>Get in touch with us today and explore how our service can elevate your multimedia experience</h1>
+                <div>
+                    <h1 class="text-center">Get in touch with us today and explore how our service <br> can elevate your multimedia experience</h1>
                     <a href="#" class="btn btn-outline-light btn-lg ">Hubungi Kami</a>
                 </div>
             </div>
         </div>
-    </div>
-
+        </div>
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <?= $this->endSection() ?>
