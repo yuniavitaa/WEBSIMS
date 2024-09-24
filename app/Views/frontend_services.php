@@ -2,7 +2,7 @@
 
 <?= $this->section('style') ?>
 <style>
-    body{
+    body {
         font-family: 'Chakra Petch', sans-serif;
         margin: 0;
         padding: 0;
@@ -314,6 +314,7 @@
         font-style: normal;
     }
 
+    /* atas */
     .separator-arrow-down {
         position: absolute;
         width: 100%;
@@ -324,14 +325,17 @@
         background-repeat: no-repeat;
     }
 
-    .separator-arrow-down {
+    /* bawah */
+    .separator-arrow-down-custom{
         position: absolute;
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('assets/img/separatorsims.svg');
+        background-image: url('assets/img/lay1.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        
+      
     }
 
     .separator-arrow-down-alt {
@@ -342,9 +346,26 @@
         background-image: url('assets/img/layer1.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top:-9px;
+        margin-top: -7px;
     }
-  
+    .custom-section {
+        background-image: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.01),
+                rgba(255, 255, 255, 0) 85%),
+            radial-gradient(ellipse at center left,
+                rgba(128, 0, 128, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 128, 0, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(255, 192, 203, 0.15),
+                transparent 50%);
+        padding: 96px 0;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -526,56 +547,59 @@
         <div class="row">
             <div class="col">
                 <div class="text-center mb-6 " style="margin-top: 250px;">
-                <div class="text-center mb-5 " style="margin-top: 250px;">
-                    
-                    <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
-                    <div class="separator-arrow-down-alt align-self-end"></div>
-                    <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
+                    <div class="text-center mb-5 " style="margin-top: 250px;">
+
+                        <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
+                        <div class="separator-arrow-down-alt align-self-end"></div>
+                        <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    
-</section>
 
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 ">
-            <div class="service-card">
-                <img src="assets/img/webapp.png" alt="Web Application Icon">
-                <h3>Web Application</h3>
-                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+</section>
+<div class="middle-red-section" style="background-color: #4D1B28; padding: 100px;">
+    <br>
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-3 ">
+                <div class="service-card">
+                    <img src="assets/img/webapp.png" alt="Web Application Icon">
+                    <h3>Web Application</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-card">
-                <img src="assets/img/mobileapp.png" alt="Mobile Application Icon">
-                <h3>Mobile Application</h3>
-                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="assets/img/mobileapp.png" alt="Mobile Application Icon">
+                    <h3>Mobile Application</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-card">
-                <img src="assets/img/webdesign.png" alt="Web Design Icon">
-                <h3>Web Design</h3>
-                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="assets/img/webdesign.png" alt="Web Design Icon">
+                    <h3>Web Design</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-card">
-                <img src="assets/img/payment.png" alt="Payment Gateway Icon">
-                <h3>Payment Gateway</h3>
-                <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <img src="assets/img/payment.png" alt="Payment Gateway Icon">
+                    <h3>Payment Gateway</h3>
+                    <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<section class="bg-dark text-white d-flex">
-    <div class="separator-arrow-down align-self-start"></div>
-    <div class="container">
+<section class="custom-section text-white d-flex" style="background-color: #000; color: white;">
+    <div class="separator-arrow-down-custom align-self-start"></div>
+    <div class="container custom-section text-white d-flex" style="background-color: #000; color: white;">
         <div class="row">
             <div class="col">
                 <div class="explore text-center" style="margin-top: 250px; padding-top:128px; padding-bottom:128px;">
@@ -585,6 +609,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 
