@@ -141,12 +141,13 @@
     .separator-wave {
         position: absolute;
         width: 50vw;
-        height: 100vh;
+        height: 93vh;
         right: 50%;
         background-image: url('assets/img/separatorwave.svg');
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: right center;
+
     }
 
     .separator-arrow-down-subtractive {
@@ -158,7 +159,7 @@
         background-image: url('assets/img/separatorpaytv.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        z-index: 2;
+        z-index: 10;
     }
 
     .title {
@@ -276,7 +277,7 @@
 </section>
 <section>
     <div class="container-fluid">
-        <div class="separator-arrow-down-subtractive align-self-end"></div>
+        <div class="separator-arrow-down-subtractive align-self-end" ></div>
         <div class="row">
             <div class="col-sm-6 p-0">
                 <div class="separator-wave"></div>
@@ -297,22 +298,18 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="row">
-        <div class="col">
 
+<section>
+    <div class="container-fluid gradient" style="background-color:#000; padding: 60px 0; z-index:1000;">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="title">GET READY</h1>
+                <p class="subtitle">Experience the future of television</p>
+                <button class="cta-button">GAME ON</button>
+            </div>
         </div>
     </div>
 </section>
-<div class="container-fluid gradient" style="background-color:#000; padding: 60px 0;">
-    <div class="row">
-        <div class="col text-center">
-            <h1 class="title">GET READY</h1>
-            <p class="subtitle">Experience the future of television</p>
-            <button class="cta-button">GAME ON</button>
-        </div>
-    </div>
-</div>
 
 
 
