@@ -391,7 +391,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="row w-100">
-                    <div class="col-sm-4 d-flex flex-column justify-content-center">
+                    <div class="col-md-4 d-flex flex-column justify-content-center order-2 order-lg-1">
                         <div class="text-start">
                             <p>Experience</p>
                             <div class="text-uppercase">
@@ -408,14 +408,14 @@
                             <p>April 2024</p>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-8 order-1 order-lg-2">
                         <img src="assets/img/Media.png" alt="Slide 2" class="w-100 object-fit-cover">
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row w-100">
-                    <div class="col-sm-4 d-flex flex-column justify-content-center">
+                    <div class="col-sm-4 d-flex flex-column justify-content-center order-2 order-lg-2">
                         <div class="text-start">
                             <p>Experience</p>
                             <div class="text-uppercase">
@@ -431,7 +431,7 @@
                             <p>April 2024</p>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-md-8 order 2 order-lg-1">
                         <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
                     </div>
                 </div>
