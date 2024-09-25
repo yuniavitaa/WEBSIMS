@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="col-md-6 p-0">
-            <img src="assets/img/exmedia.png" alt="Government Image" style="object-fit: cover;" >
+            <img src="<? ('assets/img/exmedia.png') ?>" alt="Government Image" style="object-fit: cover;" >
         </div>
     </div>
 </div>
@@ -121,7 +121,7 @@
 <div class=" container">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <img src="assets/img/exgev.png" alt="" style="width: 80%;">
+                    <img src="<? ('assets/img/exgev.png') ?>" alt="" style="width: 80%;">
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
             <div class="row mb-5 align-items-center" >
                 <div class="col-md-6 p-0">
                     <div>
-                        <img src="assets/img/exsarjito.png" alt="Government Image" class="img-fluid government-image">
+                        <img src="<? ('assets/img/exsarjito.png') ?>" alt="Government Image" class="img-fluid government-image">
                     </div>
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-start" style="padding-left: 40px;">
@@ -153,7 +153,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <img src="assets/img/exlogosarjito.png" alt="" style="width: 20%;">
+                    <img src="<? ('assets/img/exlogosarjito.png') ?>" alt="" style="width: 20%;">
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <img src="assets/img/exisp.png" alt="Government Image" style="object-fit: cover;">
+                    <img src="<? ('assets/img/exisp.png') ?>" alt="Government Image" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -179,8 +179,8 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex flex-column align-items-center">
-                    <img src="assets/img/exlogoisp.png" alt="" style="width: 60%;">
-                    <img src="assets/img/exlogoisp2.png" alt="" style="width: 60%;">
+                    <img src="<? ('assets/img/exlogoisp.png') ?>" alt="" style="width: 60%;">
+                    <img src="<? ('assets/img/exlogoisp2.png') ?>" alt="" style="width: 60%;">
                 </div>
             </div>
         </div>
@@ -194,7 +194,7 @@
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 p-0">
                     <div>
-                        <img src="assets/img/exhotel.png" alt="Government Image" class="img-fluid government-image">
+                        <img src="<? ('assets/img/exhotel.png')?>" alt="Government Image" class="img-fluid government-image">
                     </div>
                 </div>
                 <div class="col-md-6 flex-column justify-content-start" style="padding-left: 40px;">
@@ -211,7 +211,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <img src="assets/img/exlogohotel.png" alt="" style="width: 50%;">
+                    <img src="<? ('assets/img/exlogohotel.png') ?>" alt="" style="width: 50%;">
                 </div>
             </div>
         </div>
@@ -230,7 +230,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <img src="assets/img/exaprt.png" alt="Government Image" style="object-fit: cover;">
+                    <img src="<? ('assets/img/exaprt.png') ?> " alt="Government Image" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -239,7 +239,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex flex-column align-items-center">
-                    <img src="assets/img/exlogoapart.png" alt="" style="width: 20%;">
+                    <img src="<? ('assets/img/exlogoapart.png') ?>" alt="" style="width: 20%;">
                 </div>
             </div>
         </div>
@@ -253,7 +253,7 @@
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6 p-0">
                     <div>
-                        <img src="assets/img/exedu.png" alt="Government Image" class="img-fluid government-image">
+                        <img src="<? ('assets/img/exedu.png') ?>" alt="Government Image" class="img-fluid government-image">
                     </div>
                 </div>
                 <div class="col-md-6 flex-column justify-content-start" style="padding-left: 40px;">
@@ -268,7 +268,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <img src="assets/img/exlogoedu.png" alt="" style="width: 50%;">
+                    <img src="<? ('assets/img/exlogoedu.png') ?>" alt="" style="width: 50%;">
                 </div>
             </div>
         </div>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <img src="assets/img/exbank.png" alt="Government Image" style="object-fit: cover;">
+                    <img src="<? ('assets/img/exbank.png') ?>" alt="Government Image" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -297,7 +297,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex flex-column align-items-center">
-                    <img src="assets/img/exlogobank.png" alt="" style="width: 60%;">
+                    <img src="<? ('assets/img/exlogobank.png') ?>" alt="" style="width: 60%;">
                 </div>
             </div>
         </div>
