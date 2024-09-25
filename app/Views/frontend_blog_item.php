@@ -58,7 +58,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-white shadow-lg">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
+      <img src="<? ('assets/img/SIMS.png') ?>" height="30" alt="SIMS Logo" loading="lazy" />
     </a>
     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -87,7 +87,7 @@
       <h1 class="fw-bold">PT SIMS has become the tenth decacorn company in Indonesia</h1>
       <p class="text-muted">Admin SIMS - 30 April 2024</p>
 
-      <img src="assets/img/bgitem.png" alt="Gambar Utama" class="img-fluid my-4">
+      <img src="<? ('assets/img/bgitem.png') ?>" alt="Gambar Utama" class="img-fluid my-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl condimentum id venenatis a condimentum vitae.
         Semper risus in hendrerit gravida rutrum quisque non tellus. Nec ullamcorper sit amet risus nullam. Arcu ac tortor dignissim convallis aenean et tortor. Bibendum est ultricies integer quis auctor elit sed. A diam sollicitudin tempor id eu nisl nunc mi ipsum.
         Nunc congue nisi vitae suscipit. Nibh mauris cursus mattis molestie a iaculis at. Purus ut faucibus pulvinar elementum integer enim. Massa enim nec dui nunc mattis enim ut.
@@ -104,7 +104,7 @@
         <h5>Share</h5>
         <div class="d-flex justify-content-between mb-3">
           <!-- Ikon share -->
-          <img src="assets/img/iconsosmed.png" alt="TikTok" class="img-fluid" style="margin-right: auto;">
+          <img src="<? ('assets/img/iconsosmed.png') ?>" alt="TikTok" class="img-fluid" style="margin-right: auto;">
 
         </div>
         <hr>
@@ -112,21 +112,21 @@
         <h5>For You</h5>
         <div class="row for-you-section overflow-auto" style="max-height: 300px;">
           <div class=" col d-flex align-items-center col-12 mb-3">
-            <img src="assets/img/bigdng.png" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <img src="<? ('assets/img/bigdng.png') ?>" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <div class="card-body p-0">
               <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
             </div>
           </div>
 
           <div class=" col d-flex align-items-center col-12 mb-3">
-            <img src="assets/img/bisunset.png" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <img src="<? ('assets/img/bisunset.png') ?>" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <div class="card-body p-0">
               <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
             </div>
           </div>
 
           <div class="col d-flex align-items-center col-12 mb-3">
-            <img src="assets/img/bitv.png" class="img-fluid" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <img src="<? ('assets/img/bitv.png" class="img-fluid') ?>" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <div class="card-body p-0">
               <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
             </div>

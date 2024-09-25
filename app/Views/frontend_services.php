@@ -115,7 +115,6 @@
         height: 200px;
         overflow: hidden;
         border: 1px solid #ddd;
-        border-radius: 10px;
         cursor: pointer;
         transition: transform 0.3s;
         overflow: hidden;
@@ -320,35 +319,10 @@
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('assets/img/separatorsims.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    /* bawah */
-    .separator-arrow-down-custom{
-        position: absolute;
-        width: 100%;
-        height: 128px;
-        left: 0;
         background-image: url('assets/img/lay1.svg');
         background-size: contain;
         background-repeat: no-repeat;
         margin-top:-185px;
-        
-      
-    } 
-    .separator-arrow-down-custom{
-        position: absolute;
-        width: 100%;
-        height: 128px;
-        left: 0;
-        background-image: url('assets/img/lay1.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top:-185px;
-        
-      
     }
 
     .separator-arrow-down-alt {
@@ -359,9 +333,40 @@
         background-image: url('assets/img/layer1.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -7px;
+        margin-top:75px;
     }
+     /* bawah */
+     .separator-arrow-down-custom{
+        position: absolute;
+        width: 100%;
+        height: 128px;
+        left: 0;
+        background-image: url('assets/img/lay1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top:-185px;
+
+    } 
+    
     .custom-section {
+        background-image: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.01),
+                rgba(255, 255, 255, 0) 85%),
+            radial-gradient(ellipse at center left,
+                rgba(128, 0, 128, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 128, 0, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(255, 192, 203, 0.15),
+                transparent 50%);
+        padding: 96px 0;
+    }
+    .alt-section{
         background-image: linear-gradient(180deg,
                 rgba(255, 255, 255, 0.01),
                 rgba(255, 255, 255, 0) 85%),
@@ -407,7 +412,7 @@
             <div class="swiper-slide">
                 <div class="row">
                     <div class="col-sm-8">
-                        <img src="assets/img/swiperpaytv.png" alt="Slide 1" class="d-block w-100">
+                        <img src="<? ('assets/img/swiperpaytv.png') ?>" alt="Slide 1" class="d-block w-100">
                     </div>
                     <div class="col-sm-4">
                         <div class="d-flex align-items-center h-100 ">
@@ -422,7 +427,7 @@
             <div class="swiper-slide">
                 <div class="row">
                     <div class="col-sm-8">
-                        <img src="assets/img/swiperpaytv.png" alt="Slide 2" class="d-block w-100">
+                    <img src="<?= base_url('assets/img/swiperpaytv.png') ?>" alt="Slide 2" class="d-block w-100">
                     </div>
                     <div class="col-sm-4">
                         <div class="d-flex align-items-center h-100">
@@ -525,7 +530,7 @@
             </div>
         </div>
 
-        <div class="service-item">
+        <div class="service-item mb-5">
             <img src="<?= base_url('assets/img/vsat.png') ?>" alt="VSAT">
             <div class="service-info">
                 VSAT
@@ -538,7 +543,7 @@
             </div>
         </div>
 
-        <div class="service-item">
+        <div class="service-item mb-5">
             <img src="<?= base_url('assets/img/training.png') ?>" alt="Training">
             <div class="service-info">
                 Training
@@ -555,24 +560,23 @@
     </div>
 
 </div>
+<br>
 
-<section class="bg-black text-white d-flex">
+<section class="alt-section text-white d-flex" style="background-color: #000; color: white;">
     <div class="separator-arrow-down align-self-start"></div>
     <div class="container ">
         <div class="row">
-            <div class="col">
-                <div class="text-center mb-6 " style="margin-top: 250px;">
-                    <div class="text-center mb-5 " style="margin-top: 250px;">
-
-                        <h4>SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
+            <div class="col text-center">
+                <div>
+                        <h4 class="arcade-interlaced-semibold">SIMS' SUITE OF VALUE-ADDED SERVICES</h4>
                         <div class="separator-arrow-down-alt align-self-end"></div>
-                        <p>Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, and Seamless Payment Gateways</p>
+                        <p class="chakra-petch-regular">Improve Your Online Experience with Web and Mobile Applications, Custom Web Design, <br> and Seamless Payment Gateways</p>
                     </div>
 
                 </div>
             </div>
         </div>
-    </div>
+
 
 </section>
 <div class="middle-red-section" style="background-color: #4D1B28; padding: 100px;">
@@ -581,28 +585,28 @@
         <div class="row text-center">
             <div class="col-md-3 ">
                 <div class="service-card">
-                    <img src="assets/img/webapp.png" alt="Web Application Icon">
+                <img src="<?= base_url('assets/img/webapp.png') ?>" alt="Web Application Icon">
                     <h3>Web Application</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="assets/img/mobileapp.png" alt="Mobile Application Icon">
+                <img src="<?= base_url('assets/img/webdesign.png') ?>" alt="Mobile Application Icon">
                     <h3>Mobile Application</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="assets/img/webdesign.png" alt="Web Design Icon">
+                    <img src="<?= ('assets/img/webdesign.png') ?>" alt="Web Design Icon">
                     <h3>Web Design</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="assets/img/payment.png" alt="Payment Gateway Icon">
+                    <img src="<? ('assets/img/payment.png') ?>" alt="Payment Gateway Icon">
                     <h3>Payment Gateway</h3>
                     <p>Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
                 </div>

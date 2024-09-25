@@ -116,7 +116,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="social-icons mt-4">
-                    <img src="assets/img/iconsosmed.png" alt="" class="img-fluid"style="width:200px;">
+                    <img src="<? ('assets/img/iconsosmed.png') ?>" alt="" class="img-fluid"style="width:200px;">
                 </div>
             </div>
         </div>
