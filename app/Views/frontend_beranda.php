@@ -338,7 +338,7 @@
                     <p class="text-end">Tentang Kami ⊿</p>
             </div>
         </div>
-    </div>
+     </div>
 </div>
 
 

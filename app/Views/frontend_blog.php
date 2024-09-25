@@ -40,7 +40,7 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        
+
     }
 
     .hero-content h1 {
@@ -166,7 +166,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card shadow rounded-0" style="width: 100%;">
-                    <img class="card-img-top rounded-0" src="assets/img/blog/Media.png" alt="Card image cap">
+                    <img class="card-img-top rounded-0" src="<?= base_url('assets/img/Blog/Media.png') ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -175,7 +175,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow rounded-0" style="width: 100%;">
-                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 2.png" alt="Card image cap">
+                    <img class="card-img-top rounded-0" src="<?= base_url('assets/img/Blog/Media 2.png') ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -184,7 +184,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow rounded-0" style="width: 100%;">
-                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 3.png" alt="Card image cap">
+                    <img class="card-img-top rounded-0" src="<?= base_url('assets/img/Blog/Media 3.png') ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -196,7 +196,7 @@
         <div class="row mt-4">
             <div class="col-md-4">
                 <div class="card shadow rounded-0 " style="width: 100%;">
-                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 4.png" alt="Card image cap">
+                    <img class="card-img-top rounded-0" src="<?= base_url('assets/img/Blog/Media 4.png') ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -205,7 +205,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow rounded-0" style="width: 100%;">
-                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 5.png" alt="Card image cap">
+                    <img class="card-img-top rounded-0" src="<?= base_url('assets/img/Blog/Media 5.png') ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -215,7 +215,7 @@
 
             <div class="col-md-4">
                 <div class="card shadow rounded-0" style="width: 100%;">
-                    <img class="card-img-top rounded-0" src="assets/img/blog/Media 6.png" alt="Card image cap">
+                    <img class="card-img-top rounded-0" src="<?= base_url('assets/img/Blog/Media 6.png') ?>" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">PT SIMS Bekerja Sama dengan Harvard Univ...</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
