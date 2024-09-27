@@ -10,28 +10,16 @@
   <link rel="icon" href="img/SIMS.png" type="image/x-icon" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-  <!-- Google Fonts Charmonman -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Google Font Chakra Petch  -->
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- Google Font Darker Grotesque -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-
-
-
   <!-- MDB -->
   <link rel="stylesheet" href="assets/css/mdb.min.css" />
   <!-- Style -->
@@ -55,6 +43,7 @@
     }
 
     footer a:hover {
+
       color: #ddd;
 
 
@@ -69,8 +58,10 @@
       <a class="navbar-brand" href="#">
         <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
       </a>
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+      </button><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -86,7 +77,7 @@
         </ul>
       </div>
     </div>
-    </div>
+
   </nav>
   <!-- Navbar -->
 
@@ -94,32 +85,20 @@
   <?= $this->renderSection('content') ?>
 
   <!-- Footer -->
-  <footer class="text-center text-lg-start text-muted-white pt-1 " style="background-color:#000000;">
-    <!-- Section: Links  -->
+  <footer class="text-center text-lg-start text-muted-white pt-1" style="background-color:#000000;">
     <section>
       <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
         <div class="row mt-3">
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
             <a class="navbar-brand" href="#">
               <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
             </a>
-            </br>
             <p>
               Wisma Kodel Lantai 8, Jl. HR Rasuna Said, Kuningan, Setiabudi, Jakarta Selatan
             </p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Kontak
-            </h6>
+            <h6 class="text-uppercase fw-bold mb-4">Kontak</h6>
             <p>
               <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Kontak.png" width="24" height="24" alt="Whatsapp">+6281 **** ****</a>
             </p>
@@ -127,14 +106,9 @@
               <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Gmail.png" width="24" height="24" alt="Email">sims@gmail.com</a>
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Layanan
-            </h6>
+            <h6 class="text-uppercase fw-bold mb-4">Layanan</h6>
             <p>
               <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Internet.png" width="24" height="24" alt="Internet">Internet</a>
             </p>
@@ -145,11 +119,8 @@
               <a href="#"><img style="margin:5px" src="assets/img/icon-footer/email.png" width="24" height="24" alt="Pelatihan">Pelatihan</a>
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Sosial Media</h6>
             <p>
               <a href="#"><img style="margin:5px" src="assets/img/icon-footer/X.png" width="24" height="24" alt="Twitter">Twitter</a>
@@ -158,32 +129,25 @@
               <a href="http://instagram.com/username"><img style="margin:5px" src="assets/img/icon-footer/Instagram.png" width="24" height="24" alt="Instagram">Instagram</a>
             </p>
           </div>
-          <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
+        </div>
       </div>
     </section>
-    <!-- Section: Links  -->
 
-    <!-- Copyright -->
+
     <div class="text-start" style="padding-left: 90px; padding-right: 90px;">
       © 2024 PT SIMS. All Rights Reserved
     </div>
-    <!-- Copyright -->
+
   </footer>
   <!-- Footer -->
-
-
 
   <!-- MDB -->
   <script type="text/javascript" src="assets/js/mdb.umd.min.js"></script>
   <?= $this->renderSection('script') ?>
   <!-- Custom scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="text/javascript"></script>
+
   <script>
     var swiper = new Swiper('#swiper-experience', {
       slidesPerView: 1,

@@ -295,9 +295,9 @@
             </div> -->
             <div class="col">
                 <div class="hero-content">
-                    <h1 class="chakra-petch-bold ">Connecting People</h1>
+                    <h1 class="chakra-petch-bold ">Internet Connection</h1>
                     </br>
-                    <h1 class="chakra-petch-regular">with Internet</h1>
+                    <h1 class="chakra-petch-regular">For People</h1>
                     <p class="arcade-interlaced-regular">Empowering connectivity for tomorrow.</p>
                     <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium" data-mdb-ripple-init>Selengkapnya</a>
                 </div>
