@@ -198,10 +198,12 @@
         /* Sesuaikan ukuran font untuk layar lebih kecil */
     }
     .service-card {
-        background-color:#000;
+        background-color:rgba(0, 0, 0, 0.5);
         border: 1px solid #ff0066;
         padding: 30px;
         text-align: center;
+        position: relative;
+        z-index: 1;
     }
 
     .service-card img {
@@ -333,7 +335,7 @@
         background-image: url('assets/img/layer1.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 75px;
+        margin-top: 107px;
     }
 
     /* bawah */
@@ -564,7 +566,7 @@
 
 <section class="alt-section text-white d-flex" style="background-color: #000; color: white;">
     <div class="separator-arrow-down align-self-start"></div>
-    <div class="container ">
+    <div class="container" style="padding: 5vh;">
         <div class="row">
             <div class="col text-center">
                 <div>
@@ -579,10 +581,10 @@
 
 
 </section>
-<div class="middle-red-section" style="background-color: #4D1B28; padding: 100px;">
+<div class="middle-red-section" style="background-color: #4D1B28; padding: 20vh;">
     <br>
     <div class="container pt-5 text-white">
-        <div class="row" style="margin-top: -240px;">
+        <div class="row" style="margin-top: -300px;">
             <div class="col-md-3 text-center">
                 <div class="service-card">
                 <img src="<?= base_url('assets/img/webapp.png') ?>" alt="Web Application Icon">
@@ -613,8 +615,6 @@
             </div>
         </div>
     </div>
-
-
 </div>
 
 
