@@ -224,10 +224,6 @@
 
     }
     
-
-
-   
-
     /*sims' */
     .card h4 {
         font-family: 'Arcade Interlaced', sans-serif;
@@ -321,7 +317,7 @@
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('assets/img/lay1.svg');
+        background-image: url('<?= base_url("assets/img/lay1.svg") ?>');
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -185px;
@@ -332,7 +328,7 @@
         width: 100%;
         height: 200px;
         left: 0;
-        background-image: url('assets/img/layer1.svg');
+        background-image: url('<?= base_url ("assets/img/layer1.svg") ?>');
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 107px;
@@ -344,7 +340,7 @@
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('assets/img/lay1.svg');
+        background-image: url('<?= base_url ("assets/img/lay1.svg") ?>');
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -185px;
@@ -397,13 +393,13 @@
 <div class="hero">
     <div class="position-relative z-1 container">
         <div class="row">
-            <dEiv class="col">
+            <div class="col">
                 <h1 class="fw-bold">Elevate your digital<br>
                     experience to <br>
                     unprecedented heights</h1>
                 <p class="fs-6 my-3 arcade-interlaced-regular">Explore our innovative, high-quality superior services</p>
                 <a href="#" class="btn">Selengkapnya</a>
-            </dEiv>
+            </div>
         </div>
     </div>
 </div>
@@ -601,14 +597,14 @@
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="<?= ('assets/img/webdesign.png') ?>" alt="Web Design Icon">
+                    <img src="<?= base_url ('assets/img/webdesign.png') ?>" alt="Web Design Icon">
                     <h3 class="chakra-petch-bold">Web Design</h3>
                     <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                <img src="<?= ('assets/img/payment.png') ?>" alt="Web Design Icon">
+                <img src="<?= base_url ('assets/img/payment.png') ?>" alt="Web Design Icon">
                     <h3 class="chakra-petch-bold">Payment Gateway</h3>
                     <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
                 </div>
