@@ -91,7 +91,7 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <a class="navbar-brand" href="#">
-              <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
+              <img src=" <?= base_url ('assets/img/SIMS.png') ?>" height="30" alt="SIMS Logo" loading="lazy" />
             </a>
             <p>
               Wisma Kodel Lantai 8, Jl. HR Rasuna Said, Kuningan, Setiabudi, Jakarta Selatan
@@ -100,33 +100,33 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Kontak</h6>
             <p>
-              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Kontak.png" width="24" height="24" alt="Whatsapp">+6281 **** ****</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Kontak.png') ?>" width="24" height="24" alt="Whatsapp">+6281 **** ****</a>
             </p>
             <p>
-              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Gmail.png" width="24" height="24" alt="Email">sims@gmail.com</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Gmail.png') ?>" width="24" height="24" alt="Email">sims@gmail.com</a>
             </p>
           </div>
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Layanan</h6>
             <p>
-              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/Internet.png" width="24" height="24" alt="Internet">Internet</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Internet.png') ?>" width="24" height="24" alt="Internet">Internet</a>
             </p>
             <p>
-              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/coding.png" width="24" height="24" alt="Email">Pengembangan Aplikasi</a>
+              <a href="#"><img style="margin:5px" src="<?= base_url ('assets/img/icon-footer/coding.png') ?>" width="24" height="24" alt="Email">Pengembangan Aplikasi</a>
             </p>
             <p>
-              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/email.png" width="24" height="24" alt="Pelatihan">Pelatihan</a>
+              <a href="#"><img style="margin:5px" src="<?= base_url ('assets/img/icon-footer/email.png') ?>" width="24" height="24" alt="Pelatihan">Pelatihan</a>
             </p>
           </div>
 
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Sosial Media</h6>
             <p>
-              <a href="#"><img style="margin:5px" src="assets/img/icon-footer/X.png" width="24" height="24" alt="Twitter">Twitter</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/X.png') ?>" width="24" height="24" alt="Twitter">Twitter</a>
             </p>
             <p>
-              <a href="http://instagram.com/username"><img style="margin:5px" src="assets/img/icon-footer/Instagram.png" width="24" height="24" alt="Instagram">Instagram</a>
+              <a href="http://instagram.com/username"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Instagram.png') ?>" width="24" height="24" alt="Instagram">Instagram</a>
             </p>
           </div>
         </div>
