@@ -55,7 +55,7 @@
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black shadow-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="<?= base_url('/') ?>">
         <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

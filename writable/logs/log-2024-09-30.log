@@ -1,0 +1,20 @@
+CRITICAL - 2024-09-30 04:03:25 --> syntax error, unexpected token "("
+in APPPATH\Controllers\Service.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\FINAL SIMS\\SIMSWEB\\app\\Controllers\\Service.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Service')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Service')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Service', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\FINAL SIMS\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-09-30 05:11:04 --> Invalid file: "frontend_high_speed_internet_access.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frontend_high_speed_internet_access.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('frontend_high_speed_internet_access', [], true)
+ 3 APPPATH\Controllers\Service.php(29): view('frontend_high_speed_internet_access', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Service->high_speed_internet_access()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\FINAL SIMS\\SIMSWEB\\public\\index.php')

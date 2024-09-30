@@ -12,11 +12,20 @@ class Service extends BaseController
         return view('frontend_services', $data);
     }
 
-    public function service_item(): string
+    public function pay_tv_services(): string
     {
         $data = [
-            'title' => 'Service_Item'
+            'title' => 'Pay TV Service'
         ];
-        return view('frontend_service_item', $data);
+        return view('frontend_pay_tv_services', $data);
+    }
+
+
+    public function high_speed_internet_access(): string
+    {
+        $data = [
+            'title' => 'High Speed Internet Access'
+        ];
+        return view('frontend_high_speed_internet_access', $data);
     }
 }

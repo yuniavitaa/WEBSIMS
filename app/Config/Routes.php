@@ -31,7 +31,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/service', 'Service::service');
-$routes->get('/service_item', 'Service::service_item'); 
+$routes->get('/pay_tv_services', 'Service::pay_tv_services');
+$routes->get('/high_speed_internet_access', 'Service::high_speed_internet_access'); 
 $routes->get('/experience', 'Experience::experience');
 $routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');

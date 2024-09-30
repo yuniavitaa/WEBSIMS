@@ -157,7 +157,7 @@
         margin-top: 500px;
         left: 0;
         background-image: url('assets/img/separatorpaytv.svg');
-        background-size: contain;
+        background-size: contain; 
         background-repeat: no-repeat;
         z-index: 10;
     }
