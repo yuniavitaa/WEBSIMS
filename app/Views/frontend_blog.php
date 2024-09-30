@@ -23,7 +23,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('assets/img/Blog/Frame Blog.png');
+        background-image: url('<?=base_url('assets/img/Blog/Frame Blog.png') ?>');
         background-size: cover;
         background-position: center;
         color: white;

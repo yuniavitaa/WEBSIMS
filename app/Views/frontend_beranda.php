@@ -14,7 +14,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('assets/img/Background.png');
+        background-image: url('<?= base_url('assets/img/Background.png') ?>');
         background-size: cover;
         background-position: center;
         color: white;
@@ -105,7 +105,7 @@
         /* top: 0; */
         left: 0;
         transform: translateY(-1px);
-        background-image: url('assets/img/Separator2.svg');
+        background-image: url('<?= base_url('assets/img/Separator2.svg') ?>');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -117,7 +117,7 @@
         /* top: 0; */
         margin-top: -200px;
         left: 0;
-        background-image: url('assets/img/Separator11.svg');
+        background-image: url('<?= base_url('assets/img/Separator11.svg') ?>');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -312,18 +312,18 @@
     <h2>Our Partner</h2>
     <div class="row">
         <div class="col-md-12 pt-5">
-            <img src="assets/img/Group 2.png" alt="Partner 1" class="img-fluid">
+            <img src=" <?= base_url ("assets/img/Group 2.png") ?>" alt="Partner 1" class="img-fluid">
         </div>
     </div>
 </div>
 <!-- About Us -->
-<div class="d-flex" style="background-image: url('assets/img/background-tentang-kami.png'); background-size: cover; background-position: center top 20%; padding-bottom: 300px; margin-top: 100px; ">
+<div class="d-flex" style="background-image: url('<?= base_url('assets/img/background-tentang-kami.png'); ?>'); background-size: cover; background-position: center top 20%; padding-bottom: 300px; margin-top: 100px; ">
     <div class="separator-arrow-up-subtractive z-3 align-self-start"></div>
     <div class="container text-start pt-5">
         <div class="row mt-4">
             <div class="col-md-6 position-relative">
-                <img src="assets/img/image 171.png" class="img-fluid stacked-image-1" alt="About Us Image" style="transform: rotate(5deg)">
-                <img src="assets/img/image 151.png" class="img-fluid stacked-image-2" alt="About Us Image" style="transform: rotate(-10deg)">
+                <img src=" <?= base_url('assets/img/image 171.png') ?>" class="img-fluid stacked-image-1" alt="About Us Image" style="transform: rotate(5deg)">
+                <img src=" <?= base_url ('assets/img/image 151.png') ?>" class="img-fluid stacked-image-2" alt="About Us Image" style="transform: rotate(-10deg)">
             </div>
             <div class="col-md-6">
                 <h2 class="text-end text-white me-5 mb-5 fs-1">About Us</h2>
@@ -349,7 +349,7 @@
     <div class="row " style="margin-top: -200px;">
         <div class="col-md-3">
             <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
-                <img src="assets/img/jaringan.png" class="card-img-top small-icon mx-auto" alt="Partner 1">
+                <img src=" <?= base_url ('assets/img/jaringan.png') ?>" class="card-img-top small-icon mx-auto" alt="Partner 1">
                 <div class="card-body">
                     <h5 class="card-title">Konektivitas Terluas</h5>
                     <p class="card-text">Jaringan yang luas dan andal, menjangkau berbagai daerah dengan layanan berkualitas tinggi.</p>
@@ -358,7 +358,7 @@
         </div>
         <div class="col-md-3">
             <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
-                <img src=" assets/img/teknologi.png" class="card-img-top small-icon mx-auto" alt="Partner 2">
+                <img src=" <?= base_url ('assets/img/teknologi.png') ?>" class="card-img-top small-icon mx-auto" alt="Partner 2">
                 <div class="card-body">
                     <h5 class="card-title">Teknologi Terkini</h5>
                     <p class="card-text">Teknologi mutakhir untuk memastikan kecepatan, stabilitas, dan efisiensi dalam setiap layanan.</p>
@@ -367,7 +367,7 @@
         </div>
         <div class="col-md-3">
             <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
-                <img src="assets/img/support.png" class="card-img-top small-icon mx-auto" alt="Partner 3">
+                <img src="<?= base_url('assets/img/support.png') ?>" class="card-img-top small-icon mx-auto" alt="Partner 3">
                 <div class="card-body">
                     <h5 class="card-title">Dukungan Terbaik</h5>
                     <p class="card-text">Layanan pelanggan siap membantu kapan saja, memastikan pengalaman pengguna yang memuaskan dan tanpa hambatan.</p>
@@ -376,7 +376,7 @@
         </div>
         <div class="col-md-3">
             <div class="card text-center equal-height border border-danger rounded-0" style=" background-color: rgba(255, 255, 255, 80%);">
-                <img src="assets/img/inovasi.png" class="card-img-top small-icon mx-auto" alt="Partner 4">
+                <img src="<?= base_url ('assets/img/inovasi.png') ?>" class="card-img-top small-icon mx-auto" alt="Partner 4">
                 <div class="card-body">
                     <h5 class="card-title">Inovasi Berkelanjutan</h5>
                     <p class="card-text">Revolusi teknologi dengan inovasi berkelanjutan memastikan Anda selalu berada di garis depan perkembangan digital.</p>
@@ -409,7 +409,7 @@
                         </div>
                     </div>
                     <div class="col-sm-8 order-1 order-lg-2">
-                        <img src="assets/img/Media.png" alt="Slide 2" class="w-100 object-fit-cover">
+                        <img src="<?= base_url('assets/img/Media.png') ?>" alt="Slide 2" class="w-100 object-fit-cover">
                     </div>
                 </div>
             </div>
@@ -432,7 +432,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 order 2 order-lg-1">
-                        <img src="assets/img/city.png" alt="Slide 2" class="w-100 object-fit-cover">
+                        <img src="<?= base_url('assets/img/city.png') ?>" alt="Slide 2" class="w-100 object-fit-cover">
                     </div>
                 </div>
             </div>
@@ -448,28 +448,28 @@
     <section class="swiper mySwiper trusted-section">
         <div class="wrapper swiper-wrapper">
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 5.png" alt="Logo DIY">
+                <img src="<?= base_url('assets/img/customer/image 5.png') ?>" alt="Logo DIY">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 6.png" alt="Logo Kominfo">
+                <img src="<?=base_url('assets/img/customer/image 6.png') ?>" alt="Logo Kominfo">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 7.png" alt="Logo Panti Rapih">
+                <img src="<?= base_url('assets/img/customer/image 7.png') ?>" alt="Logo Panti Rapih">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 8.png" alt="Logo RSUP Dr.Sardjito">
+                <img src="<?=base_url('assets/img/customer/image 8.png') ?>" alt="Logo RSUP Dr.Sardjito">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 9.png" alt="Logo Citranet">
+                <img src="<?= base_url('assets/img/customer/image 9.png') ?>" alt="Logo Citranet">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 10.png" alt="Logo Indosat">
+                <img src="<?= base_url('assets/img/customer/image 10.png') ?>" alt="Logo Indosat">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 11.png" alt="Logo Hyat Regency">
+                <img src="<?= base_url('assets/img/customer/image 11.png') ?>" alt="Logo Hyat Regency">
             </div>
             <div class="item swiper-slide">
-                <img src="assets/img/customer/image 12.png" alt="Logo UGM">
+                <img src="<?= base_url('assets/img/customer/image 12.png') ?>" alt="Logo UGM">
             </div>
         </div>
         <div class="swiper-button-next"></div>

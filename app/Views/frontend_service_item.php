@@ -31,7 +31,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('assets/img/Background_PayTV.png');
+        background-image: url('<?= base_url('assets/img/Background_PayTV.png') ?>');
         background-size: cover;
         background-position: center;
         color: white;
@@ -58,7 +58,7 @@
     .wood-background {
         position: relative;
         width: 100%;
-        background-image: url('assets/img/image 25.png');
+        background-image: url('<?= base_url('assets/img/image 25.png') ?>');
         background-size: cover;
         background-position: center;
         height: auto;
@@ -112,7 +112,7 @@
     .separator-line {
         width: 50%;
         height: 5px;
-        background: url('assets/img/pay-tv/Line.png') no-repeat center;
+        background: url('<?= base_url('assets/img/pay-tv/Line.png') ?>') no-repeat center;
         margin: 20px auto;
     }
 
@@ -143,7 +143,7 @@
         width: 50vw;
         height: 93vh;
         right: 50%;
-        background-image: url('assets/img/separatorwave.svg');
+        background-image: url('<?= base_url('assets/img/separatorwave.svg') ?>');
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: right center;
@@ -156,7 +156,7 @@
         height: 128px;
         margin-top: 500px;
         left: 0;
-        background-image: url('assets/img/separatorpaytv.svg');
+        background-image: url('<?= base_url('assets/img/separatorpaytv.svg') ?>');
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 10;
@@ -243,25 +243,25 @@
 <section class="wood-background position-relative">
     <div class="container-fluid" style="padding: 0;">
         <div class="row">
-            <img src="assets/img/image 25.png" alt="Service Item" style="width: 100%; display: block;">
+            <img src="<?= base_url('assets/img/image 25.png') ?>" alt="Service Item" style="width: 100%; display: block;">
         </div>
     </div>
     <div class="info-box rounded-0 position-absolute" style="top: 20%; left: 50%; transform: translate(-50%, -50%); padding: 20px; width: 50%; height: auto; max-width: 600px;">
         <div class="icon-container chakra-petch-regular" style="margin-bottom: 15px;">
             <div class="icon-item" style="flex: 1; padding: 5px;">
-                <img src="assets/img/pay-tv/icons-tv.png" alt="Seamless" style="max-width: 40px; margin-bottom: 5px;">
+                <img src="<?= base_url('assets/img/pay-tv/icons-tv.png') ?>" alt="Seamless" style="max-width: 40px; margin-bottom: 5px;">
                 <h3 style="font-size: 1rem; margin-bottom: 5px;">Seamless</h3>
             </div>
             <div class="icon-item" style="flex: 1; padding: 5px;">
-                <img src="assets/img/pay-tv/icons1-tv.png" alt="Clear" style="max-width: 40px; margin-bottom: 5px;">
+                <img src="<?= base_url('assets/img/pay-tv/icons1-tv.png') ?>" alt="Clear" style="max-width: 40px; margin-bottom: 5px;">
                 <h3 style="font-size: 1rem; margin-bottom: 5px;">Clear</h3>
             </div>
             <div class="icon-item" style="flex: 1; padding: 5px;">
-                <img src="assets/img/pay-tv/icons2-tv.png" alt="Immersive" style="max-width: 40px; margin-bottom: 5px;">
+                <img src="<?= base_url('assets/img/pay-tv/icons2-tv.png') ?>" alt="Immersive" style="max-width: 40px; margin-bottom: 5px;">
                 <h3 style="font-size: 1rem; margin-bottom: 5px;">Immersive</h3>
             </div>
             <div class="icon-item" style="flex: 1; padding: 5px;">
-                <img src="assets/img/pay-tv/icons3-tv.png" alt="Extensive" style="max-width: 40px; margin-bottom: 5px;">
+                <img src="<?= base_url('assets/img/pay-tv/icons3-tv.png') ?>" alt="Extensive" style="max-width: 40px; margin-bottom: 5px;">
                 <h3 style="font-size: 1rem; margin-bottom: 5px;">Extensive</h3>
             </div>
         </div>
@@ -281,7 +281,7 @@
         <div class="row">
             <div class="col-sm-6 p-0">
                 <div class="separator-wave"></div>
-                <img src="assets/img/Frame.png" alt="Frame" class="w-100 h-100 object-fit-cover">
+                <img src="<?= base_url('assets/img/Frame.png') ?>" alt="Frame" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="col-sm-6 d-flex align-items-center justify-content-center bg-white">
                 <h1 class="text-end me-5 mb-3 fs-1 chakra-petch-bold" style="color: #b71c1c; position: relative; top: -200px; font-weight:700;">Why?</h1>
