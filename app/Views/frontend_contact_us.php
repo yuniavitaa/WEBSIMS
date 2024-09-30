@@ -1,15 +1,14 @@
 <?= $this->extend('layout/frontend_template') ?>
 <?= $this->section('style') ?>
 <style>
-    footer {
-        padding-left: 16px;
+    .navbar {
         padding-right: 16px;
         background-color: white;
         color: black;
         justify-content: space-between;
     }
 
-    footer a {
+    .navbar a {
         color: black;
         text-decoration: none;
     }
@@ -24,10 +23,41 @@
     }
 
     .contact-section {
-        background: linear-gradient(to bottom right, #f0f0f0, #d7d7ff);
+        background-image: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.01),
+                rgba(255, 255, 255, 0) 85%),
+            radial-gradient(ellipse at center left,
+                rgba(128, 0, 128, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 128, 0, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(255, 192, 203, 0.15),
+                transparent 50%);
+        padding: 96px 0;
     }
-    .office-section{
-        background: linear-gradient(to bottom right, #f0f0f0, #d7d7ff);
+
+    .office-section {
+        background-image: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.01),
+                rgba(255, 255, 255, 0) 85%),
+            radial-gradient(ellipse at center left,
+                rgba(128, 0, 128, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 128, 0, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(255, 192, 203, 0.15),
+                transparent 50%);
+        padding: 96px 0;
     }
 
     .social-media {
@@ -52,16 +82,15 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-<br>
-<br>
-<br>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-white shadow-lg">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
+            <img src="<?= base_url ('assets/img/SIMS.png') ?>" height="30" alt="SIMS Logo" loading="lazy" />
         </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+        </button><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -77,14 +106,12 @@
             </ul>
         </div>
     </div>
-    </div>
+
 </nav>
-
-
 <!-- Contact Form Section -->
 <section class="contact-section py-5">
     <div class="container">
-        <h2 class="mb-4 chakra-petch-bold">Hubungi Kami</h2>
+        <h2 class="mb-4 chakra-petch-bold" style="margin-top: 100px;">Hubungi Kami</h2>
         <div class="row">
             <div class="col-lg-6">
                 <form action="#" method="POST">
@@ -102,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-light mt-3">Kirim</button>
+                    <button type="submit" class="btn btn-light mt-3"style="background-color: white; border-color: #ccc;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);" >Kirim</button>
                 </form>
             </div>
         </div>
@@ -116,7 +143,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="social-icons mt-4">
-                    <img src="<? ('assets/img/iconsosmed.png') ?>" alt="" class="img-fluid"style="width:200px;">
+                    <img src="<?= base_url('assets/img/iconsosmed.png') ?>" alt="" class="img-fluid" style="width:200px;">
                 </div>
             </div>
         </div>
