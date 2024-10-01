@@ -33,6 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/service', 'Service::service');
 $routes->get('/pay_tv_services', 'Service::pay_tv_services');
 $routes->get('/high_speed_internet_access', 'Service::high_speed_internet_access'); 
+$routes->get('/data_center', 'Service::data_center');
 $routes->get('/experience', 'Experience::experience');
 $routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');
