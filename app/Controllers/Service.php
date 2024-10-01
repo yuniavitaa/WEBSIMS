@@ -28,4 +28,12 @@ class Service extends BaseController
         ];
         return view('frontend_high_speed_internet_access', $data);
     }
+
+    public function data_center(): string
+    {
+        $data = [
+            'title' => 'Data Center'
+        ];
+        return view('frontend_data_center', $data);
+    }
 }
