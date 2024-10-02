@@ -197,8 +197,9 @@
         font-size: 10px;
         /* Sesuaikan ukuran font untuk layar lebih kecil */
     }
+
     .service-card {
-        background-color:rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         border: 1px solid #ff0066;
         padding: 30px;
         text-align: center;
@@ -223,7 +224,7 @@
         padding: 0;
 
     }
-    
+
     /*sims' */
     .card h4 {
         font-family: 'Arcade Interlaced', sans-serif;
@@ -328,7 +329,7 @@
         width: 100%;
         height: 200px;
         left: 0;
-        background-image: url('<?= base_url ("assets/img/layer1.svg") ?>');
+        background-image: url('<?= base_url("assets/img/layer1.svg") ?>');
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 107px;
@@ -340,7 +341,7 @@
         width: 100%;
         height: 128px;
         left: 0;
-        background-image: url('<?= base_url ("assets/img/lay1.svg") ?>');
+        background-image: url('<?= base_url("assets/img/lay1.svg") ?>');
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -185px;
@@ -410,7 +411,7 @@
             <div class="swiper-slide">
                 <div class="row">
                     <div class="col-sm-8">
-                    <img src="<?= base_url('assets/img/swiperpaytv.png') ?>" alt="Slide 1" class="d-block w-100">
+                        <img src="<?= base_url('assets/img/swiperpaytv.png') ?>" alt="Slide 1" class="d-block w-100">
                     </div>
                     <div class="col-sm-4">
                         <div class="d-flex align-items-center h-100 ">
@@ -453,7 +454,7 @@
             </div>
             <div class="service-slideshow">
                 <p>Digital TV service employs FTTH (Fiber To The Home) technology and offers numerous Free To Air and Premium Channels.</p>
-                <button class="more-btn">Selengkapnya</button>
+                <a href="<?= base_url('pay_tv_services'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>
 
@@ -469,7 +470,7 @@
                     <li>Post or Pra Paid Service</li>
                     <li>Dedicated connection through Optical Fiber (PTP) or wireless media</li>
                 </ul>
-                <button class="more-btn">Selengkapnya</button>
+                <a href="<?= base_url('high_speed_internet_access'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>
 
@@ -483,7 +484,7 @@
                     <li>Virtual Private Network solution with a variety of bandwidth according to needs</li>
                     <li>Feature: MRTG, 24/7 Technical Support</li>
                 </ul>
-                <button class="more-btn">Selengkapnya</button>
+                <a href="<?= base_url('vpn_services'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>
 
@@ -583,28 +584,28 @@
         <div class="row" style="margin-top: -300px;">
             <div class="col-md-3 text-center">
                 <div class="service-card">
-                <img src="<?= base_url('assets/img/webapp.png') ?>" alt="Web Application Icon">
+                    <img src="<?= base_url('assets/img/webapp.png') ?>" alt="Web Application Icon">
                     <h3 class="chakra-petch-bold">Web Application</h3>
                     <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                <img src="<?= base_url('assets/img/mobileapp.png') ?>" alt="Mobile Application Icon">
+                    <img src="<?= base_url('assets/img/mobileapp.png') ?>" alt="Mobile Application Icon">
                     <h3 class="chakra-petch-bold">Mobile Application</h3>
                     <p class="inter-bold">Jaringan yang luas dan andal, <br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                    <img src="<?= base_url ('assets/img/webdesign.png') ?>" alt="Web Design Icon">
+                    <img src="<?= base_url('assets/img/webdesign.png') ?>" alt="Web Design Icon">
                     <h3 class="chakra-petch-bold">Web Design</h3>
                     <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="service-card">
-                <img src="<?= base_url ('assets/img/payment.png') ?>" alt="Web Design Icon">
+                    <img src="<?= base_url('assets/img/payment.png') ?>" alt="Web Design Icon">
                     <h3 class="chakra-petch-bold">Payment Gateway</h3>
                     <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
                 </div>

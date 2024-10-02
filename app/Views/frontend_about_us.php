@@ -1,7 +1,7 @@
 <?= $this->extend('layout/frontend_template') ?>
 <?= $this->section('style') ?>
 <style>
-    .navbar {
+    /* .navbar {
         background-color: transparent;
         border-bottom: none;
         transition: background-color 0.3s ease;
@@ -17,7 +17,7 @@
 
     .navbar.scrolled {
         background-color: rgba(0, 0, 0, 0.8) !important;
-    }
+    } */
 
     .hero-section {
         position: relative;

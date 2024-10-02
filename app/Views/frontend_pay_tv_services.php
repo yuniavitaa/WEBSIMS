@@ -7,7 +7,7 @@
         margin: 0;
         padding: 0;
     }
-
+/* 
     .navbar {
         background-color: transparent;
         border-bottom: none;
@@ -24,7 +24,7 @@
 
     .navbar.scrolled {
         background-color: rgba(0, 0, 0, 0.8) !important;
-    }
+    } */
 
     /* Hero Section */
     .hero-section {

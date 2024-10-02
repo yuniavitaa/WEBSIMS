@@ -8,7 +8,7 @@
         padding: 0;
     }
 
-    /* Navbar */
+    /*     
     .navbar {
         background-color: transparent;
         border-bottom: none;
@@ -25,21 +25,20 @@
 
     .navbar.scrolled {
         background-color: rgba(0, 0, 0, 0.8) !important;
-    }
+    } */
 
     /* Hero Section */
     .hero-section {
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('assets/img/high-speed/internet.jpg');
+        background-image: url('assets/img/high-speed/Media.png');
         background-size: cover;
         background-position: center;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
     }
 
     .hero-content h1 {
@@ -216,6 +215,52 @@
         font-size: 1.2rem;
         color: #f7c946;
     }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+
+    .faq-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .accordion-button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        padding: 20px;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .accordion-button:hover {
+        background-color: #f7f7f7;
+    }
+
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+    .accordion-body {
+        background-color: #fff;
+        padding: 20px;
+        border: none;
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -224,9 +269,9 @@
     <div class="container" style="z-index: 1;">
         <div class="row">
             <div class="col">
-                <div class="hero-content text-center">
+                <div class="hero-content">
                     <h1 class="chakra-petch-bold">Unleash the Power of Speed</h1>
-                    <p class="arcade-interlaced-regular">Fast, reliable, and secure internet connection for all your needs.</p>
+                    <p class="arcade-interlaced-regular">Fast, reliable, and secure internet connection for all your needs</p>
                     <br>
                     <a href="#" class="btn btn-outline-light btn-lg chakra-petch-medium cta-button">Learn More</a>
                 </div>
@@ -282,6 +327,57 @@
     </div>
 </section>
 
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        Bagaimana cara saya memasang layanan internet ini di rumah?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Untuk memasang layanan internet kami di rumah, Anda cukup menghubungi tim pemasaran atau mendaftar melalui situs web kami. Setelah itu, teknisi kami akan mengunjungi lokasi Anda untuk pemasangan perangkat dan mengaktifkan layanan internet dengan cepat.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Apakah layanan internet tersedia di seluruh wilayah Indonesia?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Layanan internet kami saat ini tersedia di sebagian besar wilayah Indonesia. Namun, untuk memastikan bahwa layanan tersedia di wilayah Anda, silakan periksa dengan memasukkan kode pos Anda di situs web kami atau hubungi tim layanan pelanggan.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Apa yang membedakan layanan ini dari penyedia lain?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Layanan internet kami unggul karena kecepatan tinggi, koneksi yang stabil, keamanan data terbaik, dan dukungan pelanggan yang responsif. Kami juga menawarkan harga kompetitif dengan berbagai pilihan paket yang sesuai dengan kebutuhan pengguna.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?= $this->endSection() ?>
 
 <?= $this->section('script') ?>
@@ -293,6 +389,27 @@
         } else {
             navbar.classList.remove('scrolled');
         }
+    });
+</script>
+
+<script>
+    // Ensure Bootstrap Accordion functionality works
+    const accordion = document.querySelectorAll('.accordion-button');
+    accordion.forEach(button => {
+        button.addEventListener('click', () => {
+            const accordionCollapse = button.nextElementSibling;
+
+            accordion.forEach(otherButton => {
+                if (otherButton !== button) {
+                    otherButton.classList.add('collapsed');
+                    otherButton.nextElementSibling.classList.remove('show');
+                }
+            });
+
+            if (!accordionCollapse.classList.contains('show')) {
+                accordionCollapse.classList.add('show');
+            }
+        });
     });
 </script>
 <?= $this->endSection() ?>
