@@ -56,8 +56,7 @@
 
     .data-center-section {
         padding: 60px 0;
-        background:rgba(77, 27, 40, 0.9);
-        color: #fff;
+        background: linear-gradient(to right, #FFFFFF, #E6E6FA);
     }
 
     .data-center-section h2 {
@@ -74,8 +73,9 @@
     }
 
     .feature-card {
-        background-color: #fff;
-        border-radius: 15px;
+        background-color: #E6E6FA;
+        border-radius: 20px;
+        border: 1px solid #800080;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out;
         height: 100%;
@@ -127,6 +127,19 @@
     .cta-button:hover {
         background-color: #0056b3;
     }
+    @media (max-width: 768px) {
+    .feature-card {
+        margin-bottom: 20px;
+    }
+    
+    .data-center-section h2 {
+        font-size: 28px; /* Ukuran lebih kecil untuk mobile */
+    }
+    
+    .hero p {
+        font-size: 40px; /* Ukuran teks lebih kecil untuk mobile */
+    }
+}
 </style>
 <?= $this->endSection() ?>
 
@@ -143,21 +156,25 @@
 </div>
 
 <section class="data-center-section">
-    <div class="container">
-        <h2 class="chakra-petch-semibold">Data Center - Server Collocation</h2>
-        <div class="row align-items-center">
-            <!-- Server Collocation Info -->
-            <div class="col-lg-6 mb-5">
-                <p>Server collocation equipped with electrical <br> protection in the form generators, UPS, and <br> spark arrester are provided</p>
-                <ul>
-                    <li>Koneksi internet cepat dan stabil</li>
-                    <li>Pendinginan yang terjamin</li>
-                    <li>Pengelolaan keamanan fisik dan data</li>
-                </ul>
+<div class="container"style="overflow: hidden;">
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6 d-flex align-items-center justify-content-center text-center ">
+                    <div>
+                        <h4 class="text-experience mb-4 arcade-interlaced-semibold"  style="font-size: 30px;">WHY</h4>
+                        <P class="inter-bold text-start" style="font-size: 25px;">
+                        Server collocation equipped with electrical <br> protection in the form generators,<br> UPS, and spark arrester are provided
+                        </P>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <img src="<?= base_url ('assets/img/datacenter-konten.png') ?> " alt=""  class="img-fluid" style="object-fit: cover;">
+                </div>
             </div>
+        </div>
 
             <!-- Electrical Protection Features -->
-            <div class="container py-5">
+            <div class="container py-3">
+                 <h2 class="mb-4 chakra-petch-bold" style="padding: 30px;">Keunggulan</h2>
                 <div class="row justify-content-center">
                     <!-- Genset -->
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
