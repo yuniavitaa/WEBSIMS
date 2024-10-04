@@ -44,4 +44,21 @@ class Service extends BaseController
         ];
         return view('frontend_data_center', $data);
     }
+
+    public function dark_viber_connection(): string
+    {
+        $data = [
+            'title' => 'Dark Viber Connection'
+        ];
+        return view('frontend_dark_viber_connection', $data);
+    }
+
+    
+    public function bts_hotel(): string
+    {
+        $data = [
+            'title' => 'BTS  Hotel/Multimedia Micro Cell Pole'
+        ];
+        return view('frontend_bts_hotel', $data);
+    }
 }

@@ -34,6 +34,8 @@ $routes->get('/service', 'Service::service');
 $routes->get('/pay_tv_services', 'Service::pay_tv_services');
 $routes->get('/high_speed_internet_access', 'Service::high_speed_internet_access');
 $routes->get('/vpn_services', 'Service::vpn_services');
+$routes->get('/bts_hotel', 'Service::bts_hotel');
+$routes->get('/dark_viber_connection', 'Service::dark_viber_connection');
 $routes->get('/data_center', 'Service::data_center');
 $routes->get('/experience', 'Experience::experience');
 $routes->get('/about_us', 'AboutUs::about_us');
