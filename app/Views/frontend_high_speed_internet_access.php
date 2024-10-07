@@ -180,6 +180,8 @@
     .testimonial-container {
         display: flex;
         justify-content: space-around;
+        align-items: stretch;
+        /* Pastikan semua card memiliki tinggi yang sama */
         flex-wrap: wrap;
         text-align: center;
     }
@@ -192,6 +194,12 @@
         margin: 10px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Untuk menjaga jarak antara konten */
+        height: 100%;
+        /* Pastikan card memiliki tinggi penuh sesuai container */
     }
 
     .testimonial-card:hover {
@@ -202,16 +210,22 @@
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        margin-bottom: 15px;
+        margin: 0 auto 15px auto;
+        /* Atur margin otomatis di kiri dan kanan */
+        display: block;
+        /* Pastikan gambar diperlakukan sebagai elemen block agar margin auto bekerja */
+        object-fit: cover;
     }
 
     .testimonial-card p {
         font-size: 1rem;
         line-height: 1.6;
+        margin-bottom: 20px;
     }
 
     .testimonial-card h4 {
-        margin-top: 10px;
+        margin-top: auto;
+        /* Memastikan nama muncul di bagian bawah card */
         font-size: 1.2rem;
         color: #f7c946;
     }
@@ -261,6 +275,65 @@
         color: #666;
         line-height: 1.6;
     }
+
+    .internet-section {
+        padding: 60px 0;
+        background-color: #f5f5f5;
+    }
+
+    .internet-column {
+        padding: 20px;
+    }
+
+    .internet-column .content {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .internet-column h2 {
+        font-size: 1.8rem;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    .internet-column p {
+        font-size: 1rem;
+        color: #666666;
+        margin-bottom: 20px;
+    }
+
+    .internet-column ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .internet-column ul li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #555555;
+    }
+
+    .internet-column ul li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+        background-color: #E70051;
+        /* Warna aksen */
+        border-radius: 50%;
+    }
+
+    /* Responsive */
+    @media (max-width: 767px) {
+        .internet-column {
+            margin-bottom: 30px;
+        }
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -280,47 +353,56 @@
     </div>
 </section>
 
-<!-- Paket Layanan Section -->
-<section class="paket-section">
-    <h2 class="paket-title">Our Packages</h2>
-    <div class="paket-container">
-        <div class="paket-card">
-            <h3>Basic Plan</h3>
-            <p>For light users</p>
-            <div class="price">$20/month</div>
-            <a href="#" class="btn-pilih">Choose Plan</a>
-        </div>
-        <div class="paket-card">
-            <h3>Premium Plan</h3>
-            <p>For regular users</p>
-            <div class="price">$40/month</div>
-            <a href="#" class="btn-pilih">Choose Plan</a>
-        </div>
-        <div class="paket-card">
-            <h3>Pro Plan</h3>
-            <p>For heavy users</p>
-            <div class="price">$60/month</div>
-            <a href="#" class="btn-pilih">Choose Plan</a>
+<section class="internet-section">
+    <div class="container">
+        <div class="row">
+            <!-- Kolom Kiri: FTTH -->
+            <div class="col-md-6 col-sm-12 internet-column">
+                <div class="content">
+                    <h2>FTTH (Fiber to the Home)</h2>
+                    <p>FTTH menyediakan koneksi internet melalui serat optik langsung ke rumah Anda, memberikan kecepatan tinggi dan stabilitas yang luar biasa.</p>
+                    <ul>
+                        <li>Koneksi kabel langsung ke rumah (fiber optik)</li>
+                        <li>Kecepatan tinggi dan latensi rendah</li>
+                        <li>Cocok untuk rumah dan kantor</li>
+                        <li>Stabil, terutama untuk streaming dan gaming</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Kolom Kanan: Koneksi Nirkabel -->
+            <div class="col-md-6 col-sm-12 internet-column">
+                <div class="content">
+                    <h2>Koneksi Nirkabel (Wireless)</h2>
+                    <p>Koneksi nirkabel menawarkan fleksibilitas tanpa kabel, ideal untuk area yang sulit dijangkau oleh infrastruktur kabel.</p>
+                    <ul>
+                        <li>Tidak memerlukan kabel</li>
+                        <li>Instalasi lebih cepat dan mudah</li>
+                        <li>Cocok untuk area terpencil atau sulit dijangkau</li>
+                        <li>Dapat digunakan oleh pengguna rumahan atau bisnis kecil</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
 
 <!-- Testimonial Section -->
 <section class="testimonial-section">
     <h2 class="testimonial-title">What Our Customers Say</h2>
     <div class="testimonial-container">
         <div class="testimonial-card">
-            <img src="assets/img/testimonial/user1.jpg" alt="User 1">
+            <img src="assets/img/high-speed/cust1.jpg" alt="User 1">
             <p>"Amazing service! Fast and reliable, perfect for my daily needs."</p>
             <h4>John Doe</h4>
         </div>
         <div class="testimonial-card">
-            <img src="assets/img/testimonial/user2.jpg" alt="User 2">
+            <img src="assets/img/high-speed/cust3.jpg" alt="User 2">
             <p>"The best internet I've ever used, and the support team is great."</p>
             <h4>Jane Smith</h4>
         </div>
         <div class="testimonial-card">
-            <img src="assets/img/testimonial/user3.jpg" alt="User 3">
+            <img src="assets/img/high-speed/cust2.jpg" alt="User 3">
             <p>"Super fast internet with no downtime, perfect for streaming."</p>
             <h4>Alex Johnson</h4>
         </div>

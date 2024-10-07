@@ -23,7 +23,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('<?= base_url ('assets/img/about-us/Hero-About.png') ?>');
+        background-image: url('<?= base_url('assets/img/about-us/Hero-About.png') ?>');
         background-size: cover;
         background-position: center;
         color: white;
@@ -142,6 +142,8 @@
         background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         pointer-events: none;
     }
+
+    
 </style>
 <?= $this->endSection() ?>
 
@@ -191,7 +193,7 @@
         <div class="row">
             <div class="col">
                 <div class="position-relative">
-                    <img src=" <?= base_url ("assets/img/about-us/image 39.png") ?>" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
+                    <img src=" <?= base_url("assets/img/about-us/image 39.png") ?>" alt="About Us Image" class="img-fluid w-100" style="object-fit: cover;">
                     <!-- Gradient overlay -->
                     <div class="gradient-overlay"></div>
                     <div class="text-overlay position-absolute bottom-0 start-0 w-100" style="height: 30%; margin-bottom : 100px;">
@@ -226,7 +228,7 @@
 <section>
     <div class="row">
         <div class="col-sm-6 p-0" style="margin-top:-5px;">
-            <img src=" <?= base_url ("assets/img/about-us/vision.png") ?>" alt="Vision & Mission img" class="w-100 h-100 object-fit-cover">
+            <img src=" <?= base_url("assets/img/about-us/vision.png") ?>" alt="Vision & Mission img" class="w-100 h-100 object-fit-cover">
         </div>
         <div class="col-sm-6 d-flex align-items-center justify-content-center bg-black">
             <div class="text-box p-4 rounded-0 position-box">
