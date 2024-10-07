@@ -122,7 +122,7 @@
           </div>
 
           <div class="col d-flex align-items-center col-12 mb-3">
-            <img src="<?= base_url ('assets/img/bitv.png" class="img-fluid') ?>" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <img src="<?= base_url ('assets/img/bitv.png') ?>" alt="..." style="max-width: 100px; height: auto; margin-right: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <div class="card-body p-0">
               <h6 class="card-title">Lorem Ipsum Dolor Sit Amet</h6>
             </div>

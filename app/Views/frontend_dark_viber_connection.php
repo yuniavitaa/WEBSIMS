@@ -6,7 +6,7 @@
     }
 
     .hero {
-        background-image: url('<?= base_url('assets/img/centerdata.png') ?>');
+        background-image: url('<?= base_url('assets/img/kontendarkviber.png') ?>');
         background-size: cover;
         background-position: center;
         height: 100vh;

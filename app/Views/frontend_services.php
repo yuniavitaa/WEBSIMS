@@ -205,11 +205,14 @@
         text-align: center;
         position: relative;
         z-index: 1;
+        max-width: 100%; /* Pastikan tidak melebihi kontainer */
+
     }
 
     .service-card img {
         width: 50px;
         margin-bottom: 20px;
+        max-width: 100%;
     }
 
     .service-card h3 {
@@ -222,7 +225,32 @@
         margin: 0;
         /* Mengurangi margin default untuk menghemat ruang */
         padding: 0;
+        word-wrap: break-word; /* Pastikan teks tidak meluap */
 
+    }
+
+    @media (max-width: 576px) {
+        .service-card {
+            padding: 20px;
+            /* Mengurangi padding untuk tampilan mobile */
+            
+        }
+
+        .service-card img {
+            width: 40px;
+            /* Perkecil gambar di layar kecil */
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 14px;
+            /* Ukuran font lebih kecil di layar mobile */
+        }
+
+        .service-card p {
+            font-size: 12px;
+            /* Ukuran font lebih kecil di layar mobile */
+        }
     }
 
     /*sims' */
@@ -313,7 +341,7 @@
     }
 
     /* atas */
-    .separator-arrow-down {
+    /* .separator-arrow-down {
         position: absolute;
         width: 100%;
         height: 128px;
@@ -321,10 +349,10 @@
         background-image: url('<?= base_url("assets/img/lay1.svg") ?>');
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -185px;
-    }
+        margin-top: -183px;
+    } */
 
-    .separator-arrow-down-alt {
+    /* .separator-arrow-down-alt {
         position: absolute;
         width: 100%;
         height: 200px;
@@ -333,10 +361,10 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 107px;
-    }
+    } */
 
     /* bawah */
-    .separator-arrow-down-custom {
+    /* .separator-arrow-down-custom {
         position: absolute;
         width: 100%;
         height: 128px;
@@ -346,7 +374,7 @@
         background-repeat: no-repeat;
         margin-top: -185px;
 
-    }
+    } */
 
     .custom-section {
         background-image: linear-gradient(180deg,
@@ -495,7 +523,7 @@
             </div>
             <div class="service-slideshow">
                 <p>Server Collocation equipped with electrical protection in the form of generators, UPS, and Spark Arrester are provided</p>
-                <button class="more-btn">Selengkapnya</button>
+                <a href="<?= base_url('data_center'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>
 
@@ -506,7 +534,7 @@
             </div>
             <div class="service-slideshow">
                 <p>PTP connection is available to Service Providers Talco Operations</p>
-                <button class="more-btn">Selengkapnya</button>
+                <a href="<?= base_url('dark_viber_connection'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>
 
@@ -525,7 +553,7 @@
                     </li>
                 </ul>
 
-                <button class="more-btn">Selengkapnya</button>
+                <a href="<?= base_url('bts_hotel'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>
 
@@ -582,36 +610,38 @@
     <br>
     <div class="container pt-5 text-white">
         <div class="row" style="margin-top: -300px;">
-            <div class="col-md-3 text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-4">
                 <div class="service-card">
-                    <img src="<?= base_url('assets/img/webapp.png') ?>" alt="Web Application Icon">
+                    <img src="<?= base_url('assets/img/webapp.png') ?>" alt="Web Application Icon" class="img-fluid">
                     <h3 class="chakra-petch-bold">Web Application</h3>
-                    <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
+                    <p class="inter-bold">Web applications provide users with a great deal of convenience because they can be accessed from anywhere and at any time and are very simple to use</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-4">
                 <div class="service-card">
-                    <img src="<?= base_url('assets/img/mobileapp.png') ?>" alt="Mobile Application Icon">
+                    <img src="<?= base_url('assets/img/mobileapp.png') ?>" alt="Mobile Application Icon" class="img-fluid">
                     <h3 class="chakra-petch-bold">Mobile Application</h3>
-                    <p class="inter-bold">Jaringan yang luas dan andal, <br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
+                    <p class="inter-bold">The aim of a solution to increase the efficacy of a customer's business process is aided by mobile-based applications that enable highly mobile work</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-4">
                 <div class="service-card">
-                    <img src="<?= base_url('assets/img/webdesign.png') ?>" alt="Web Design Icon">
+                    <img src="<?= base_url('assets/img/webdesign.png') ?>" alt="Web Design Icon" class="img-fluid">
                     <h3 class="chakra-petch-bold">Web Design</h3>
-                    <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
+                    <p class="inter-bold">With a variety of attractive modules, a website development solution with a design can be tailored to the company's theme and business</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-4">
                 <div class="service-card">
-                    <img src="<?= base_url('assets/img/payment.png') ?>" alt="Web Design Icon">
+                    <img src="<?= base_url('assets/img/payment.png') ?>" alt="Payment Gateway Icon" class="img-fluid">
                     <h3 class="chakra-petch-bold">Payment Gateway</h3>
-                    <p class="inter-bold">Jaringan yang luas dan andal,<br> menjangkau berbagai daerah <br> dengan layanan berkualitas tinggi.</p>
+                    <p class="inter-bold">Payments can be managed in real time, accurately, and securely with this solution, which facilitates payment methods through multiple banking payment channels</p>
                 </div>
             </div>
         </div>
     </div>
+
+
 </div>
 
 

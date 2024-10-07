@@ -6,7 +6,7 @@
     }
 
     .hero {
-        background-image: url('<?= base_url('assets/img/centerdata.png') ?>');
+        background-image: url('<?= base_url('assets/img/kontenbts.png') ?>');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -55,10 +55,22 @@
     }
 
     .description-section {
-        padding: 60px 0;
-        background: linear-gradient(135deg, #e0e0e0, #f9f9f9);
-        border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.01),
+                rgba(255, 255, 255, 0) 85%),
+            radial-gradient(ellipse at center left,
+                rgba(128, 0, 128, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 128, 0, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center right,
+                rgba(0, 0, 255, 0.15),
+                transparent 50%),
+            radial-gradient(ellipse at center left,
+                rgba(255, 192, 203, 0.15),
+                transparent 50%);
+        padding: 96px 0;
     }
 
     .description-section h2 {
@@ -210,56 +222,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Features List -->
-<section class="description-section feature-list">
-    <div class="container">
-        <ul>
-            <li>Jangkauan yang lebih luas dengan instalasi Micro Cell Pole</li>
-            <li>Koneksi PTP yang stabil dan aman</li>
-            <li>Pemeliharaan dan pengelolaan sistem yang efisien</li>
-            <li>Kompatibel dengan berbagai teknologi jaringan</li>
-            <li>Instalasi mudah dan cepat dengan waktu minimum</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Specifications Table -->
-<section class="table-section">
-    <div class="container">
-        <h3>Spesifikasi Teknis</h3>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Parameter</th>
-                    <th>Detail</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Frekuensi</td>
-                    <td>800MHz - 2600MHz</td>
-                </tr>
-                <tr>
-                    <td>Jangkauan</td>
-                    <td>5km - 20km</td>
-                </tr>
-                <tr>
-                    <td>Kecepatan Maksimal</td>
-                    <td>1Gbps</td>
-                </tr>
-                <tr>
-                    <td>Konektivitas</td>
-                    <td>Fiber Optic, Microwave</td>
-                </tr>
-                <tr>
-                    <td>Redundansi</td>
-                    <td>Dual Layer Backup</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </section>
 
