@@ -42,6 +42,9 @@ $routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
 $routes->get('/contact_us', 'ContactUs::contact_us');
+
+$routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute ini
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPN Service</title>
     <style>
+        /* Main Styles */
         body {
             font-family: 'Lato', sans-serif;
             margin: 0;
@@ -105,20 +106,60 @@
             background-color: #007a8a;
         }
 
-        .testimonials {
-            background-color: #1a1a1a;
-            padding: 40px;
+        /* Pop-up Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
         }
 
-        .testimonial {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #ccc;
+        .modal-content {
+            background-color: #262626;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            color: white;
+            text-align: center;
         }
 
-        .testimonial-name {
-            font-weight: bold;
+        .modal-content h2 {
             color: #00b8d4;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .close-button {
+            background: #00b8d4;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .switch-button {
+            background: none;
+            border: none;
+            color: #00b8d4;
+            cursor: pointer;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -130,58 +171,78 @@
         <h1 class="vpn-title">Virtual Private Network (VPN)</h1>
         <p class="vpn-subtitle">Secure your data and enjoy seamless global connectivity.</p>
 
-        <!-- Features Section -->
-        <div class="features-container">
-            <div class="feature-box">
-                <h3>Flexible Bandwidth</h3>
-                <p>Select the bandwidth capacity that fits your business needs, from small teams to enterprises.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Global Access Points</h3>
-                <p>Access from over 50 strategic global locations with stable and secure connections.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Military-grade Encryption</h3>
-                <p>Protect your data with AES-256 encryption, the highest security standard available.</p>
-            </div>
-        </div>
-
         <!-- VPN Packages -->
         <div class="package-container">
             <div class="package-box">
                 <h3>Essential Plan</h3>
                 <p>10 Mbps Bandwidth</p>
-                <p>MRTG Traffic Monitoring</p>
-                <p>Basic Firewall</p>
-                <p>24/7 Technical Support</p>
                 <p class="package-price">Rp 100,000 / month</p>
-                <button class="cta-button">Choose Plan</button>
+                <button class="cta-button" onclick="openModal()">Choose Plan</button>
             </div>
             <div class="package-box">
                 <h3>Business Plan</h3>
                 <p>100 Mbps Bandwidth</p>
-                <p>MRTG, Custom Firewall</p>
-                <p>Zero Log Policy</p>
-                <p>Priority Support</p>
                 <p class="package-price">Rp 300,000 / month</p>
-                <button class="cta-button">Choose Plan</button>
+                <button class="cta-button" onclick="openModal()">Choose Plan</button>
             </div>
             <div class="package-box">
                 <h3>Enterprise Plan</h3>
                 <p>500 Mbps Bandwidth</p>
-                <p>Dedicated VPN Configuration</p>
-                <p>All features included</p>
                 <p class="package-price">Rp 1,000,000 / month</p>
-                <button class="cta-button">Choose Plan</button>
+                <button class="cta-button" onclick="openModal()">Choose Plan</button>
             </div>
         </div>
-
-        <!-- Testimonials Section -->
-        <div class="testimonials">
-            <p class="testimonial">"Using this VPN service has secured our remote communication and protected our data across the globe."</p>
-            <p class="testimonial-name">- Dian Pratama, CTO at XYZ Company</p>
-        </div>
     </section>
+
+    <!-- Modal for Login/Register -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Login</h2>
+            <div id="loginForm">
+                <div class="form-group"><input type="email" placeholder="Email" required></div>
+                <div class="form-group"><input type="password" placeholder="Password" required></div>
+                <button class="close-button" onclick="continueToPurchase()">Login</button>
+                <p>Don't have an account? <button class="switch-button" onclick="showRegister()">Register</button></p>
+            </div>
+            <div id="registerForm" style="display: none;">
+                <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                <div class="form-group"><input type="email" placeholder="Email" required></div>
+                <div class="form-group"><input type="password" placeholder="Password" required></div>
+                <div class="form-group"><input type="password" placeholder="Repeat Password" required></div>
+                <button class="close-button" onclick="continueToPurchase()">Register</button>
+                <p>Already have an account? <button class="switch-button" onclick="showLogin()">Login</button></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("loginModal").style.display = "flex";
+            showLogin();
+        }
+
+        function closeModal() {
+            document.getElementById("loginModal").style.display = "none";
+        }
+
+        function showLogin() {
+            document.getElementById("modalTitle").textContent = "Login";
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("registerForm").style.display = "none";
+        }
+
+        function showRegister() {
+            document.getElementById("modalTitle").textContent = "Register";
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("registerForm").style.display = "block";
+        }
+
+        function continueToPurchase() {
+            closeModal();
+            alert("Redirecting to purchase form...");
+            // Redirect to purchase form page here
+        }
+    </script>
 
 </body>
 
