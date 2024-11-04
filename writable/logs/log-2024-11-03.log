@@ -1,0 +1,57 @@
+CRITICAL - 2024-11-03 07:28:07 --> Class "Codeigniter\Model" not found
+in APPPATH\Models\M_User.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\SIMSWEB\\app\\Models\\M_USer.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_USer')
+ 4 APPPATH\Controllers\User.php(27): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_USer')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->regis()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+ERROR - 2024-11-03 07:29:38 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\SIMSWEB\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\xampp\htdocs\SIMSWEB\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sims', 3306, '', 0)
+#1 D:\xampp\htdocs\SIMSWEB\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\SIMSWEB\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\SIMSWEB\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp\htdocs\SIMSWEB\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\SIMSWEB\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\SIMSWEB\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\SIMSWEB\app\Controllers\User.php(31): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\SIMSWEB\system\CodeIgniter.php(934): App\Controllers\User->regis()
+#9 D:\xampp\htdocs\SIMSWEB\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\xampp\htdocs\SIMSWEB\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\SIMSWEB\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\SIMSWEB\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\SIMSWEB\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\htdocs\SIMSWEB\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\SIMSWEB\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\SIMSWEB\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 D:\xampp\htdocs\SIMSWEB\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 D:\xampp\htdocs\SIMSWEB\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 D:\xampp\htdocs\SIMSWEB\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#6 D:\xampp\htdocs\SIMSWEB\app\Controllers\User.php(31): CodeIgniter\Model->insert(Array)
+#7 D:\xampp\htdocs\SIMSWEB\system\CodeIgniter.php(934): App\Controllers\User->regis()
+#8 D:\xampp\htdocs\SIMSWEB\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\xampp\htdocs\SIMSWEB\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SIMSWEB\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\SIMSWEB\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-03 07:29:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `password`) VALUES (:email:, :password:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\User.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->regis()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
