@@ -40,11 +40,16 @@ $routes->get('/vpn_services', 'Service::vpn_services');
 $routes->get('/bts_hotel', 'Service::bts_hotel');
 $routes->get('/dark_viber_connection', 'Service::dark_viber_connection');
 $routes->get('/data_center', 'Service::data_center');
+$routes->get('/vsat', 'Service::vsat');
+$routes->get('/training', 'Service::training');
 $routes->get('/experience', 'Experience::experience');
 $routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
 $routes->get('/contact_us', 'ContactUs::contact_us');
+$routes->get('/payment', 'Payment::index');
+$routes->post('/payment/simpan', 'Payment::simpan');
+
 
 $routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute ini
 

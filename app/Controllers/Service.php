@@ -68,7 +68,21 @@ class Service extends BaseController
         ];
         return view('frontend_vpn_form', $data); // Pastikan view ini ada
     }
+    public function vsat(): string
+    {
+        $data = [
+            'title' => 'VSAT'
+        ];
+        return view('frontend_vsat', $data);
+    }
 
+    public function training(): string
+    {
+        $data = [
+            'title' => 'Training'
+        ];
+        return view('frontend_training', $data);
+    }
     public function submit()
 {
     // Validasi input

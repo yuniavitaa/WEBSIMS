@@ -48,6 +48,62 @@
 
 
     }
+ /* Pop-up Styles */
+ .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background-color: #262626;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        color: white;
+        text-align: center;
+    }
+
+    .modal-content h2 {
+        color: #00b8d4;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        color: #333;
+    }
+
+    .close-button {
+        background: #00b8d4;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .switch-button {
+        background: none;
+        border: none;
+        color: #00b8d4;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
   </style>
 </head>
 
@@ -65,16 +121,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-         <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Products
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-    <li><a class="dropdown-item" href="<?= base_url('service') ?>">Services</a></li>
-    <li><a class="dropdown-item" href="https://lifemedia.id/" target="_blank">Life Media</a></li>
-    <li><a class="dropdown-item" href="https://www.sportlinknews.com/" target="_blank">Sportlinknews</a></li>
-  </ul>
-</li>
+
+    <li class="nav-item"><a class="nav-link" href="<?= base_url('service') ?>">Product</a></li>
+ 
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url('experience') ?>">Experiences</a>
           </li>
@@ -203,6 +252,92 @@
       },
     });
   </script>
+
+  <!-- Modal for Login/Register -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <h2 id="modalTitle">Login</h2>
+        <div id="loginForm">
+            <div class="form-group"><input type="email" placeholder="Email" required></div>
+            <div class="form-group"><input type="password" placeholder="Password" required></div>
+            <button class="close-button" onclick="continueToPurchase()">Login</button>
+            <p>Don't have an account? <button class="switch-button" onclick="showRegister()">Register</button></p>
+        </div>
+        <div id="registerForm" style="display: none;">
+            <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+            <div class="form-group"><input type="email" placeholder="Email" required></div>
+            <div class="form-group"><input type="password" placeholder="Password" required></div>
+            <div class="form-group"><input type="password" placeholder="Repeat Password" required></div>
+            <button class="close-button" onclick="continueToPurchase()">Register</button>
+            <p>Already have an account? <button class="switch-button" onclick="showLogin()">Login</button></p>
+        </div>
+    </div>
+</div>
+
+<script>
+ // Membuka modal dan menampilkan form login sebagai tampilan awal
+function openModal() {
+    document.getElementById("loginModal").style.display = "flex";
+    showLogin(); // Memulai modal dengan form login
+}
+
+// Menutup modal
+function closeModal() {
+    document.getElementById("loginModal").style.display = "none";
+}
+
+// Menampilkan form login
+function showLogin() {
+    document.getElementById("modalTitle").textContent = "Login";
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("registerForm").style.display = "none";
+}
+
+// Menampilkan form registrasi
+function showRegister() {
+    document.getElementById("modalTitle").textContent = "Register";
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "block";
+}
+
+// Mengirim data form login atau registrasi ke server
+function continueToPurchase() {
+    // Cek apakah yang dipilih adalah form login atau registrasi berdasarkan judul modal
+    const url = document.getElementById("modalTitle").textContent === "Register" ? '/register' : '/login';
+
+    // Mengambil data dari form login atau registrasi
+    const formData = new FormData();
+    if (url === '/register') {
+        formData.append('full_name', document.querySelector('#registerForm input[placeholder="Full Name"]').value);
+        formData.append('email', document.querySelector('#registerForm input[placeholder="Email"]').value);
+        formData.append('password', document.querySelector('#registerForm input[placeholder="Password"]').value);
+        formData.append('repeat_password', document.querySelector('#registerForm input[placeholder="Repeat Password"]').value);
+    } else {
+        formData.append('email', document.querySelector('#loginForm input[placeholder="Email"]').value);
+        formData.append('password', document.querySelector('#loginForm input[placeholder="Password"]').value);
+    }
+
+    // Mengirim data ke server
+    fetch(url, {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        if (response.ok) {
+            closeModal();
+            alert("Redirecting to purchase form...");
+            // Arahkan ke halaman form pembelian
+            window.location.href = '/purchase'; // Ganti dengan URL halaman pembelian Anda
+        } else {
+            alert("Login/Registration failed.");
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+
+
+</script>
 
 </body>
 
