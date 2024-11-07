@@ -41,11 +41,9 @@
             <div class="col-sm-4">
                 <div class="form-group">
                     <label>Kabupaten</label>
-                    <select name="Jenis Kelamin" class="form-control">
-                        <option value="">----Jenis Kelamin---</option>
-                        <option value="L">Laki-Laki</option>
-                        <option value="P">Perempuan</option>
+                    <select name="id_kabupaten" id="id_kabupaten" class="form-control">
                     </select>
+                    <p class="text-danger"><?= ($validation->hasError('id_kabupaten')) ? $validation->getError('id_kabupaten') : '' ?></p>
                 </div>
             </div>
 
@@ -60,14 +58,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
 
         <!-- Form Langkah 2 -->
         <div class="tab-pane fade" id="langkah2" role="tabpanel" aria-labelledby="langkah2-tab">
@@ -96,5 +86,22 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script>
+            $(document).ready(function(){
+        $("#id_provinsi") .change(function (e){
+            var id_provinsi = $("#id_provinsi") .val();
+            $.ajax({
+            type: "POST",
+            url: "",
+            data: {
+                id_provinsi: id_provinsi
+            },
+            dataType: "dataType",
+            success: function (response){
+                $("#id_kabupaten") .html(response);
+            }
+        })
+            });
+        });
+        </script>
 <?= $this->endSection() ?>

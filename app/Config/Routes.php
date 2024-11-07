@@ -50,7 +50,7 @@ $routes->get('/contact_us', 'ContactUs::contact_us');
 $routes->get('/payment', 'Payment::index');
 $routes->post('/payment/simpan', 'Payment::simpan');
 
-
+$routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute ini
 
 /*
