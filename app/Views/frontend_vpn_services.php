@@ -327,7 +327,7 @@
                         <li>QoS untuk memastikan bandwidth prioritas</li>
                     </ul>
                     <h5 class="text-success">Harga: IDR Y / bulan</h5>
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
                 </div>
             </div>
         </div>
