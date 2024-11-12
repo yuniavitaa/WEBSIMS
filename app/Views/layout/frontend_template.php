@@ -303,11 +303,47 @@
     //     document.getElementById("registerForm").style.display = "block";
     // }
 
-    // Mengirim data form login atau registrasi ke server
-    function continueToPurchase() {
-      window.location.href = '/login'; // Mengarah ke route login yang diatur pada routes.php
+// Mengirim data form login atau registrasi ke server
+function continueToPurchase() {
+    // Cek apakah yang dipilih adalah form login atau registrasi berdasarkan judul modal
+    const url = document.getElementById("modalTitle").textContent === "Register" ? '/register' : '/login';
+
+    // Mengambil data dari form login atau registrasi
+    const formData = new FormData();
+    if (url === '/register') {
+        formData.append('full_name', document.querySelector('#registerForm input[placeholder="Full Name"]').value);
+        formData.append('email', document.querySelector('#registerForm input[placeholder="Email"]').value);
+        formData.append('password', document.querySelector('#registerForm input[placeholder="Password"]').value);
+        formData.append('repeat_password', document.querySelector('#registerForm input[placeholder="Repeat Password"]').value);
+    } else {
+        formData.append('email', document.querySelector('#loginForm input[placeholder="Email"]').value);
+        formData.append('password', document.querySelector('#loginForm input[placeholder="Password"]').value);
     }
-  </script>
+
+    // Mengirim data ke server
+    fetch(url, {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        if (response.ok) {
+            closeModal();
+            alert("Redirecting to purchase form...");
+            // Arahkan ke halaman form pembelian
+            window.location.href = '/purchase'; // Ganti dengan URL halaman pembelian Anda
+        } else {
+            alert("Login/Registration failed.");
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+
+
+</script>
+<!-- AdminLTE JS -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 
