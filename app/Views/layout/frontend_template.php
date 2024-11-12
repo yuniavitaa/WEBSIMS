@@ -262,8 +262,8 @@
     <div class="modal-content">
       <h2 id="modalTitle">Login</h2>
       <div id="loginForm">
-        <div class="form-group"><input type="email" placeholder="Email" required></div>
-        <div class="form-group"><input type="password" placeholder="Password" required></div>
+        <!-- <div class="form-group"><input type="email" placeholder="Email" required></div>
+        <div class="form-group"><input type="password" placeholder="Password" required></div> -->
         <button class="close-button" onclick="continueToPurchase()">Login Dahulu</button>
       </div>
       <!-- <div id="registerForm" style="display: none;">

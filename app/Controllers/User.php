@@ -55,7 +55,7 @@ class User extends BaseController
             if ($user['role'] === 'admin') {
                 return redirect()->to('/dashboard');
             } else {
-                return redirect()->to('/service');
+                return redirect()->to('/payment');
             }
         } else {
             // Jika gagal, kembalikan ke halaman login
