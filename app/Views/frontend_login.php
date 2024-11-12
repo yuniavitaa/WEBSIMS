@@ -34,7 +34,7 @@
                             </div>
 
                             <div class="card-body">
-                                <form method="POST" action="#" class="needs-validation" novalidate="">
+                                <form method="POST" action="<?= site_url('user/loginProcess') ?>" class="needs-validation" novalidate="">
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
@@ -76,9 +76,6 @@
                         </div>
                         <div class="mt-5 text-muted text-center">
                             Don't have an account? <a href="<?= base_url('register')?>">Create Now</a>
-                        </div>
-                        <div class="simple-footer">
-                            Copyright &copy; Stisla 2018
                         </div>
                     </div>
                 </div>

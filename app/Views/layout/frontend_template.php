@@ -52,62 +52,62 @@
 
 
     }
- /* Pop-up Styles */
- .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        align-items: center;
-        justify-content: center;
+
+    /* Pop-up Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
     }
 
     .modal-content {
-        background-color: #262626;
-        padding: 20px;
-        border-radius: 10px;
-        width: 400px;
-        color: white;
-        text-align: center;
+      background-color: #262626;
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      color: white;
+      text-align: center;
     }
 
     .modal-content h2 {
-        color: #00b8d4;
-        margin-bottom: 20px;
+      color: #00b8d4;
+      margin-bottom: 20px;
     }
 
     .form-group {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
 
     .form-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #333;
-        border-radius: 5px;
-        color: #333;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      color: #333;
     }
 
     .close-button {
-        background: #00b8d4;
-        border: none;
-        padding: 10px 20px;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
+      background: #00b8d4;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     .switch-button {
-        background: none;
-        border: none;
-        color: #00b8d4;
-        cursor: pointer;
-        text-decoration: underline;
+      background: none;
+      border: none;
+      color: #00b8d4;
+      cursor: pointer;
+      text-decoration: underline;
     }
-    
   </style>
 </head>
 
@@ -126,8 +126,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-    <li class="nav-item"><a class="nav-link" href="<?= base_url('service') ?>">Product</a></li>
- 
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('service') ?>">Product</a></li>
+
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url('experience') ?>">Experiences</a>
           </li>
@@ -151,7 +151,7 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <a class="navbar-brand" href="#">
-              <img src=" <?= base_url ('assets/img/SIMS.png') ?>" height="30" alt="SIMS Logo" loading="lazy" />
+              <img src=" <?= base_url('assets/img/SIMS.png') ?>" height="30" alt="SIMS Logo" loading="lazy" />
             </a>
             <p>
               Wisma Kodel Lantai 8, Jl. HR Rasuna Said, Kuningan, Setiabudi, Jakarta Selatan
@@ -160,33 +160,33 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Kontak</h6>
             <p>
-              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Kontak.png') ?>" width="24" height="24" alt="Whatsapp">+6281 **** ****</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url('assets/img/icon-footer/Kontak.png') ?>" width="24" height="24" alt="Whatsapp">+6281 **** ****</a>
             </p>
             <p>
-              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Gmail.png') ?>" width="24" height="24" alt="Email">sims@gmail.com</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url('assets/img/icon-footer/Gmail.png') ?>" width="24" height="24" alt="Email">sims@gmail.com</a>
             </p>
           </div>
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Layanan</h6>
             <p>
-              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Internet.png') ?>" width="24" height="24" alt="Internet">Internet</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url('assets/img/icon-footer/Internet.png') ?>" width="24" height="24" alt="Internet">Internet</a>
             </p>
             <p>
-              <a href="#"><img style="margin:5px" src="<?= base_url ('assets/img/icon-footer/coding.png') ?>" width="24" height="24" alt="Email">Pengembangan Aplikasi</a>
+              <a href="#"><img style="margin:5px" src="<?= base_url('assets/img/icon-footer/coding.png') ?>" width="24" height="24" alt="Email">Pengembangan Aplikasi</a>
             </p>
             <p>
-              <a href="#"><img style="margin:5px" src="<?= base_url ('assets/img/icon-footer/email.png') ?>" width="24" height="24" alt="Pelatihan">Pelatihan</a>
+              <a href="#"><img style="margin:5px" src="<?= base_url('assets/img/icon-footer/email.png') ?>" width="24" height="24" alt="Pelatihan">Pelatihan</a>
             </p>
           </div>
 
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Sosial Media</h6>
             <p>
-              <a href="#"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/X.png') ?>" width="24" height="24" alt="Twitter">Twitter</a>
+              <a href="#"><img style="margin:5px" src=" <?= base_url('assets/img/icon-footer/X.png') ?>" width="24" height="24" alt="Twitter">Twitter</a>
             </p>
             <p>
-              <a href="http://instagram.com/username"><img style="margin:5px" src=" <?= base_url ('assets/img/icon-footer/Instagram.png') ?>" width="24" height="24" alt="Instagram">Instagram</a>
+              <a href="http://instagram.com/username"><img style="margin:5px" src=" <?= base_url('assets/img/icon-footer/Instagram.png') ?>" width="24" height="24" alt="Instagram">Instagram</a>
             </p>
           </div>
         </div>
@@ -258,51 +258,50 @@
   </script>
 
   <!-- Modal for Login/Register -->
-<div id="loginModal" class="modal">
+  <div id="loginModal" class="modal">
     <div class="modal-content">
-        <h2 id="modalTitle">Login</h2>
-        <div id="loginForm">
-            <div class="form-group"><input type="email" placeholder="Email" required></div>
-            <div class="form-group"><input type="password" placeholder="Password" required></div>
-            <button class="close-button" onclick="continueToPurchase()">Login</button>
-            <p>Don't have an account? <button class="switch-button" onclick="showRegister()">Register</button></p>
-        </div>
-        <div id="registerForm" style="display: none;">
+      <h2 id="modalTitle">Login</h2>
+      <div id="loginForm">
+        <div class="form-group"><input type="email" placeholder="Email" required></div>
+        <div class="form-group"><input type="password" placeholder="Password" required></div>
+        <button class="close-button" onclick="continueToPurchase()">Login Dahulu</button>
+      </div>
+      <!-- <div id="registerForm" style="display: none;">
             <div class="form-group"><input type="text" placeholder="Full Name" required></div>
             <div class="form-group"><input type="email" placeholder="Email" required></div>
             <div class="form-group"><input type="password" placeholder="Password" required></div>
             <div class="form-group"><input type="password" placeholder="Repeat Password" required></div>
             <button class="close-button" onclick="continueToPurchase()">Register</button>
             <p>Already have an account? <button class="switch-button" onclick="showLogin()">Login</button></p>
-        </div>
+        </div> -->
     </div>
-</div>
+  </div>
 
-<script>
- // Membuka modal dan menampilkan form login sebagai tampilan awal
-function openModal() {
-    document.getElementById("loginModal").style.display = "flex";
-    showLogin(); // Memulai modal dengan form login
-}
+  <script>
+    // Membuka modal dan menampilkan form login sebagai tampilan awal
+    function openModal() {
+      document.getElementById("loginModal").style.display = "flex";
+      showLogin(); // Memulai modal dengan form login
+    }
 
-// Menutup modal
-function closeModal() {
-    document.getElementById("loginModal").style.display = "none";
-}
+    // Menutup modal
+    function closeModal() {
+      document.getElementById("loginModal").style.display = "none";
+    }
 
-// Menampilkan form login
-function showLogin() {
-    document.getElementById("modalTitle").textContent = "Login";
-    document.getElementById("loginForm").style.display = "block";
-    document.getElementById("registerForm").style.display = "none";
-}
+    // Menampilkan form login
+    function showLogin() {
+      document.getElementById("modalTitle").textContent = "Login";
+      document.getElementById("loginForm").style.display = "block";
+      document.getElementById("registerForm").style.display = "none";
+    }
 
-// Menampilkan form registrasi
-function showRegister() {
-    document.getElementById("modalTitle").textContent = "Register";
-    document.getElementById("loginForm").style.display = "none";
-    document.getElementById("registerForm").style.display = "block";
-}
+    // Menampilkan form registrasi
+    // function showRegister() {
+    //     document.getElementById("modalTitle").textContent = "Register";
+    //     document.getElementById("loginForm").style.display = "none";
+    //     document.getElementById("registerForm").style.display = "block";
+    // }
 
 // Mengirim data form login atau registrasi ke server
 function continueToPurchase() {

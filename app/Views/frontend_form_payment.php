@@ -42,10 +42,7 @@
                 <div class="form-group">
                     <label>Kabupaten</label>
                     <select name="id_kabupaten" id="id_kabupaten" class="form-control">
-                        <option value="">----Pilih Provinsi---</option>
-                        <?php foreach ($kabupaten as $k): ?>
-                            <option value="<?= $k['id_kabupaten']; ?>"><?= $k['nama_kabupaten']; ?></option>
-                        <?php endforeach; ?>
+                        <option value="">----Pilih Kabupaten---</option>
                     </select>
                     <p class="text-danger"><?= ($validation->hasError('id_kabupaten')) ? $validation->getError('id_kabupaten') : '' ?></p>
                 </div>
@@ -55,7 +52,7 @@
                 <div class="form-group">
                     <label>Kecamatan</label>
                     <select name="Jenis Kelamin" class="form-control">
-                        <option value="">----Jenis Kelamin---</option>
+                        <option value="">----Pilih Kecamatan---</option>
                         <option value="L">Laki-Laki</option>
                         <option value="P">Perempuan</option>
                     </select>
@@ -87,23 +84,21 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function() {
         $("#id_provinsi").change(function(e) {
             var id_provinsi = $("#id_provinsi").val();
-            console.log('haha');
             $.ajax({
                 type: "POST",
-                url: "<?php echo base_url('payment/kabupaten') ?>",
+                url: "<?php echo base_url('payment/Kabupaten') ?>",
                 data: {
                     id_provinsi: id_provinsi
                 },
                 dataType: "dataType",
                 success: function(response) {
-                    console.log(response);
                     $("#id_kabupaten").html(response);
                 }
             })
