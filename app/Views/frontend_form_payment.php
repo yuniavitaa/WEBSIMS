@@ -97,11 +97,14 @@
                 data: {
                     id_provinsi: id_provinsi
                 },
-                dataType: "dataType",
+                dataType: "html", // Mengubah dataType menjadi html
                 success: function(response) {
                     $("#id_kabupaten").html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.log("Error: " + error);
                 }
-            })
+            });
         });
     });
 </script>

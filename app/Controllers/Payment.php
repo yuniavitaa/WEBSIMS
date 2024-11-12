@@ -34,7 +34,7 @@ class Payment extends BaseController
     public function Kabupaten()
     {
         $id_provinsi = $this->request->getPost('id_provinsi');
-        $kab = $this->M_Form->AllKabupaten('id_provinsi');
+        $kab = $this->M_Form->AllKabupaten($id_provinsi);
         echo '<option value="">--Pilih Kabupaten--</option>';
         foreach ($kab as $key => $k) {
             echo "<option value=" . $k['id_kabupaten'] . ">" . $k['nama_kabupaten'] . "</option>";
