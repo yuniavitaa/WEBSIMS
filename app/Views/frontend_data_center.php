@@ -92,7 +92,6 @@
     .feature-icon {
         font-size: 50px;
         background: linear-gradient(45deg, #007bff, #00d2ff);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 20px;
     }
