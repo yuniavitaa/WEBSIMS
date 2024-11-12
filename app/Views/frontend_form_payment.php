@@ -28,7 +28,7 @@
             <div class="col-sm-4">
                 <div class="form-group">
                     <label>Provinsi</label>
-                    <select name="id_provinsi" class="form-control">
+                    <select id="id_provinsi" name="id_provinsi" class="form-control">
                         <option value="">----Pilih Provinsi---</option>
                         <?php foreach ($provinsi as $key => $value) { ?>
                             <option value="<?= $value['id_provinsi'] ?>"><?= $value['nama_provinsi'] ?></option>
@@ -42,6 +42,10 @@
                 <div class="form-group">
                     <label>Kabupaten</label>
                     <select name="id_kabupaten" id="id_kabupaten" class="form-control">
+                        <option value="">----Pilih Provinsi---</option>
+                        <?php foreach ($kabupaten as $k): ?>
+                            <option value="<?= $k['id_kabupaten']; ?>"><?= $k['nama_kabupaten']; ?></option>
+                        <?php endforeach; ?>
                     </select>
                     <p class="text-danger"><?= ($validation->hasError('id_kabupaten')) ? $validation->getError('id_kabupaten') : '' ?></p>
                 </div>
@@ -87,21 +91,23 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-            $(document).ready(function(){
-        $("#id_provinsi") .change(function (e){
-            var id_provinsi = $("#id_provinsi") .val();
+    $(document).ready(function() {
+        $("#id_provinsi").change(function(e) {
+            var id_provinsi = $("#id_provinsi").val();
+            console.log('haha');
             $.ajax({
-            type: "POST",
-            url: "",
-            data: {
-                id_provinsi: id_provinsi
-            },
-            dataType: "dataType",
-            success: function (response){
-                $("#id_kabupaten") .html(response);
-            }
-        })
-            });
+                type: "POST",
+                url: "<?php echo base_url('payment/kabupaten') ?>",
+                data: {
+                    id_provinsi: id_provinsi
+                },
+                dataType: "dataType",
+                success: function(response) {
+                    console.log(response);
+                    $("#id_kabupaten").html(response);
+                }
+            })
         });
-        </script>
+    });
+</script>
 <?= $this->endSection() ?>

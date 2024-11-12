@@ -16,9 +16,17 @@ class Payment extends BaseController
         $data = [
             'provinsi' => $this->M_Form->AllProvinsi(),
            ];
+           $id_provinsi = $this->request->getPost('id_provinsi'); // Atau sesuaikan dengan data yang dikirimkan
+           if ($id_provinsi) {
+               $data['kabupaten'] = $this->M_Form->AllKabupaten($id_provinsi); // Mendapatkan data kabupaten berdasarkan provinsi
+           } else {
+               $data['kabupaten'] = []; // Atau inisialisasi sebagai array kosong
+           }
+       
            $data['validation'] = \Config\Services::validation();
            return view('frontend_form_payment', $data);
         }
+        
 
     public function simpan()
 {
@@ -39,7 +47,5 @@ class Payment extends BaseController
         foreach ($kab as $key => $k) {
             echo "<option value=" . $k['id_kabupaten'] . ">" . $k['nama_kabupaten'] . "</option>";
         }
-
+    }
 }
-}
-

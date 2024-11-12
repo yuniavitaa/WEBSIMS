@@ -48,6 +48,7 @@ $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
 $routes->get('/contact_us', 'ContactUs::contact_us');
 $routes->get('/payment', 'Payment::index');
+$routes->post('payment/kabupaten', 'Payment::Kabupaten');
 $routes->post('/payment/simpan', 'Payment::simpan');
 
 $routes->get('/dashboard', 'Dashboard::index');
