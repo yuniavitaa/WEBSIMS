@@ -33,6 +33,8 @@ $routes->get('login', 'User::login');
 $routes->get('register', 'User::register');
 $routes->get('/', 'Home::index');
 $routes->post('user/regis', 'User::regis');
+$routes->post('user/loginProcess', 'User::loginProcess');
+$routes->get('user/logout', 'User::logout');
 $routes->get('/service', 'Service::service');
 $routes->get('/pay_tv_services', 'Service::pay_tv_services');
 $routes->get('/high_speed_internet_access', 'Service::high_speed_internet_access');
@@ -48,8 +50,8 @@ $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
 $routes->get('/contact_us', 'ContactUs::contact_us');
 $routes->get('/payment', 'Payment::index');
+$routes->post('/payment', 'Payment::Kabupaten');
 $routes->post('/payment/simpan', 'Payment::simpan');
-
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute ini
 
