@@ -6,9 +6,11 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        echo view ("/templates/admin_header");
-        echo view ("/templates/admin_footer");
-        echo view ("/templates/admin_dashboard");
+        $data = [
+            'judul' => 'Dashboard',
+            'page' => 'admin_dashboard',
+        ];
+        return view('/templates/admin_dashboard', $data);
     }
     
 }
