@@ -13,7 +13,12 @@ class Payment extends BaseController
     }
     public function index()
     {
+        
         $data = [
+            'judul' => 'Payment',
+            'page' => 'frontend_form_payment',
+            'menu' => 'masterdata', // Menu utama
+            'submenu' => 'payment', // Submenu aktif
             'provinsi' => $this->M_Form->AllProvinsi(),
            ];
            $id_provinsi = $this->request->getPost('id_provinsi'); // Atau sesuaikan dengan data yang dikirimkan

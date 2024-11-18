@@ -6,6 +6,18 @@ use App\Models\M_User;
 
 class User extends BaseController
 {
+    public function index()
+    {
+        $data = [
+            'judul' => 'User',
+            'page' => 'frontend_login',
+            'menu' => 'user',
+            'submenu' => '',
+        ];
+        return view('templates/admin_dashboard', $data);
+    }
+    
+
     public function login()
     {
         $data = [

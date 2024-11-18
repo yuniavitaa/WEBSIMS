@@ -8,7 +8,9 @@ class Dashboard extends BaseController
     {
         $data = [
             'judul' => 'Dashboard',
-            'page' => 'admin_dashboard',
+            'page' => 'dashboard',
+            'menu' => 'dashboard',
+            'submenu' => '',
         ];
         return view('/templates/admin_dashboard', $data);
     }

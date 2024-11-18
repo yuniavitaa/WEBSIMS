@@ -80,7 +80,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('dashboard')?>" class="nav-link <?= $menu=='dashboard' ? 'active' : ''?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -88,8 +88,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
 
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item <?= $menu=='masterdata' ? 'menu-open' : ''?>">
+            <a href="#" class="nav-link <?= $menu =='masterdata' ? 'active' : ''?>">
               <i class="nav-icon fas fa-table"></i>
               <p>
                Master Data
@@ -98,9 +98,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('payment') ?>" class="nav-link <?= $submenu =='payment' ? 'active' : ''?>">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Pelanggan</p>
+                  <p>Payment</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -112,7 +112,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('user')?>" class="nav-link  <?= $menu=='user' ? 'active' : ''?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
                User
@@ -161,7 +161,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row">
           <!-- /.content-->
-           Konten
+       <?php
+       if ($page) {
+       echo view($page);
+       }
+       ?>
           <!-- /.end content -->
         </div>
         <!-- /.row -->
