@@ -51,11 +51,10 @@
             <div class="col-sm-4">
                 <div class="form-group">
                     <label>Kecamatan</label>
-                    <select name="Jenis Kelamin" class="form-control">
+                    <select name="id_kecamatan" id="id_kecamatan" class="form-control">
                         <option value="">----Pilih Kecamatan---</option>
-                        <option value="L">Laki-Laki</option>
-                        <option value="P">Perempuan</option>
                     </select>
+                    <p class="text-danger"><?= ($validation->hasError('id_kecamatan')) ? $validation->getError('id_kecamatan') : '' ?></p>
                 </div>
             </div>
         </div>
@@ -97,12 +96,23 @@
                 data: {
                     id_provinsi: id_provinsi
                 },
-                dataType: "html", // Mengubah dataType menjadi html
                 success: function(response) {
                     $("#id_kabupaten").html(response);
+                    $("#id_kecamatan").html('<option value="">--Pilih Kecamatan--</option>'); // reset kecamatan
+                }
+            });
+        });
+
+        $("#id_kabupaten").change(function(e) {
+            var id_kabupaten = $("#id_kabupaten").val();
+            $.ajax({
+                type: "POST",
+                url: "<?php echo base_url('payment/Kecamatan') ?>",
+                data: {
+                    id_kabupaten: id_kabupaten
                 },
-                error: function(xhr, status, error) {
-                    console.log("Error: " + error);
+                success: function(response) {
+                    $("#id_kecamatan").html(response);
                 }
             });
         });

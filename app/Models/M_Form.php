@@ -22,4 +22,6 @@ class M_Form extends Model{
         ->where('id_kabupaten', $id_kabupaten)
         ->Get()->getResultArray();
     }
+
+
 }

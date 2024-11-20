@@ -32,6 +32,10 @@ class User extends BaseController
         if (!$userData->insert($_POST)) {
             var_dump($userData->errors());
             exit;
+        } else {
+            // Set flashdata untuk notifikasi berhasil registrasi
+            session()->setFlashdata('success', 'Registrasi berhasil! Silakan login.');
+            return redirect()->to('/login'); // Arahkan ke halaman login
         }
     }
 
@@ -51,6 +55,9 @@ class User extends BaseController
                 'logged_in' => true
             ]);
 
+            // Set flashdata untuk notifikasi berhasil login
+            session()->setFlashdata('success', 'Login berhasil!');
+
             // Redirect berdasarkan peran
             if ($user['role'] === 'admin') {
                 return redirect()->to('/dashboard');
@@ -58,7 +65,7 @@ class User extends BaseController
                 return redirect()->to('/payment');
             }
         } else {
-            // Jika gagal, kembalikan ke halaman login
+            // Jika gagal, kembalikan ke halaman login dengan flashdata error
             session()->setFlashdata('error', 'Email atau password salah');
             return redirect()->back();
         }

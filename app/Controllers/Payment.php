@@ -48,4 +48,16 @@ class Payment extends BaseController
             echo "<option value=" . $k['id_kabupaten'] . ">" . $k['nama_kabupaten'] . "</option>";
         }
     }
+
+
+    public function Kecamatan()
+    {
+        $id_kabupaten = $this->request->getPost('id_kabupaten');
+        $kecamatan = $this->M_Form->AllKecamatan($id_kabupaten);
+        echo '<option value="">--Pilih Kecamatan--</option>';
+        foreach ($kecamatan as $key => $k) {
+            echo "<option value='" . $k['id_kecamatan'] . "'>" . $k['nama_kecamatan'] . "</option>";
+        }
+    }
+
 }
