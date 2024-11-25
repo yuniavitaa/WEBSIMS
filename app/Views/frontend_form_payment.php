@@ -116,6 +116,24 @@
                 }
             });
         });
+
+        $("#id_kabupaten").change(function(e) {
+            var id_kabupaten = $("#id_kabupaten").val();
+            $.ajax({
+                type: "POST",
+                url: "<?php echo base_url('payment/Kecamatan') ?>",
+                data: {
+                    id_kabupaten: id_kabupaten
+                },
+                dataType: "html", // Mengubah dataType menjadi html
+                success: function(response) {
+                    $("#id_kecamatan").html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.log("Error: " + error);
+                }
+            });
+        });
     });
 </script>
 <?= $this->endSection() ?>

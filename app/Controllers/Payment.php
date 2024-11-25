@@ -13,7 +13,12 @@ class Payment extends BaseController
     }
     public function index()
     {
+        
         $data = [
+            'judul' => 'Payment',
+            'page' => 'frontend_form_payment',
+            'menu' => 'masterdata', // Menu utama
+            'submenu' => 'payment', // Submenu aktif
             'provinsi' => $this->M_Form->AllProvinsi(),
            ];
            $id_provinsi = $this->request->getPost('id_provinsi'); // Atau sesuaikan dengan data yang dikirimkan
@@ -43,7 +48,7 @@ class Payment extends BaseController
     {
         $id_provinsi = $this->request->getPost('id_provinsi');
         $kab = $this->M_Form->AllKabupaten($id_provinsi);
-        echo '<option value="">--Pilih Kabupaten--</option>';
+        echo '<option value="">--Pilih Kabupaten/Kota--</option>';
         foreach ($kab as $key => $k) {
             echo "<option value=" . $k['id_kabupaten'] . ">" . $k['nama_kabupaten'] . "</option>";
         }
