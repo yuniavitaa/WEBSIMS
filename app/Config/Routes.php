@@ -55,8 +55,10 @@ $routes->post('/payment/Kabupaten', 'Payment::Kabupaten');
 $routes->post('/payment/Kecamatan', 'Payment::Kecamatan');
 $routes->post('/payment/simpan', 'Payment::simpan');
 $routes->get('/dashboard', 'Dashboard::index');
-$routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute ini
+$routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute
 
+$routes->get('/pendaftaran-anggota', 'PendaftaranAnggota::index');
+$routes->post('/pendaftaran-anggota/kirim', 'PendaftaranAnggota::kirim');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
