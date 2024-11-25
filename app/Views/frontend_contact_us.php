@@ -116,46 +116,35 @@
 
 </nav>
 <!-- Contact Form Section -->
+<!-- Contact Form Section -->
 <section class="contact-section py-5">
     <div class="container">
         <h2 class="mb-4 chakra-petch-bold" style="margin-top: 100px;">Hubungi Kami</h2>
         <div class="row">
             <div class="col-lg-6">
-                <form action="#" method="POST">
+                <form id="contactForm" method="POST">
                     <div class="mb-3" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <input type="text" class="inter-reguler form-control" id="keperluan" placeholder="Keperluan">
+                        <input type="text" class="inter-reguler form-control" id="keperluan" name="keperluan" placeholder="Keperluan" required>
                     </div>
                     <div class="mb-3" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <textarea class="inter-reguler form-control" id="pesan" rows="3" placeholder="Pesan"></textarea>
+                        <textarea class="inter-reguler form-control" id="pesan" name="pesan" rows="3" placeholder="Pesan" required></textarea>
                     </div>
                     <div class="col-md-4">
                         <div class="border p-2" style="background-color: white; border-color: #ccc;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="notRobot">
+                                <input type="checkbox" class="form-check-input" id="notRobot" name="notRobot" required>
                                 <label class="form-check-label" for="notRobot">Saya bukan robot</label>
                             </div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-light mt-3" style="background-color: white; border-color: #ccc;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);">Kirim</button>
                 </form>
+                <div id="responseMessage" style="margin-top: 20px;"></div> <!-- Tempat untuk menampilkan pesan sukses -->
             </div>
         </div>
     </div>
 </section>
 
-<!-- Social Media Section -->
-<section class="social-media py-5 text-center" style="background-color: #000; color: white;">
-    <h3 class="arcade-interlaced-semibold">TEMUKAN KAMI!</h3>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="social-icons mt-4">
-                    <img src="<?= base_url('assets/img/iconsosmed.png') ?>" alt="" class="img-fluid" style="width:200px;">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Office Section -->
 <section class="office-section py-5">
@@ -171,4 +160,35 @@
         </div>
 </section>
 
+<!-- Tambahkan kode JavaScript untuk AJAX -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Tangani pengiriman form menggunakan AJAX
+        $('#contactForm').submit(function(e) {
+            e.preventDefault(); // Mencegah halaman melakukan reload
+
+            // Mengambil data dari form
+            var formData = $(this).serialize();
+
+            // Mengirim data ke controller menggunakan AJAX
+            $.ajax({
+                url: '<?= site_url('contact_us/save') ?>',
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    // Menampilkan pesan sukses tanpa mengubah halaman
+                    $('#responseMessage').html('<div class="alert alert-success">Pesan berhasil dikirim!</div>');
+
+                    // Kosongkan form setelah berhasil
+                    $('#contactForm')[0].reset();
+                },
+                error: function() {
+                    // Menampilkan pesan error jika terjadi masalah
+                    $('#responseMessage').html('<div class="alert alert-danger">Terjadi kesalahan, pesan gagal dikirim.</div>');
+                }
+            });
+        });
+    });
+</script>
 <?= $this->endSection() ?>

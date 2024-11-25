@@ -49,7 +49,12 @@ $routes->get('/experience', 'Experience::experience');
 $routes->get('/about_us', 'AboutUs::about_us');
 $routes->get('/blog', 'Blog::blog');
 $routes->get('/blog_item', 'Blog::blog_item');
-$routes->get('/contact_us', 'ContactUs::contact_us');
+
+// Rute untuk halaman contact us
+$routes->get('contact_us', 'ContactUs::contact_us');
+$routes->post('contact_us/save', 'ContactUs::saveMessage');
+
+
 $routes->get('/payment', 'Payment::index');
 $routes->post('/payment/Kabupaten', 'Payment::Kabupaten');
 $routes->post('/payment/Kecamatan', 'Payment::Kecamatan');
