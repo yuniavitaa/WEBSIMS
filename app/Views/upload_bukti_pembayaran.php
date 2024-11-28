@@ -36,6 +36,7 @@
         </div>
         <div>
         <label for="payment_method">Metode Pembayaran</label>
+        <div class="form-group">
         <select name="payment_method" id="payment_method" required>
             <option value="transfer">Transfer</option>
             <option value="gopay">GoPay</option>
