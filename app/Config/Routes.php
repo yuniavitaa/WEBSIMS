@@ -70,13 +70,13 @@ $routes->get('about_us', 'AboutUs::about_us');
 $routes->get('contact_us', 'ContactUs::contact_us');
 $routes->post('contact_us/save', 'ContactUs::saveMessage');
 
-// Pendaftaran Anggota Routes
-$routes->get('pendaftaran-anggota', 'PendaftaranAnggota::index');
-$routes->post('pendaftaran-anggota/kirim', 'PendaftaranAnggota::kirim');
+// form pendaftaran dan upload bukti
+$routes->get('/pendaftaran', 'PendaftaranAnggota::index');
+$routes->post('/pendaftaran/kirim', 'PendaftaranAnggota::kirim');
+$routes->get('pendaftaran/uploadBukti', 'PendaftaranAnggota::uploadBukti');
+$routes->post('pendaftaran/prosesUploadBukti', 'PendaftaranAnggota::prosesUploadBukti');
+$routes->post('proses-upload-bukti', 'PendaftaranAnggota::prosesUploadBukti');
 
-$routes->post('/pendaftaran-anggota/simpanPendaftaran', 'PendaftaranAnggota::simpanPendaftaran'); // Proses simpan pendaftaran anggota
-$routes->get('/pendaftaran-anggota/getKabupaten/(:num)', 'PendaftaranAnggota::getKabupaten'); // Ambil kabupaten berdasarkan provinsi
-$routes->get('/pendaftaran-anggota/getKecamatan/(:num)', 'PendaftaranAnggota::getKecamatan'); // Ambil kecamatan berdasarkan kabupaten
 
 // Dashboard Route
 $routes->get('dashboard', 'Dashboard::index');

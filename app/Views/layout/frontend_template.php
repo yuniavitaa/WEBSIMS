@@ -128,6 +128,14 @@
           <li class="nav-item"><a class="nav-link" href="<?= base_url('about_us') ?>">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= base_url('contact_us') ?>">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= base_url('blog') ?>">Blog</a></li>
+          <li class="nav-item dropdown">
+            <a href="/pendaftaran/uploadBukti" class="nav-link">
+              <i class="fa fa-bell"></i>
+              <span class="badge bg-danger">
+                <?= session()->get('notifikasi') ?? 0 ?>
+              </span>
+            </a>
+          </li>
         </ul>
         <!-- Button Login -->
         <a href="<?= base_url('login') ?>" class="btn btn-primary ms-lg-3">Login</a>

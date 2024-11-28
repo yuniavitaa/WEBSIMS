@@ -4,40 +4,44 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreatePendaftaranAnggotaTable extends Migration
+class CreatePendaftaranAnggota extends Migration
 {
     public function up()
     {
         $this->forge->addField([
             'id' => [
                 'type' => 'INT',
-                'constraint' => 11,
                 'unsigned' => true,
-                'auto_increment' => true,
+                'auto_increment' => true
             ],
             'nama_lengkap' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => 100,
+                'null' => false,
             ],
             'email' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => 100,
+                'null' => false,
             ],
             'nomor_hp' => [
                 'type' => 'VARCHAR',
                 'constraint' => 15,
+                'null' => false,
             ],
             'domisili' => [
-                'type' => 'TEXT',
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+                'null' => false,
             ],
             'perusahaan' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => 100,
                 'null' => true,
             ],
             'jabatan' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => 50,
                 'null' => true,
             ],
             'alamat_perusahaan' => [
@@ -47,19 +51,22 @@ class CreatePendaftaranAnggotaTable extends Migration
             'id_type' => [
                 'type' => 'ENUM',
                 'constraint' => ['ktp', 'sims', 'pasport'],
+                'null' => false,
             ],
             'nomor_id' => [
                 'type' => 'VARCHAR',
-                'constraint' => 15, // Ubah sesuai kebutuhan
+                'constraint' => 50,
+                'null' => false,
             ],
-
             'gender' => [
                 'type' => 'ENUM',
                 'constraint' => ['laki-laki', 'perempuan'],
+                'null' => false,
             ],
             'payment_method' => [
                 'type' => 'ENUM',
                 'constraint' => ['transfer', 'gopay', 'shoppepay', 'dana'],
+                'null' => false,
             ],
             'created_at' => [
                 'type' => 'DATETIME',
@@ -70,7 +77,8 @@ class CreatePendaftaranAnggotaTable extends Migration
                 'null' => true,
             ],
         ]);
-        $this->forge->addPrimaryKey('id');
+
+        $this->forge->addKey('id', true);
         $this->forge->createTable('pendaftaran_anggota');
     }
 

@@ -24,7 +24,7 @@ helper('form');
             </div>
         <?php endif; ?>
         <small class="text-secondary">* Wajib diisi</small>
-        <form method="post" action="/pendaftaran-anggota/kirim">
+        <form action="/pendaftaran/kirim" method="post">
             <!-- Nama Lengkap -->
             <div class="form-floating mb-2">
                 <input id="namaLengkap" class="form-control <?= (validation_show_error('namaLengkap')) ? 'is-invalid' : ''; ?>" type="text" name="namaLengkap" value="<?= old('namaLengkap') ?>" placeholder="Nama Lengkap *" required />
@@ -51,7 +51,7 @@ helper('form');
             </div>
             <!-- Domisili -->
             <div class="form-floating mb-2">
-                <textarea class="form-control <?= (validation_show_error('domisili')) ? 'is-invalid' : ''; ?>" rows="5" name="domisili" id="domisili" placeholder="Alamat domisili"><?= old('domisili') ?></textarea>
+                <textarea class="form-control overlayscollbar <?= (validation_show_error('domisili')) ? 'is-invalid' : ''; ?>" rows="5" type="text" name="domisili" id="domisili" placeholder="Alamat domisili"><?= old('domisili') ?></textarea>
                 <label for="domisili">Alamat domisili</label>
                 <div class="invalid-feedback mb-2">
                     <?= validation_show_error('domisili'); ?>
@@ -76,7 +76,7 @@ helper('form');
             </div>
             <!-- Alamat Perusahaan -->
             <div class="form-floating mb-2">
-                <textarea id="alamatPerusahaan" name="alamatPerusahaan" class="form-control <?= (validation_show_error('alamatPerusahaan')) ? 'is-invalid' : ''; ?>" rows="5" placeholder="Alamat perusahaan"><?= old('alamatPerusahaan') ?></textarea>
+                <textarea id="alamatPerusahaan" name="alamatPerusahaan" class="form-control overlayscollbar <?= (validation_show_error('alamatPerusahaan')) ? 'is-invalid' : ''; ?>" rows="5" type="text" placeholder="Alamat perusahaan"><?= old('alamatPerusahaan') ?></textarea>
                 <label for="alamatPerusahaan">Alamat perusahaan</label>
                 <div class="invalid-feedback mb-2">
                     <?= validation_show_error('alamatPerusahaan'); ?>
@@ -94,7 +94,7 @@ helper('form');
                     <?= validation_show_error('id_type'); ?>
                 </div>
             </div>
-            <!-- Nomor ID -->
+            <!-- Nomor HP -->
             <div class="form-group">
                 <label for="nomor_id">Nomor ID*</label>
                 <input type="text" name="nomor_id" id="nomor_id" class="form-control" placeholder="Masukkan Nomor ID" required>
@@ -128,12 +128,58 @@ helper('form');
                     <?= validation_show_error('payment_method'); ?>
                 </div>
             </div>
-
-            <div class="form-group mt-5">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Kirim</button>
-            </div>
+            <!-- Captcha -->
+            <div class="g-recaptcha mb-2" data-sitekey="6LeXtpApAAAAAHXQ_XsWs-zpmKXd4bk9klTyQASw"></div>
+            <!-- Tombol kirim -->
+            <button class="btn btn-outline-dark btn-lg mt-2" type="submit" data-aos="zoom-in">Kirim</a>
         </form>
     </div>
 </div>
-
+</div>
 <?= $this->endSection() ?>
+
+<?= $this->section('head') ?>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#id_provinsi").change(function(e) {
+            var id_provinsi = $("#id_provinsi").val();
+            $.ajax({
+                type: "POST",
+                url: "<?php echo base_url('payment/Kabupaten') ?>",
+                data: {
+                    id_provinsi: id_provinsi
+                },
+                dataType: "html", // Mengubah dataType menjadi html
+                success: function(response) {
+                    $("#id_kabupaten").html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.log("Error: " + error);
+                }
+            });
+        });
+
+        $("#id_kabupaten").change(function(e) {
+            var id_kabupaten = $("#id_kabupaten").val();
+            $.ajax({
+                type: "POST",
+                url: "<?php echo base_url('payment/Kecamatan') ?>",
+                data: {
+                    id_kabupaten: id_kabupaten
+                },
+                dataType: "html", // Mengubah dataType menjadi html
+                success: function(response) {
+                    $("#id_kecamatan").html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.log("Error: " + error);
+                }
+            });
+        });
+    });
+</script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<?= $this->endSection(); ?>
