@@ -205,7 +205,8 @@
         text-align: center;
         position: relative;
         z-index: 1;
-        max-width: 100%; /* Pastikan tidak melebihi kontainer */
+        max-width: 100%;
+        /* Pastikan tidak melebihi kontainer */
 
     }
 
@@ -225,7 +226,8 @@
         margin: 0;
         /* Mengurangi margin default untuk menghemat ruang */
         padding: 0;
-        word-wrap: break-word; /* Pastikan teks tidak meluap */
+        word-wrap: break-word;
+        /* Pastikan teks tidak meluap */
 
     }
 
@@ -233,7 +235,7 @@
         .service-card {
             padding: 20px;
             /* Mengurangi padding untuk tampilan mobile */
-            
+
         }
 
         .service-card img {
@@ -295,11 +297,16 @@
         color: white;
         padding: 8px 16px;
         text-transform: uppercase;
-
+        transition: all 0.3s ease;
+        /* Menambahkan transisi halus */
     }
 
     .more-btn:hover {
-        background: linear-gradient(to right, #FF5F7E, #0056B3);
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        /* Efek cahaya putih */
     }
 
     .swiper {
@@ -566,7 +573,7 @@
                 <p>Very Small Aperture Terminal (VSAT) service is a solution to accommodatatelecomunications needs in areas notcovered
                     by terrestrial networks for the needs of users with fixed, Maving or Mobile locations
                 </p>
-               
+
                 <a href="<?= base_url('vsat'); ?>" class="more-btn">Selengkapnya</a>
             </div>
         </div>

@@ -7,7 +7,8 @@
         margin: 0;
         padding: 0;
     }
-/* 
+
+    /* 
     .navbar {
         background-color: transparent;
         border-bottom: none;
@@ -25,6 +26,15 @@
     .navbar.scrolled {
         background-color: rgba(0, 0, 0, 0.8) !important;
     } */
+
+    .navbar .btn {
+        max-width: 150px;
+        /* Batasi lebar maksimal */
+        width: auto;
+        /* Gunakan ukuran otomatis */
+        padding: 10px 20px;
+        /* Tambahkan padding secukupnya */
+    }
 
     /* Hero Section */
     .hero-section {
@@ -218,25 +228,39 @@
                 transparent 50%);
         padding: 96px 0;
     }
+
     .card {
-            border: none; /* Menghilangkan garis pada kartu */
-            display: flex; /* Menggunakan flexbox */
-            flex-direction: column; /* Mengatur arah kolom */
-            height: 100%; /* Mengatur tinggi kartu 100% dari kolom */
-        }
-        .card-body {
-            flex-grow: 1; /* Memungkinkan body kartu untuk mengisi ruang yang tersedia */
-            padding-bottom: 20px; /* Memberikan padding di bawah */
-        }
-        .card-footer {
-            text-align: center; /* Menyusun teks footer di tengah */
-        }
-        .card:hover {
-            transform: scale(1.05); /* Efek zoom saat hover */
-        }
-        .btn {
-            width: 100%; /* Mengatur lebar tombol agar memenuhi ruang footer */
-        }
+        border: none;
+        /* Menghilangkan garis pada kartu */
+        display: flex;
+        /* Menggunakan flexbox */
+        flex-direction: column;
+        /* Mengatur arah kolom */
+        height: 100%;
+        /* Mengatur tinggi kartu 100% dari kolom */
+    }
+
+    .card-body {
+        flex-grow: 1;
+        /* Memungkinkan body kartu untuk mengisi ruang yang tersedia */
+        padding-bottom: 20px;
+        /* Memberikan padding di bawah */
+    }
+
+    .card-footer {
+        text-align: center;
+        /* Menyusun teks footer di tengah */
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        /* Efek zoom saat hover */
+    }
+
+    .btn {
+        width: 100%;
+        /* Mengatur lebar tombol agar memenuhi ruang footer */
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -330,73 +354,73 @@
     </div>
 </section>
 <div class="container mt-5">
-        <h1 class="text-center">Paket Pembelian Pay TV Service</h1>
+    <h1 class="text-center">Paket Pembelian Pay TV Service</h1>
 
-        <div class="row mt-4 d-flex align-items-stretch">
-            <!-- Paket Silver -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="card-title">Paket Silver</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 200.000/bulan</h6>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">100+ Channel TV</li>
-                            <li class="list-group-item">Streaming HD</li>
-                            <li class="list-group-item">Akses Film dan Serial</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                       <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
-                    </div>
+    <div class="row mt-4 d-flex align-items-stretch">
+        <!-- Paket Silver -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Paket Silver</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 200.000/bulan</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">100+ Channel TV</li>
+                        <li class="list-group-item">Streaming HD</li>
+                        <li class="list-group-item">Akses Film dan Serial</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Paket Gold -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="card-title">Paket Gold</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 350.000/bulan</h6>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">200+ Channel TV</li>
-                            <li class="list-group-item">Streaming UHD</li>
-                            <li class="list-group-item">Akses Film dan Serial</li>
-                            <li class="list-group-item">Fitur Rekaman</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
-                    </div>
+        <!-- Paket Gold -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Paket Gold</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 350.000/bulan</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">200+ Channel TV</li>
+                        <li class="list-group-item">Streaming UHD</li>
+                        <li class="list-group-item">Akses Film dan Serial</li>
+                        <li class="list-group-item">Fitur Rekaman</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Paket Platinum -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="card-title">Paket Platinum</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 500.000/bulan</h6>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">300+ Channel TV</li>
-                            <li class="list-group-item">Streaming 4K</li>
-                            <li class="list-group-item">Akses Film dan Serial</li>
-                            <li class="list-group-item">Fitur Rekaman & Pause TV</li>
-                            <li class="list-group-item">Dukungan Multi-Perangkat</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
-                    </div>
+        <!-- Paket Platinum -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Paket Platinum</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 500.000/bulan</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">300+ Channel TV</li>
+                        <li class="list-group-item">Streaming 4K</li>
+                        <li class="list-group-item">Akses Film dan Serial</li>
+                        <li class="list-group-item">Fitur Rekaman & Pause TV</li>
+                        <li class="list-group-item">Dukungan Multi-Perangkat</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 

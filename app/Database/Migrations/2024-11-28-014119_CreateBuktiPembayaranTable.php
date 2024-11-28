@@ -52,7 +52,7 @@ class CreateBuktiPembayaranTable extends Migration
         $this->forge->addPrimaryKey('id');
         
         // Menambahkan foreign key ke tabel pendaftaran_anggota
-        $this->forge->addForeignKey('pendaftaran_id', 'pendaftaran_anggota', 'id', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('pendaftaran_id', 'pendaftaran_anggota', 'id', 'CASCADE', 'CASCADE');
         
         // Membuat tabel
         $this->forge->createTable('bukti_pembayaran');
