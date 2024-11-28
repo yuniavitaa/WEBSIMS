@@ -36,3 +36,8 @@ docs_html/
 TODO
 test.html
 ad.js
+
+
+writable/logs/*.log
+writable/session/*
+writable/debugbar/*

@@ -9,7 +9,7 @@
   <!-- MDB icon -->
   <link rel="icon" href="img/SIMS.png" type="image/x-icon" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
- <!-- AdminLTE -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <!-- AdminLTE -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
   <!-- Bootstrap Icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- MDB -->
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
- 
+
 
 
   <?= $this->renderSection('style') ?>
@@ -119,25 +119,20 @@
         <img src="assets/img/SIMS.png" height="30" alt="SIMS Logo" loading="lazy" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi bi-list"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
           <li class="nav-item"><a class="nav-link" href="<?= base_url('service') ?>">Product</a></li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('experience') ?>">Experiences</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('experience') ?>">Experiences</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= base_url('about_us') ?>">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= base_url('contact_us') ?>">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= base_url('blog') ?>">Blog</a></li>
         </ul>
+        <!-- Button Login -->
+        <a href="<?= base_url('login') ?>" class="btn btn-primary ms-lg-3">Login</a>
       </div>
     </div>
-
   </nav>
   <!-- Navbar -->
 
@@ -303,47 +298,44 @@
     //     document.getElementById("registerForm").style.display = "block";
     // }
 
-// Mengirim data form login atau registrasi ke server
-function continueToPurchase() {
-    // Cek apakah yang dipilih adalah form login atau registrasi berdasarkan judul modal
-    const url = document.getElementById("modalTitle").textContent === "Register" ? '/register' : '/login';
+    // Mengirim data form login atau registrasi ke server
+    function continueToPurchase() {
+      // Cek apakah yang dipilih adalah form login atau registrasi berdasarkan judul modal
+      const url = document.getElementById("modalTitle").textContent === "Register" ? '/register' : '/login';
 
-    // Mengambil data dari form login atau registrasi
-    const formData = new FormData();
-    if (url === '/register') {
+      // Mengambil data dari form login atau registrasi
+      const formData = new FormData();
+      if (url === '/register') {
         formData.append('full_name', document.querySelector('#registerForm input[placeholder="Full Name"]').value);
         formData.append('email', document.querySelector('#registerForm input[placeholder="Email"]').value);
         formData.append('password', document.querySelector('#registerForm input[placeholder="Password"]').value);
         formData.append('repeat_password', document.querySelector('#registerForm input[placeholder="Repeat Password"]').value);
-    } else {
+      } else {
         formData.append('email', document.querySelector('#loginForm input[placeholder="Email"]').value);
         formData.append('password', document.querySelector('#loginForm input[placeholder="Password"]').value);
-    }
+      }
 
-    // Mengirim data ke server
-    fetch(url, {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => {
-        if (response.ok) {
+      // Mengirim data ke server
+      fetch(url, {
+          method: 'POST',
+          body: formData,
+        })
+        .then(response => {
+          if (response.ok) {
             closeModal();
             alert("Redirecting to purchase form...");
             // Arahkan ke halaman form pembelian
             window.location.href = '/purchase'; // Ganti dengan URL halaman pembelian Anda
-        } else {
+          } else {
             alert("Login/Registration failed.");
-        }
-    })
-    .catch(error => console.error('Error:', error));
-}
-
-
-
-</script>
-<!-- AdminLTE JS -->
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+  </script>
+  <!-- AdminLTE JS -->
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 
