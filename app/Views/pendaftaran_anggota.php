@@ -51,7 +51,7 @@ helper('form');
             </div>
             <!-- Domisili -->
             <div class="form-floating mb-2">
-                <textarea class="form-control overlayscollbar <?= (validation_show_error('domisili')) ? 'is-invalid' : ''; ?>" rows="5" type="text" name="domisili" id="domisili" placeholder="Alamat domisili"><?= old('domisili') ?></textarea>
+                <textarea class="form-control <?= (validation_show_error('domisili')) ? 'is-invalid' : ''; ?>" rows="5" name="domisili" id="domisili" placeholder="Alamat domisili"><?= old('domisili') ?></textarea>
                 <label for="domisili">Alamat domisili</label>
                 <div class="invalid-feedback mb-2">
                     <?= validation_show_error('domisili'); ?>
@@ -76,12 +76,13 @@ helper('form');
             </div>
             <!-- Alamat Perusahaan -->
             <div class="form-floating mb-2">
-                <textarea id="alamatPerusahaan" name="alamatPerusahaan" class="form-control overlayscollbar <?= (validation_show_error('alamatPerusahaan')) ? 'is-invalid' : ''; ?>" rows="5" type="text" placeholder="Alamat perusahaan"><?= old('alamatPerusahaan') ?></textarea>
+                <textarea id="alamatPerusahaan" name="alamatPerusahaan" class="form-control <?= (validation_show_error('alamatPerusahaan')) ? 'is-invalid' : ''; ?>" rows="5" placeholder="Alamat perusahaan"><?= old('alamatPerusahaan') ?></textarea>
                 <label for="alamatPerusahaan">Alamat perusahaan</label>
                 <div class="invalid-feedback mb-2">
                     <?= validation_show_error('alamatPerusahaan'); ?>
                 </div>
-            </div><!-- Jenis ID (KTP, SIM, Paspor) -->
+            </div>
+            <!-- Jenis ID (KTP, SIM, Paspor) -->
             <div class="form-floating mb-2">
                 <select class="form-control <?= (validation_show_error('id_type')) ? 'is-invalid' : ''; ?>" name="id_type" required>
                     <option value="ktp" <?= old('id_type') == 'ktp' ? 'selected' : ''; ?>>KTP</option>
@@ -93,7 +94,7 @@ helper('form');
                     <?= validation_show_error('id_type'); ?>
                 </div>
             </div>
-            <!-- Nomor HP -->
+            <!-- Nomor ID -->
             <div class="form-group">
                 <label for="nomor_id">Nomor ID*</label>
                 <input type="text" name="nomor_id" id="nomor_id" class="form-control" placeholder="Masukkan Nomor ID" required>
@@ -127,18 +128,12 @@ helper('form');
                     <?= validation_show_error('payment_method'); ?>
                 </div>
             </div>
-            <!-- Captcha -->
-            <div class="g-recaptcha mb-2" data-sitekey="6LeXtpApAAAAAHXQ_XsWs-zpmKXd4bk9klTyQASw"></div>
-            <!-- Tombol kirim -->
-            <button class="btn btn-outline-dark btn-lg mt-2" type="submit" data-aos="zoom-in">Kirim</a>
+
+            <div class="form-group mt-5">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Kirim</button>
+            </div>
         </form>
     </div>
 </div>
-</div>
-<?= $this->endSection() ?>
 
-<?= $this->section('head') ?>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<?= $this->endSection(); ?>
+<?= $this->endSection() ?>

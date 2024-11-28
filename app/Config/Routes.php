@@ -29,41 +29,57 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+// Default route
+$routes->get('/', 'Home::index');
+
+// User Authentication Routes
 $routes->get('login', 'User::login');
 $routes->get('register', 'User::register');
-$routes->get('/', 'Home::index');
 $routes->get('user', 'User::index');
 $routes->post('user/regis', 'User::regis');
 $routes->post('user/loginProcess', 'User::loginProcess');
 $routes->get('user/logout', 'User::logout');
-$routes->get('/service', 'Service::service');
-$routes->get('/pay_tv_services', 'Service::pay_tv_services');
-$routes->get('/high_speed_internet_access', 'Service::high_speed_internet_access');
-$routes->get('/vpn_services', 'Service::vpn_services');
-$routes->get('/bts_hotel', 'Service::bts_hotel');
-$routes->get('/dark_viber_connection', 'Service::dark_viber_connection');
-$routes->get('/data_center', 'Service::data_center');
-$routes->get('/vsat', 'Service::vsat');
-$routes->get('/training', 'Service::training');
-$routes->get('/experience', 'Experience::experience');
-$routes->get('/about_us', 'AboutUs::about_us');
-$routes->get('/blog', 'Blog::blog');
-$routes->get('/blog_item', 'Blog::blog_item');
 
-// Rute untuk halaman contact us
+// Service Routes
+$routes->get('service', 'Service::service');
+$routes->get('pay_tv_services', 'Service::pay_tv_services');
+$routes->get('high_speed_internet_access', 'Service::high_speed_internet_access');
+$routes->get('vpn_services', 'Service::vpn_services');
+$routes->get('vpn_services/form', 'Service::vpn_form'); // Form VPN
+$routes->get('bts_hotel', 'Service::bts_hotel');
+$routes->get('dark_viber_connection', 'Service::dark_viber_connection');
+$routes->get('data_center', 'Service::data_center');
+$routes->get('vsat', 'Service::vsat');
+$routes->get('training', 'Service::training');
+
+// Payment Routes
+$routes->get('payment', 'Payment::index');
+$routes->post('payment/Kabupaten', 'Payment::Kabupaten');
+$routes->post('payment/Kecamatan', 'Payment::Kecamatan');
+$routes->post('payment/simpan', 'Payment::simpan');
+
+// Blog Routes
+$routes->get('blog', 'Blog::blog');
+$routes->get('blog_item', 'Blog::blog_item');
+
+// Experience and About Us Routes
+$routes->get('experience', 'Experience::experience');
+$routes->get('about_us', 'AboutUs::about_us');
+
+// Contact Us Routes
 $routes->get('contact_us', 'ContactUs::contact_us');
 $routes->post('contact_us/save', 'ContactUs::saveMessage');
 
+// Pendaftaran Anggota Routes
+$routes->get('pendaftaran-anggota', 'PendaftaranAnggota::index');
+$routes->post('pendaftaran-anggota/kirim', 'PendaftaranAnggota::kirim');
 
-$routes->get('/payment', 'Payment::index');
-$routes->post('/payment/Kabupaten', 'Payment::Kabupaten');
-$routes->post('/payment/Kecamatan', 'Payment::Kecamatan');
-$routes->post('/payment/simpan', 'Payment::simpan');
-$routes->get('/dashboard', 'Dashboard::index');
-$routes->get('/vpn_services/form', 'Service::vpn_form'); // Tambahkan rute
+$routes->post('/pendaftaran-anggota/simpanPendaftaran', 'PendaftaranAnggota::simpanPendaftaran'); // Proses simpan pendaftaran anggota
+$routes->get('/pendaftaran-anggota/getKabupaten/(:num)', 'PendaftaranAnggota::getKabupaten'); // Ambil kabupaten berdasarkan provinsi
+$routes->get('/pendaftaran-anggota/getKecamatan/(:num)', 'PendaftaranAnggota::getKecamatan'); // Ambil kecamatan berdasarkan kabupaten
 
-$routes->get('/pendaftaran-anggota', 'PendaftaranAnggota::index');
-$routes->post('/pendaftaran-anggota/kirim', 'PendaftaranAnggota::kirim');
+// Dashboard Route
+$routes->get('dashboard', 'Dashboard::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

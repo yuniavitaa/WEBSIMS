@@ -74,7 +74,7 @@ class User extends BaseController
             if ($user['role'] === 'admin') {
                 return redirect()->to('/dashboard');
             } else {
-                return redirect()->to('/payment');
+                return redirect()->to('/pendaftaran-anggota');
             }
         } else {
             // Jika gagal, kembalikan ke halaman login dengan flashdata error
