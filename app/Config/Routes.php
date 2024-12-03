@@ -38,7 +38,8 @@ $routes->get('register', 'User::register');
 $routes->get('user', 'User::index');
 $routes->post('user/regis', 'User::regis');
 $routes->post('user/loginProcess', 'User::loginProcess');
-$routes->get('user/logout', 'User::logout');
+$routes->get('/logout', 'User::logout');
+
 
 // Service Routes
 $routes->get('service', 'Service::service');

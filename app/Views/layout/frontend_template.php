@@ -137,8 +137,12 @@
             </a>
           </li>
         </ul>
-        <!-- Button Login -->
-        <a href="<?= base_url('login') ?>" class="btn btn-primary ms-lg-3">Login</a>
+        <!-- Button Login/Logout -->
+        <?php if (session()->get('logged_in')): ?>
+          <a href="<?= base_url('logout') ?>" class="btn btn-danger ms-lg-3">Logout</a>
+        <?php else: ?>
+          <a href="<?= base_url('login') ?>" class="btn btn-primary ms-lg-3">Login</a>
+        <?php endif; ?>
       </div>
     </div>
   </nav>
