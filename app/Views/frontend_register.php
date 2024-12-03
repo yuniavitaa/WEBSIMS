@@ -15,14 +15,11 @@
 
                             <div class="card-body">
                                 <form action="<?= site_url('user/regis') ?>" method="POST">
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <label for="first_name">First Name</label>
-                                            <input id="first_name" type="text" class="form-control" name="first_name" autofocus>
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for="last_name">Last Name</label>
-                                            <input id="last_name" type="text" class="form-control" name="last_name">
+                                    <div class="form-group">
+                                        <label for="fullname">Full Name</label>
+                                        <input id="fullname" type="text" class="form-control" name="fullname" autofocus required>
+                                        <div class="invalid-feedback">
+                                            <!-- Tampilkan pesan error jika ada -->
                                         </div>
                                     </div>
 

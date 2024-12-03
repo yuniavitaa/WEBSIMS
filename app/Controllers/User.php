@@ -51,37 +51,44 @@ class User extends BaseController
         }
     }
 
+
+
+
     public function loginProcess()
     {
-        $userData = new M_User();
+        $userData = new M_User(); // Model user
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
 
         $user = $userData->where('email', $email)->first();
 
         if ($user && password_verify($password, $user['password'])) {
-            // Simpan data sesi
+            // Ambil fullname dari database
             session()->set([
                 'email' => $user['email'],
+                'fullname' => $user['fullname'], // Nama lengkap
                 'role' => $user['role'],
                 'logged_in' => true
             ]);
 
-            // Set flashdata untuk notifikasi berhasil login
+            // Flashdata untuk notifikasi berhasil login
             session()->setFlashdata('success', 'Login berhasil!');
 
             // Redirect berdasarkan peran
             if ($user['role'] === 'admin') {
                 return redirect()->to('/dashboard');
             } else {
-                return redirect()->to('/pendaftaran-anggota');
+                return redirect()->to('/pendaftaran'); // Arahkan ke form pendaftaran
             }
         } else {
-            // Jika gagal, kembalikan ke halaman login dengan flashdata error
-            session()->setFlashdata('error', 'Email atau password salah');
+            // Jika gagal login
+            session()->setFlashdata('error', 'Email atau password salah.');
             return redirect()->back();
         }
     }
+
+
+
 
     public function logout()
     {

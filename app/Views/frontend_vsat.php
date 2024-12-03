@@ -2,9 +2,19 @@
 
 <?= $this->section('style') ?>
 <style>
-     body {
+    body {
         overflow-x: hidden;
     }
+
+    .navbar .btn {
+        max-width: 150px;
+        /* Batasi lebar maksimal */
+        width: auto;
+        /* Gunakan ukuran otomatis */
+        padding: 10px 20px;
+        /* Tambahkan padding secukupnya */
+    }
+
 
     .hero {
         background-image: url('<?= base_url('assets/img/vsat.png') ?>');
@@ -56,30 +66,35 @@
     }
 
     .card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            transition: transform 0.2s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card-header {
-            background-color: #007bff; /* Warna latar belakang header */
-            color: white;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        .btn {
-            width: 100%;
-        }
-        .highlight {
-            background-color: #e9ecef;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        transition: transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-header {
+        background-color: #007bff;
+        /* Warna latar belakang header */
+        color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .highlight {
+        background-color: #e9ecef;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -98,76 +113,76 @@
 </div>
 
 <div class="container mt-5">
-        <h1 class="text-center mb-4">Paket VSAT</h1>
+    <h1 class="text-center mb-4">Paket VSAT</h1>
 
-        <div class="highlight">
-            <h4>Solusi Komunikasi Tanpa Batas</h4>
-            <p>VSAT (Very Small Aperture Terminal) adalah solusi layanan untuk mengakomodasi kebutuhan telekomunikasi di wilayah yang tidak terjangkau oleh jaringan terrestrial. Dengan VSAT, pengguna dapat terhubung di lokasi tetap (fixed), bergerak (moving), maupun mobile dengan keandalan tinggi.</p>
+    <div class="highlight">
+        <h4>Solusi Komunikasi Tanpa Batas</h4>
+        <p>VSAT (Very Small Aperture Terminal) adalah solusi layanan untuk mengakomodasi kebutuhan telekomunikasi di wilayah yang tidak terjangkau oleh jaringan terrestrial. Dengan VSAT, pengguna dapat terhubung di lokasi tetap (fixed), bergerak (moving), maupun mobile dengan keandalan tinggi.</p>
+    </div>
+
+    <div class="row d-flex align-items-stretch">
+        <!-- Paket Dasar -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="card-title">Paket Dasar</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Harga: <strong>Rp 2.000.000/bulan</strong></h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Bandwidth: 1 Mbps</li>
+                        <li class="list-group-item">Jarak: Hingga 50 km dari hub</li>
+                        <li class="list-group-item">Dukungan: 8/5</li>
+                        <li class="list-group-item">Instalasi: Termasuk</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
+                </div>
+            </div>
         </div>
 
-        <div class="row d-flex align-items-stretch">
-            <!-- Paket Dasar -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h5 class="card-title">Paket Dasar</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Harga: <strong>Rp 2.000.000/bulan</strong></h6>
-                        <ul class="list-group">
-                            <li class="list-group-item">Bandwidth: 1 Mbps</li>
-                            <li class="list-group-item">Jarak: Hingga 50 km dari hub</li>
-                            <li class="list-group-item">Dukungan: 8/5</li>
-                            <li class="list-group-item">Instalasi: Termasuk</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
-                    </div>
+        <!-- Paket Menengah -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="card-title">Paket Menengah</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Harga: <strong>Rp 3.500.000/bulan</strong></h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Bandwidth: 3 Mbps</li>
+                        <li class="list-group-item">Jarak: Hingga 100 km dari hub</li>
+                        <li class="list-group-item">Dukungan: 8/5</li>
+                        <li class="list-group-item">Instalasi: Termasuk</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Paket Menengah -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h5 class="card-title">Paket Menengah</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Harga: <strong>Rp 3.500.000/bulan</strong></h6>
-                        <ul class="list-group">
-                            <li class="list-group-item">Bandwidth: 3 Mbps</li>
-                            <li class="list-group-item">Jarak: Hingga 100 km dari hub</li>
-                            <li class="list-group-item">Dukungan: 8/5</li>
-                            <li class="list-group-item">Instalasi: Termasuk</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
-                    </div>
+        <!-- Paket Premium -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="card-title">Paket Premium</h5>
                 </div>
-            </div>
-
-            <!-- Paket Premium -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h5 class="card-title">Paket Premium</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Harga: <strong>Rp 5.000.000/bulan</strong></h6>
-                        <ul class="list-group">
-                            <li class="list-group-item">Bandwidth: 5 Mbps</li>
-                            <li class="list-group-item">Jarak: Hingga 150 km dari hub</li>
-                            <li class="list-group-item">Dukungan: 24/7</li>
-                            <li class="list-group-item">Instalasi: Termasuk</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                    <button class="btn btn-primary mt-auto w-100"  onclick="continueToPurchase()" >Beli Paket</button>
-                    </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Harga: <strong>Rp 5.000.000/bulan</strong></h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Bandwidth: 5 Mbps</li>
+                        <li class="list-group-item">Jarak: Hingga 150 km dari hub</li>
+                        <li class="list-group-item">Dukungan: 24/7</li>
+                        <li class="list-group-item">Instalasi: Termasuk</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <?= $this->endSection() ?>

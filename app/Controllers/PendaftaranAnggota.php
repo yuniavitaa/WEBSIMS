@@ -8,8 +8,27 @@ class PendaftaranAnggota extends BaseController
 {
     public function index()
     {
-        return view('pendaftaran_anggota');
+        // Mengambil data pengguna yang login dari session
+        $userData = session()->get();
+
+        // Cek apakah pengguna sudah login
+        if (!isset($userData['logged_in']) || !$userData['logged_in']) {
+            return redirect()->to('/login');  // Arahkan ke halaman login jika tidak ada sesi login
+        }
+
+        // Kirim data pengguna yang login ke tampilan form pendaftaran
+        $data = [
+            'title' => 'Form Pendaftaran Anggota',
+            'email' => $userData['email'],  // Email pengguna yang login
+            'nama_lengkap' => $userData['fullname'] ?? '',  // Nama lengkap pengguna yang ada di session
+            'nomor_hp' => '',  // Kosongkan atau sesuaikan dengan data pengguna jika perlu
+            'domisili' => '',  // Kosongkan atau sesuaikan dengan data pengguna jika perlu
+        ];
+
+        // Tampilkan halaman form pendaftaran dengan data yang sudah ada
+        return view('pendaftaran_anggota', $data);
     }
+
 
     public function kirim()
     {
@@ -32,7 +51,7 @@ class PendaftaranAnggota extends BaseController
         }
 
         $data = [
-            'nama_lengkap' => $this->request->getPost('namaLengkap'),
+            'nama_lengkap' => $this->request->getPost('fullname'),
             'email' => $this->request->getPost('email'),
             'nomor_hp' => $this->request->getPost('nomorHp'),
             'domisili' => $this->request->getPost('domisili'),
@@ -57,17 +76,6 @@ class PendaftaranAnggota extends BaseController
         }
     }
 
-    public function uploadBukti()
-    {
-        $notifikasi = session()->get('notifikasi');
-        if (!$notifikasi) {
-            return redirect()->back()->with('gagal', 'Tidak ada data untuk diupload.');
-        }
-
-        return view('upload_bukti_pembayaran');
-       
-    }
-
     public function prosesUploadBukti()
     {
         $validation = $this->validate([
@@ -83,22 +91,22 @@ class PendaftaranAnggota extends BaseController
             return redirect()->back()->withInput()->with('gagal', 'Silakan periksa kembali isian Anda!');
         }
 
-          // Menangani file upload
+        // Menangani file upload
         $file = $this->request->getFile('bukti_pembayaran');
         if ($file->isValid() && !$file->hasMoved()) {
             $fileName = $file->getRandomName();
             $file->move(WRITEPATH . 'uploads', $fileName);
 
-             // Data yang akan disimpan ke database
-             $model = new \App\Models\BuktiPembayaranModel();
-             $model->save([
-                 'pendaftaran_id' => $this->request->getPost('pendaftaran_id'),
-                 'nama' => $this->request->getPost('nama'),
-                 'email' => $this->request->getPost('email'),
-                 'nomor_hp' => $this->request->getPost('nomor_hp'),
-                 'payment_method' => $this->request->getPost('payment_method'),
-                 'bukti_pembayaran' => $fileName,
-             ]);
+            // Data yang akan disimpan ke database
+            $model = new \App\Models\BuktiPembayaranModel();
+            $model->save([
+                'pendaftaran_id' => $this->request->getPost('pendaftaran_id'),
+                'nama' => $this->request->getPost('nama'),
+                'email' => $this->request->getPost('email'),
+                'nomor_hp' => $this->request->getPost('nomor_hp'),
+                'payment_method' => $this->request->getPost('payment_method'),
+                'bukti_pembayaran' => $fileName,
+            ]);
             session()->set('notifikasi', session()->get('notifikasi') - 1);
 
             return redirect()->back()->with('sukses', 'Bukti pembayaran berhasil diupload!');
