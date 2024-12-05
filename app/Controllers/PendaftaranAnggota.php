@@ -33,7 +33,7 @@ class PendaftaranAnggota extends BaseController
     public function kirim()
     {
         $validation = $this->validate([
-            'namaLengkap' => 'required',
+            'fullname' => 'required',
             'email' => 'required|valid_email',
             'nomorHp' => 'required|numeric',
             'domisili' => 'required',

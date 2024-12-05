@@ -285,7 +285,7 @@
                     </ul>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>
@@ -306,7 +306,7 @@
                     </ul>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>
@@ -327,7 +327,7 @@
                     </ul>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>

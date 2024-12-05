@@ -53,7 +53,6 @@
 
     }
 
-    /* Pop-up Styles */
     .modal {
       display: none;
       position: fixed;
@@ -62,22 +61,48 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      z-index: 1050;
     }
 
     .modal-content {
-      background-color: #262626;
+      background: #fff;
+      width: 90%;
+      /* Lebar maksimum 90% layar */
+      max-width: 500px;
+      /* Batas lebar maksimal 500px */
       padding: 20px;
       border-radius: 10px;
-      width: 400px;
-      color: white;
       text-align: center;
+      animation: fadeIn 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .modal-content h2 {
-      color: #00b8d4;
-      margin-bottom: 20px;
+    .close-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .close-button:hover {
+      background-color: #5a6268;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
     }
 
     .form-group {
@@ -150,6 +175,17 @@
 
   <!-- Main content -->
   <?= $this->renderSection('content') ?>
+
+  <!-- Modal untuk Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>Silahkan Login Terlebih Dahulu</h2>
+      <p>Anda harus login untuk melanjutkan pembelian paket ini.</p>
+      <a href="<?= base_url('login') ?>" class="btn btn-primary">Login</a>
+      <button class="close-button" onclick="closeModal()">Tutup</button>
+    </div>
+  </div>
+
 
   <!-- Footer -->
   <footer class="text-center text-lg-start text-muted-white pt-1" style="background-color:#000000;">
@@ -264,87 +300,34 @@
     });
   </script>
 
-  <!-- Modal for Login/Register -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <h2 id="modalTitle">Login</h2>
-      <div id="loginForm">
-        <!-- <div class="form-group"><input type="email" placeholder="Email" required></div>
-        <div class="form-group"><input type="password" placeholder="Password" required></div> -->
-        <button class="close-button" onclick="continueToPurchase()">Login Dahulu</button>
-      </div>
-      <!-- <div id="registerForm" style="display: none;">
-            <div class="form-group"><input type="text" placeholder="Full Name" required></div>
-            <div class="form-group"><input type="email" placeholder="Email" required></div>
-            <div class="form-group"><input type="password" placeholder="Password" required></div>
-            <div class="form-group"><input type="password" placeholder="Repeat Password" required></div>
-            <button class="close-button" onclick="continueToPurchase()">Register</button>
-            <p>Already have an account? <button class="switch-button" onclick="showLogin()">Login</button></p>
-        </div> -->
-    </div>
-  </div>
+
 
   <script>
-    // Membuka modal dan menampilkan form login sebagai tampilan awal
+    // Membuka Modal
     function openModal() {
       document.getElementById("loginModal").style.display = "flex";
-      showLogin(); // Memulai modal dengan form login
+
     }
 
-    // Menutup modal
+
+
+    // Menutup Modal
     function closeModal() {
       document.getElementById("loginModal").style.display = "none";
     }
 
-    // Menampilkan form login
-    function showLogin() {
-      document.getElementById("modalTitle").textContent = "Login";
-      document.getElementById("loginForm").style.display = "block";
-      document.getElementById("registerForm").style.display = "none";
-    }
-
-    // Menampilkan form registrasi
-    // function showRegister() {
-    //     document.getElementById("modalTitle").textContent = "Register";
-    //     document.getElementById("loginForm").style.display = "none";
-    //     document.getElementById("registerForm").style.display = "block";
-    // }
-
-    // Mengirim data form login atau registrasi ke server
+    // Fungsi untuk Mengecek Login
     function continueToPurchase() {
-      // Cek apakah yang dipilih adalah form login atau registrasi berdasarkan judul modal
-      const url = document.getElementById("modalTitle").textContent === "Register" ? '/register' : '/login';
-
-      // Mengambil data dari form login atau registrasi
-      const formData = new FormData();
-      if (url === '/register') {
-        formData.append('full_name', document.querySelector('#registerForm input[placeholder="Full Name"]').value);
-        formData.append('email', document.querySelector('#registerForm input[placeholder="Email"]').value);
-        formData.append('password', document.querySelector('#registerForm input[placeholder="Password"]').value);
-        formData.append('repeat_password', document.querySelector('#registerForm input[placeholder="Repeat Password"]').value);
+      const isLoggedIn = <?= json_encode(session()->get('logged_in') ?? false) ?>;
+      if (!isLoggedIn) {
+        openModal(); // Tampilkan modal jika belum login
       } else {
-        formData.append('email', document.querySelector('#loginForm input[placeholder="Email"]').value);
-        formData.append('password', document.querySelector('#loginForm input[placeholder="Password"]').value);
+        // Arahkan ke proses pembelian jika sudah login
+        window.location.href = "<?= base_url('pendaftaran') ?>";
       }
-
-      // Mengirim data ke server
-      fetch(url, {
-          method: 'POST',
-          body: formData,
-        })
-        .then(response => {
-          if (response.ok) {
-            closeModal();
-            alert("Redirecting to purchase form...");
-            // Arahkan ke halaman form pembelian
-            window.location.href = '/purchase'; // Ganti dengan URL halaman pembelian Anda
-          } else {
-            alert("Login/Registration failed.");
-          }
-        })
-        .catch(error => console.error('Error:', error));
     }
   </script>
+
   <!-- AdminLTE JS -->
   <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

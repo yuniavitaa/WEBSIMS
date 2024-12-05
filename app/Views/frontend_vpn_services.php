@@ -300,7 +300,7 @@
                         <li>Akses aman ke jaringan perusahaan dari lokasi mana saja</li>
                     </ul>
                     <h5 class="text-primary">Harga: IDR X / bulan</h5>
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>
@@ -327,7 +327,7 @@
                         <li>QoS untuk memastikan bandwidth prioritas</li>
                     </ul>
                     <h5 class="text-success">Harga: IDR Y / bulan</h5>
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()">Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>
@@ -356,7 +356,7 @@
                         <li>Traffic prioritization dan VLAN untuk isolasi jaringan</li>
                     </ul>
                     <h5 class="text-danger">Harga: IDR Z / bulan</h5>
-                    <button class="btn btn-primary mt-auto w-100" onclick="openModal()" >Beli Paket</button>
+                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
                 </div>
             </div>
         </div>
