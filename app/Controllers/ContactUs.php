@@ -30,4 +30,20 @@ class ContactUs extends BaseController
             return $this->response->setJSON(['status' => 'error', 'message' => 'Pesan gagal dikirim']);
         }
     }
+    public function index()
+    {
+        $model = new ContactUsModel();
+
+        // Ambil semua data dari tabel contact_us
+        $data = [
+            'judul' => 'Contact Us', // Judul halaman
+            'menu' => 'masterdata', // Menu yang aktif
+            'submenu' => 'contact', // Submenu yang aktif
+            'messages' => $model->findAll() // Data dari database
+        ];
+
+        // Tampilkan halaman admin dengan DataTables
+        return view('admin/contact_list', $data);
+    }
+
 }

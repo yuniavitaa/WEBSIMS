@@ -87,6 +87,84 @@ class User extends BaseController
         }
     }
 
+    public function listUsers()
+    {
+        $model = new M_User();
+
+        // Ambil semua data dari tabel user
+        $data = [
+            'judul' => 'Daftar User',
+            'menu' => 'masterdata',
+            'submenu' => 'user',
+            'users' => $model->findAll() // Ambil data user
+        ];
+
+        // Tampilkan halaman daftar user
+        return view('admin/user_list', $data);
+    }
+
+    public function createUser()
+    {
+        if ($this->request->getMethod() === 'post') {
+            $model = new M_User();
+
+            // Validasi data
+            $data = [
+                'fullname' => $this->request->getPost('fullname'),
+                'email' => $this->request->getPost('email'),
+                'password' => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT), // Hash password
+                'role' => $this->request->getPost('role'),
+                'date_create' => date('Y-m-d H:i:s'),
+                'date_update' => date('Y-m-d H:i:s'),
+            ];
+
+            $model->insert($data);
+
+            return redirect()->to('/admin/user')->with('success', 'User berhasil ditambahkan!');
+        }
+
+        // Jika metode bukan POST, tampilkan form create
+        return view('admin/user_create');
+    }
+
+    public function editUser($id)
+    {
+        $model = new M_User();
+        $user = $model->find($id);
+
+        if ($this->request->getMethod() === 'post') {
+            // Validasi dan update data
+            $data = [
+                'fullname' => $this->request->getPost('fullname'),
+                'email' => $this->request->getPost('email'),
+                'role' => $this->request->getPost('role'),
+                'date_update' => date('Y-m-d H:i:s'),
+            ];
+
+            // Periksa apakah password diubah
+            if ($this->request->getPost('password')) {
+                $data['password'] = password_hash($this->request->getPost('password'), PASSWORD_BCRYPT);
+            }
+
+            $model->update($id, $data);
+
+            return redirect()->to('/admin/user')->with('success', 'User berhasil diperbarui!');
+        }
+
+        // Tampilkan form edit
+        return view('admin/user_edit', ['user' => $user]);
+    }
+
+    public function deleteUser($id)
+    {
+        $model = new M_User();
+
+        if ($model->delete($id)) {
+            return redirect()->to('/admin/user')->with('success', 'User berhasil dihapus!');
+        } else {
+            return redirect()->to('/admin/user')->with('error', 'Gagal menghapus user.');
+        }
+    }
 
 
 
@@ -95,4 +173,10 @@ class User extends BaseController
         session()->destroy();
         return redirect()->to('/login');
     }
+
+
+
+    
 }
+
+

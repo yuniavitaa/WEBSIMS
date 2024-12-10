@@ -353,74 +353,7 @@
         </div>
     </div>
 </section>
-<div class="container mt-5">
-    <h1 class="text-center">Paket Pembelian Pay TV Service</h1>
 
-    <div class="row mt-4 d-flex align-items-stretch">
-        <!-- Paket Silver -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h5 class="card-title">Paket Silver</h5>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 200.000/bulan</h6>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">100+ Channel TV</li>
-                        <li class="list-group-item">Streaming HD</li>
-                        <li class="list-group-item">Akses Film dan Serial</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Paket Gold -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h5 class="card-title">Paket Gold</h5>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 350.000/bulan</h6>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">200+ Channel TV</li>
-                        <li class="list-group-item">Streaming UHD</li>
-                        <li class="list-group-item">Akses Film dan Serial</li>
-                        <li class="list-group-item">Fitur Rekaman</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Paket Platinum -->
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h5 class="card-title">Paket Platinum</h5>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Harga: Rp 500.000/bulan</h6>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">300+ Channel TV</li>
-                        <li class="list-group-item">Streaming 4K</li>
-                        <li class="list-group-item">Akses Film dan Serial</li>
-                        <li class="list-group-item">Fitur Rekaman & Pause TV</li>
-                        <li class="list-group-item">Dukungan Multi-Perangkat</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary mt-auto w-100" onclick="continueToPurchase()">Beli Paket</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

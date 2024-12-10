@@ -1,0 +1,253 @@
+INFO - 2024-12-09 11:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 11:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 11:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 11:40:07 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:40:33 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:40:53 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:41:00 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:43:10 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:43:13 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:50:40 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:50:43 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:51:20 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:56:40 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:56:42 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:56:46 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 11:56:50 --> Invalid file: "user_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_list', [], true)
+ 3 APPPATH\Views\templates\admin_dashboard.php(176): view('user_list')
+ 4 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\templates\\admin_dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('templates/admin_dashboard', [], true)
+ 7 APPPATH\Controllers\User.php(26): view('templates/admin_dashboard', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+CRITICAL - 2024-12-09 12:10:04 --> Object of class CodeIgniter\Router\RouteCollection could not be converted to string
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+INFO - 2024-12-09 12:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 12:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 13:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 14:04:57 --> Invalid file: "layouts/admin_template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/admin_template.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/admin_template', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/user_edit', [], true)
+ 4 APPPATH\Controllers\User.php(155): view('admin/user_edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->editUser('15')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+INFO - 2024-12-09 14:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-09 14:05:27 --> Undefined variable $menu
+in APPPATH\Views\layout\admin_template.php on line 48.
+ 1 APPPATH\Views\layout\admin_template.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\layout\\admin_template.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\SIMSWEB\\app\\Views\\layout\\admin_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/admin_template', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/user_edit', [], true)
+ 6 APPPATH\Controllers\User.php(155): view('admin/user_edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->editUser('15')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\SIMSWEB\\public\\index.php')
+INFO - 2024-12-09 14:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 14:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

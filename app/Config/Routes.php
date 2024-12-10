@@ -40,6 +40,15 @@ $routes->post('user/regis', 'User::regis');
 $routes->post('user/loginProcess', 'User::loginProcess');
 $routes->get('/logout', 'User::logout');
 
+$routes->get('/admin/user', 'User::listUsers');
+$routes->get('/admin/user/create', 'User::createUser'); // Form create
+$routes->post('/admin/user/create', 'User::createUser'); // Proses create
+$routes->get('/admin/user/edit/(:num)', 'User::editUser'); // Form edit
+$routes->post('/admin/user/edit/(:num)', 'User::editUser'); // Proses edit
+$routes->get('/admin/user/delete/(:num)', 'User::deleteUser'); // Proses delete
+
+
+
 
 // Service Routes
 $routes->get('service', 'Service::service');
@@ -70,6 +79,7 @@ $routes->get('about_us', 'AboutUs::about_us');
 // Contact Us Routes
 $routes->get('contact_us', 'ContactUs::contact_us');
 $routes->post('contact_us/save', 'ContactUs::saveMessage');
+$routes->get('admin/contact-us', 'ContactUs::index');
 
 // form pendaftaran dan upload bukti
 $routes->get('/pendaftaran', 'PendaftaranAnggota::index');
